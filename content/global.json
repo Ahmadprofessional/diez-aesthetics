@@ -1,0 +1,47 @@
+{
+  "clinic_name": "Diez Anti-Aging Aesthetics",
+  "tagline": "Enhance. Restore. Refine.",
+  "phone": "+44 7348 947988",
+  "phone_alt": "+44 7459 92141",
+  "email": "info@diezaesthetics.com",
+  "address": {
+    "street": "260 Pentonville Road",
+    "city": "London",
+    "postcode": "N1 9JY",
+    "area": "King's Cross",
+    "country": "United Kingdom"
+  },
+  "booking_url": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+  "whatsapp_url": "https://wa.link/l51u63",
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Treatments",
+      "href": "/treatments/"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery/"
+    },
+    {
+      "label": "Prices",
+      "href": "/prices/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 Diez Anti-Aging Aesthetics. All rights reserved.",
+    "tagline": "Advanced aesthetic and regenerative treatments designed to enhance your natural features.",
+    "hours": "Monday – Saturday: 10:00 AM – 7:00 PM | Sunday: Closed"
+  }
+}

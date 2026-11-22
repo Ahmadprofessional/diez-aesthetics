@@ -1,0 +1,132 @@
+{
+  "pages": [
+    {
+      "url": "https://diezaesthetics.com/",
+      "slug": "/",
+      "title": "Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/",
+      "h1": "NATURAL BEAUTY",
+      "all_h1s": [
+        "NATURAL BEAUTY"
+      ],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    },
+    {
+      "url": "https://diezaesthetics.com/about/",
+      "slug": "/about/",
+      "title": "About – Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/about/",
+      "h1": "",
+      "all_h1s": [],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    },
+    {
+      "url": "https://diezaesthetics.com/treatments/",
+      "slug": "/treatments/",
+      "title": "Treatments – Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/treatments/",
+      "h1": "",
+      "all_h1s": [],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    },
+    {
+      "url": "https://diezaesthetics.com/gallery/",
+      "slug": "/gallery/",
+      "title": "Gallery – Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/gallery/",
+      "h1": "",
+      "all_h1s": [],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    },
+    {
+      "url": "https://diezaesthetics.com/prices/",
+      "slug": "/prices/",
+      "title": "Prices – Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/prices/",
+      "h1": "",
+      "all_h1s": [],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    },
+    {
+      "url": "https://diezaesthetics.com/contact/",
+      "slug": "/contact/",
+      "title": "Contact – Diez Anti-Aging Aesthetics",
+      "meta_description": "",
+      "canonical": "https://diezaesthetics.com/contact/",
+      "h1": "",
+      "all_h1s": [],
+      "og_tags": {},
+      "twitter_tags": {},
+      "json_ld": [],
+      "status_code": 200,
+      "indexability": {
+        "indexable": true,
+        "robots_directive": "max-image-preview:large"
+      }
+    }
+  ],
+  "discovered_internal_urls": [
+    "https://diezaesthetics.com",
+    "https://diezaesthetics.com/",
+    "https://diezaesthetics.com/about/",
+    "https://diezaesthetics.com/cdn-cgi/l/email-protection",
+    "https://diezaesthetics.com/contact/",
+    "https://diezaesthetics.com/gallery/",
+    "https://diezaesthetics.com/prices/",
+    "https://diezaesthetics.com/treatments/",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155047.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155056.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155104.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155123.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155132.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155144.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155153.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155201.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155215.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155227.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155239.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155254.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155310.png",
+    "https://diezaesthetics.com/wp-content/uploads/2026/07/Screenshot-2026-07-12-155505.png"
+  ]
+}

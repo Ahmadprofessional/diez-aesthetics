@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "subtitle": "ENHANCE. RESTORE. REFINE.",
+    "title": "NATURAL BEAUTY",
+    "heading": "THAT’S UNIQUELY YOU.",
+    "description": "Advanced aesthetic and regenerative treatments designed to enhance your natural features and elevate your confidence with subtle, balanced results.",
+    "ctas": [
+      {
+        "label": "Book Consultation",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      },
+      {
+        "label": "WhatsApp Us",
+        "href": "https://wa.link/l51u63"
+      }
+    ]
+  },
+  "about_founder": {
+    "label": "ABOUT Daniel",
+    "heading": "NATURAL. BALANCED. BEAUTIFULLY YOU.",
+    "bio": [
+      "Danial is an aesthetic practitioner known for his precision, artistic eye, and gentle technique. Specialising in subtle, confidence-boosting enhancements, he prioritises patient safety, natural results, and bespoke care tailored to your unique facial anatomy.",
+      "With continuous training in the latest medical aesthetic procedures, Danial believes in enhancing your authentic beauty—never overpowering it."
+    ],
+    "qualifications": [
+      "Fully Insured & Qualified Practitioner",
+      "Complications Trained & Medically Supported",
+      "Tailored Consultations & Natural Aesthetics"
+    ],
+    "cta": {
+      "label": "More About Us",
+      "href": "/about/"
+    }
+  },
+  "treatments_preview": {
+    "label": "OUR TREATMENTS",
+    "heading": "TAILORED TO ENHANCE YOUR NATURAL BEAUTY.",
+    "subtitle": "Advanced non-surgical procedures crafted to refresh, restore, and refine your appearance.",
+    "treatments": [
+      {
+        "title": "Anti-Wrinkle Treatments",
+        "description": "Target fine lines and dynamic wrinkles for a smoother, rejuvenated complexion while preserving natural expression.",
+        "image": "/assets/images/anti-wrinkle.png",
+        "cta": {
+          "label": "Learn More",
+          "href": "/treatments/"
+        }
+      },
+      {
+        "title": "Dermal & Lip Fillers",
+        "description": "Enhance facial contours, restore volume, and define lips with premium hyaluronic acid dermal fillers.",
+        "image": "/assets/images/dermal-fillers.png",
+        "cta": {
+          "label": "Learn More",
+          "href": "/treatments/"
+        }
+      },
+      {
+        "title": "Skin Boosters & Polynucleotides",
+        "description": "Deeply hydrate, stimulate collagen and elastin, and repair cellular damage for radiant, youthful skin.",
+        "image": "/assets/images/skin-booster.png",
+        "cta": {
+          "label": "Learn More",
+          "href": "/treatments/"
+        }
+      },
+      {
+        "title": "Medical Microneedling",
+        "description": "Boost collagen synthesis, refine skin texture, and diminish acne scarring and pigmentation.",
+        "image": "/assets/images/why choose diez image.webp",
+        "cta": {
+          "label": "Learn More",
+          "href": "/treatments/"
+        }
+      }
+    ]
+  },
+  "why_choose": {
+    "label": "WHY CHOOSE DIEZ ANTI-AGING",
+    "heading": "COMMITTED TO EXCELLENCE & SAFETY.",
+    "points": [
+      {
+        "title": "Medical-Grade Standards",
+        "desc": "Highest clinical safety protocols and premium CE-marked products."
+      },
+      {
+        "title": "Bespoke Consultations",
+        "desc": "Every face is unique. We design custom treatment plans tailored to your goals."
+      },
+      {
+        "title": "Natural Harmonisation",
+        "desc": "Subtle enhancements that highlight your authentic beauty without looking overdone."
+      },
+      {
+        "title": "Comprehensive Aftercare",
+        "desc": "Full post-treatment support and follow-ups to ensure optimal results."
+      }
+    ]
+  },
+  "before_after": {
+    "label": "REAL RESULTS",
+    "heading": "BEFORE & AFTER TRANSFORMATIONS",
+    "subtitle": "Subtle, balanced enhancements showcasing natural regenerative results.",
+    "pairs": [
+      {
+        "treatment": "Lip Enhancement",
+        "before": "/assets/images/before-lip.jpg",
+        "after": "/assets/images/after-lip.jpg"
+      },
+      {
+        "treatment": "Under-Eye & Tear Trough Polynucleotides",
+        "before": "/assets/images/before-eye.jpg",
+        "after": "/assets/images/after-eye.jpg"
+      },
+      {
+        "treatment": "Facial Rejuvenation & Skin Quality",
+        "before": "/assets/images/before-lip.jpg",
+        "after": "/assets/images/after-lip.jpg"
+      }
+    ]
+  },
+  "reviews": {
+    "label": "PATIENT REVIEWS",
+    "heading": "Real Stories. Real Confidence",
+    "rating": "5.0",
+    "total_reviews": "50+",
+    "source": "Google Reviews",
+    "items": [
+      {
+        "author": "Sophie M.",
+        "rating": 5,
+        "avatar": "/assets/original/reviews/reviewer_1.png",
+        "review": "Daniel is amazing! He explained everything thoroughly and made me feel so comfortable. My lip filler looks so natural, exactly what I wanted."
+      },
+      {
+        "author": "Elena R.",
+        "rating": 5,
+        "avatar": "/assets/original/reviews/reviewer_2.png",
+        "review": "Had polynucleotides done for my dark circles and the difference after 3 sessions is incredible. Very professional and clean clinic in King’s Cross."
+      },
+      {
+        "author": "Marcus T.",
+        "rating": 5,
+        "avatar": "/assets/original/reviews/reviewer_3.png",
+        "review": "First time having anti-wrinkle injections. Daniel was patient and conservative with the dosage. No frozen look, just fresh and rested."
+      },
+      {
+        "author": "Chloe B.",
+        "rating": 5,
+        "avatar": "/assets/original/reviews/reviewer_4.png",
+        "review": "The clinic is stunning and Daniel really listens to your concerns. Highly recommend Diez Anti-Aging Aesthetics to anyone looking for subtle enhancements."
+      }
+    ]
+  }
+}

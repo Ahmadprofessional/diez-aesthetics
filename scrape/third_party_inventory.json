@@ -1,0 +1,113 @@
+{
+  "third_party_scripts": [
+    {
+      "name": "Google Tag Manager (GTM)",
+      "ids_found": [],
+      "where_fires": "Header / All pages",
+      "what_it_does": "Container for analytics and conversion tags",
+      "nextjs_replacement": "Next.js Script with strategy=\"afterInteractive\" or Partytown"
+    },
+    {
+      "name": "Google Analytics 4 (GA4)",
+      "ids_found": [],
+      "where_fires": "All pages via GTM / gtag",
+      "what_it_does": "Visitor traffic & page view telemetry",
+      "nextjs_replacement": "Google Tag with Consent Mode v2 integration"
+    },
+    {
+      "name": "Google Ads Conversion Tags",
+      "ids_found": [],
+      "where_fires": "Booking CTA clicks and WhatsApp initiates",
+      "what_it_does": "Conversion tracking for PPC campaigns",
+      "nextjs_replacement": "Conversion event triggers bound to booking & WhatsApp buttons"
+    },
+    {
+      "name": "Meta Pixel (Facebook/Instagram)",
+      "ids_found": [],
+      "where_fires": "All pages",
+      "what_it_does": "Ad attribution and retargeting from Instagram traffic",
+      "nextjs_replacement": "Consent-gated Meta Pixel script firing Lead / Contact events"
+    },
+    {
+      "name": "RAG Chatbot Widget (WPCode Injected)",
+      "ids_found": [],
+      "where_fires": "Global floating corner",
+      "what_it_does": "Interactive AI consultation assistant",
+      "nextjs_replacement": "Deferred script or custom React conversational widget (loaded idle)"
+    },
+    {
+      "name": "WhatsApp Direct Click-to-Chat",
+      "ids_found": [
+        "https://wa.link/l51u63"
+      ],
+      "where_fires": "Header, hero, floating button, mobile bar",
+      "what_it_does": "Direct lead generation to clinic practitioner WhatsApp",
+      "nextjs_replacement": "Optimized native button component with conversion tracking event"
+    },
+    {
+      "name": "FacesConsent Booking Engine",
+      "ids_found": [
+        "https://facesconsent.com/bookings/daniel"
+      ],
+      "where_fires": "Header CTA, hero CTA, treatment cards, booking buttons",
+      "what_it_does": "Medical aesthetics booking and consultation scheduler",
+      "nextjs_replacement": "Direct secure links with UTM pass-through and click conversion tracking"
+    }
+  ],
+  "active_plugins": [
+    {
+      "plugin": "elementor",
+      "role": "Core visual page builder",
+      "fires_on": "Core visual page builder",
+      "replacement": "Tailwind CSS + Next.js Server & Client Components"
+    },
+    {
+      "plugin": "elementor-pro",
+      "role": "Header/footer builder & motion effects / theme builder",
+      "fires_on": "Header/footer builder & motion effects / theme builder",
+      "replacement": "Next.js App Router RootLayout + Header/Footer components"
+    },
+    {
+      "plugin": "elementskit-lite",
+      "role": "Navigation menu widgets and icon bundles",
+      "fires_on": "Navigation menu widgets and icon bundles",
+      "replacement": "Responsive Tailwind Navigation + Lucide Icons"
+    },
+    {
+      "plugin": "gum-elementor-addon",
+      "role": "Price table layouts and Owl Carousel",
+      "fires_on": "Price table layouts and Owl Carousel",
+      "replacement": "Custom Tailwind Pricing Grid + Embla Carousel"
+    },
+    {
+      "plugin": "header-footer-elementor",
+      "role": "Header Footer builder template injector",
+      "fires_on": "Header Footer builder template injector",
+      "replacement": "Standard Next.js components in layout.tsx"
+    },
+    {
+      "plugin": "ultimate-elementor",
+      "role": "Sticky header & enhanced widgets",
+      "fires_on": "Sticky header & enhanced widgets",
+      "replacement": "Tailwind sticky navigation + Framer Motion mobile sheet"
+    },
+    {
+      "plugin": "unlimited-elements-for-elementor-premium",
+      "role": "Slide-out mobile navigation drawer",
+      "fires_on": "Slide-out mobile navigation drawer",
+      "replacement": "Accessible Radix UI Dialog / Sheet with Motion transitions"
+    },
+    {
+      "plugin": "widgets-for-google-reviews-and-ratings",
+      "role": "Google 5-star review carousel slider",
+      "fires_on": "Google 5-star review carousel slider",
+      "replacement": "Lightweight Embla Carousel with verified Google schema markup"
+    },
+    {
+      "plugin": "wp-whatsapp-chat",
+      "role": "Floating WhatsApp button",
+      "fires_on": "Floating WhatsApp button",
+      "replacement": "Mobile sticky WhatsApp/Booking bar + desktop floating pill"
+    }
+  ]
+}

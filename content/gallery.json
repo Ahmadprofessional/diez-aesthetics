@@ -1,0 +1,86 @@
+{
+  "header": {
+    "subtitle": "OUR GALLERY",
+    "title": "Clinical Results & Case Studies",
+    "description": "Real results from real patients treated at Diez Anti-Aging Aesthetics."
+  },
+  "categories": [
+    "All",
+    "Lips",
+    "Anti-Wrinkle",
+    "Polynucleotides",
+    "Skin Boosters"
+  ],
+  "items": [
+    {
+      "url": "/assets/images/gallery_1.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_2.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_3.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_4.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_5.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_6.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_7.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_8.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_9.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_10.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_11.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_12.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_13.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    },
+    {
+      "url": "/assets/images/gallery_14.png",
+      "treatment": "Aesthetic Enhancement",
+      "alt": "Diez Aesthetics patient result"
+    }
+  ]
+}

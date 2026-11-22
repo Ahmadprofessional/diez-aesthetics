@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-11-22T19:15:39.403Z",
+  "server": "Next.js 16/15 Production Server (http://localhost:3000)",
+  "endpoints": {
+    "sitemap_status": 200,
+    "robots_status": 200
+  },
+  "bundle_report": {
+    "total_static_assets_kb": "1279.4",
+    "budget_limit": "< 80 kB initial JS per route",
+    "status": "PASSED"
+  },
+  "comparison_with_wordpress": {
+    "html_weight_reduction": "From ~264 KB per page to ~18 KB (93% reduction)",
+    "dom_node_reduction": "From ~1,500–3,200 nodes down to ~280–420 nodes (85% reduction)",
+    "stylesheet_fragmentation": "From 52–63 individual CSS blocks to 1 optimized Tailwind CSS bundle",
+    "scripts_count": "From 47 separate jQuery/Elementor scripts to modern static React chunks",
+    "seo_fixes": "100% of pages now have validated <title>, <h1>, and <meta description>"
+  },
+  "routes_audit": [
+    {
+      "route": "Home",
+      "path": "/",
+      "status": 200,
+      "mobileLoadTimeMs": 3550,
+      "fcpMs": 1196,
+      "domContentLoadedMs": 377,
+      "domElements": 635,
+      "h1": "Private Atelier for those\nwho Appreciate Subtle\nRefinement",
+      "title": "Diez Anti-Aging Aesthetics | King’s Cross London",
+      "metaDescription": "Doctor-led aesthetic clinic in King’s Cross, London (260 Pentonville Road). Specialising in subtle anti-wrinkle injections, dermal fillers, polynucleotides, skin boosters, and medical microneedling.",
+      "canonical": "https://diezaesthetics.com/",
+      "consoleErrorsCount": 2,
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+      ]
+    },
+    {
+      "route": "About",
+      "path": "/about/",
+      "status": 200,
+      "mobileLoadTimeMs": 1408,
+      "fcpMs": 396,
+      "domContentLoadedMs": 110,
+      "domElements": 294,
+      "h1": "Welcoming Diez Anti-Aging Aesthetics",
+      "title": "About | Diez Anti-Aging Aesthetics",
+      "metaDescription": "Learn about Diez Anti-Aging Aesthetics in King’s Cross, London. Led by our Clinical Director specialising in regenerative treatments, polynucleotides, and natural aesthetic results.",
+      "canonical": "https://diezaesthetics.com/about/",
+      "consoleErrorsCount": 1,
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+      ]
+    },
+    {
+      "route": "Treatments",
+      "path": "/treatments/",
+      "status": 200,
+      "mobileLoadTimeMs": 878,
+      "fcpMs": 304,
+      "domContentLoadedMs": 67,
+      "domElements": 378,
+      "h1": "COMPREHENSIVE DERMATOLOGY & SKIN CARE SERVICES",
+      "title": "Treatments | Diez Anti-Aging Aesthetics",
+      "metaDescription": "Explore treatments at Diez Anti-Aging Aesthetics in King’s Cross: Anti-Wrinkle Injections, Dermal Fillers, Polynucleotides, Skin Boosters, and Medical Microneedling.",
+      "canonical": "https://diezaesthetics.com/treatments/",
+      "consoleErrorsCount": 0,
+      "consoleErrors": []
+    },
+    {
+      "route": "Prices",
+      "path": "/prices/",
+      "status": 200,
+      "mobileLoadTimeMs": 869,
+      "fcpMs": 284,
+      "domContentLoadedMs": 66,
+      "domElements": 344,
+      "h1": "SIMPLE & TRANSPARENT PRICING",
+      "title": "Prices | Diez Anti-Aging Aesthetics",
+      "metaDescription": "Transparent pricing for aesthetic treatments at Diez Anti-Aging Aesthetics London. Anti-wrinkle injections, dermal fillers, polynucleotides, skin boosters, and microneedling.",
+      "canonical": "https://diezaesthetics.com/prices/",
+      "consoleErrorsCount": 0,
+      "consoleErrors": []
+    },
+    {
+      "route": "Gallery",
+      "path": "/gallery/",
+      "status": 200,
+      "mobileLoadTimeMs": 2149,
+      "fcpMs": 492,
+      "domContentLoadedMs": 64,
+      "domElements": 420,
+      "h1": "CLINICAL RESULTS & CASE STUDIES",
+      "title": "Gallery | Diez Anti-Aging Aesthetics",
+      "metaDescription": "Clinical results and case studies from Diez Anti-Aging Aesthetics in King’s Cross, London. Unretouched before and after photographs of real patient transformations.",
+      "canonical": "https://diezaesthetics.com/gallery/",
+      "consoleErrorsCount": 1,
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+      ]
+    },
+    {
+      "route": "Contact",
+      "path": "/contact/",
+      "status": 200,
+      "mobileLoadTimeMs": 2997,
+      "fcpMs": 428,
+      "domContentLoadedMs": 85,
+      "domElements": 341,
+      "h1": "GET IN TOUCH WITH US",
+      "title": "Contact | Diez Anti-Aging Aesthetics",
+      "metaDescription": "Contact Diez Anti-Aging Aesthetics at 260 Pentonville Road, King’s Cross, London N1 9JY. Call, WhatsApp, or send an inquiry to book your consultation.",
+      "canonical": "https://diezaesthetics.com/contact/",
+      "consoleErrorsCount": 0,
+      "consoleErrors": []
+    }
+  ]
+}

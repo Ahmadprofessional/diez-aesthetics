@@ -1,0 +1,974 @@
+{
+  "summary": {
+    "total_assets_found": 56,
+    "downloaded_locally": 26,
+    "pending_browser_extract": 30,
+    "roles_breakdown": {
+      "logo": 1,
+      "hero": 1,
+      "treatment": 4,
+      "before_after": 6,
+      "team": 1,
+      "icon": 22,
+      "review_avatar": 12,
+      "gallery": 4,
+      "favicon": 2,
+      "other": 2
+    }
+  },
+  "assets": [
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/cropped-WhatsApp-Image-2026-05-20-at-12.57.24-PM-32x32.jpeg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Favicon / App Icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "favicon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/cropped-WhatsApp-Image-2026-05-20-at-12.57.24-PM-192x192.jpeg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Favicon / App Icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "favicon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/cropped-WhatsApp-Image-2026-05-20-at-12.57.24-PM-180x180.jpeg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Favicon / App Icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "apple-touch-icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/612bd645-b419-43f4-a75f-afdd2c7cc7e0_removalai_preview.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics logo",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "logo",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 1,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/05/612bd645-b419-43f4-a75f-afdd2c7cc7e0_removalai_preview-300x159.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Danial-Deiz-aesthetic-Founder.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Danial Diez aesthetic founder",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "team",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 2,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/Danial-Deiz-aesthetic-Founder-225x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/Danial-Deiz-aesthetic-Founder-768x1024.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Micro-Needling.avif",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Micro Needling",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "treatment",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Skin-Boster.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Skin Boster",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "treatment",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 1,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/Skin-Boster-768x512.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Dermal-Fillers.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Dermal Fillers",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "treatment",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 1,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/Dermal-Fillers-768x510.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Anti-Wrinkle.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Anti Wrinkle",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "treatment",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 1,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/Anti-Wrinkle-768x512.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Clinic.webp",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics hero",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "hero",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/05/Clinic-1024x696.webp",
+        "https://diezaesthetics.com/wp-content/uploads/2026/05/Clinic-300x204.webp",
+        "https://diezaesthetics.com/wp-content/uploads/2026/05/Clinic-768x522.webp"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/plugins/widgets-for-google-reviews-and-ratings/public/css/images/google-brand.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Google_icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocL2U6XibEG1GBLuXDeJMcwJdMMz3PJo1Y3FZrH6nDOPJIr9jA=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocKsVNL4LXN09e5ZRqfbpHit0U4UEj6SMe7_G41337tni5Pubw=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a-/ALV-UjVRqmcPVMOrcyOC1ayZxkvRuEL8r1kB8EwWasFSupnZJUDm6Pe3=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocKrDTH8-w_lzVm5vYAOIEWhIi56MKcghXZ0cfQZrBayUq9wUw=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocLQSAWBhe0_DP2P0ZXcX3KgpRjFPuGgdFletu6dkXf4KRe6=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocKYL1MrB7QN47YWJYfsRfARywvMWcZlrqVMc-2RP1H7EGWnFg=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a-/ALV-UjVBAG2MGBlWIOGvMnHxyNGdxzfwrir6x5ydgWuTXbEqgHDm0t1A=s120-c-rp-mo-ba3-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a-/ALV-UjUiFZQiX_lmSD7YDi2aBWnz8s4Dem8SUTB8q3JEh1j5X7v38nBm=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocLSgw8VzZ3C7qvnL7HOzqxC3yhL_m3UNYq142H8PlTm-Vk-mA=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://lh3.googleusercontent.com/a/ACg8ocKKPz3G0OrqWMrcJPQP0bT1QJQHN44qoPG8scxnDqV_8QMEg8I=s120-c-rp-mo-br100",
+      "local_file": "assets/original/reviews\\reviewer_1.png",
+      "bytes": 3073,
+      "dimensions": "auto",
+      "alt_text": "Reviewer Image",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/plugins/widgets-for-google-reviews-and-ratings/public/css/images/rep-based-verified.svg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Verified",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "review-avatar",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Screenshot-2026-06-20-211443.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics gallery",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "gallery",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Screenshot-2026-06-20-211427.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics gallery",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "gallery",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Screenshot-2026-06-20-211419.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics gallery",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "gallery",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/Screenshot-2026-06-20-211408.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics gallery",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "gallery",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Before-lip.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Before",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/after-lip.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "After",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Before-Eyeafter-lip.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Before",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Bafter-eyeefore-Eyeafter-lip.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "After",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Bafter-eyeefore-Eyeafter-lip-2.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Before",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/05/Bafter-eyeefore-Eyeafter-lip-3.jpg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "After",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "before-after",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_7f898065320f.svg",
+      "local_file": "assets/original/svgs\\inline_icon_7f898065320f.svg",
+      "bytes": 521,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_1a0c51fb5612.svg",
+      "local_file": "assets/original/svgs\\inline_icon_1a0c51fb5612.svg",
+      "bytes": 400,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_6a75411ecd3e.svg",
+      "local_file": "assets/original/svgs\\inline_icon_6a75411ecd3e.svg",
+      "bytes": 1030,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_025c51aaaeaf.svg",
+      "local_file": "assets/original/svgs\\inline_icon_025c51aaaeaf.svg",
+      "bytes": 854,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_94e7fed3f6fc.svg",
+      "local_file": "assets/original/svgs\\inline_icon_94e7fed3f6fc.svg",
+      "bytes": 1583,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_a0a4d3460cdc.svg",
+      "local_file": "assets/original/svgs\\inline_icon_a0a4d3460cdc.svg",
+      "bytes": 685,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_9cbd59b2a8d8.svg",
+      "local_file": "assets/original/svgs\\inline_icon_9cbd59b2a8d8.svg",
+      "bytes": 839,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_145914c83b57.svg",
+      "local_file": "assets/original/svgs\\inline_icon_145914c83b57.svg",
+      "bytes": 551,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_73bfd34b2018.svg",
+      "local_file": "assets/original/svgs\\inline_icon_73bfd34b2018.svg",
+      "bytes": 408,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_7f676ac27737.svg",
+      "local_file": "assets/original/svgs\\inline_icon_7f676ac27737.svg",
+      "bytes": 1067,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_d818e2991013.svg",
+      "local_file": "assets/original/svgs\\inline_icon_d818e2991013.svg",
+      "bytes": 409,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_1b658e081ef1.svg",
+      "local_file": "assets/original/svgs\\inline_icon_1b658e081ef1.svg",
+      "bytes": 608,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_21d21814337c.svg",
+      "local_file": "assets/original/svgs\\inline_icon_21d21814337c.svg",
+      "bytes": 394,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_09bc113e00c8.svg",
+      "local_file": "assets/original/svgs\\inline_icon_09bc113e00c8.svg",
+      "bytes": 199,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_369fcf41d00d.svg",
+      "local_file": "assets/original/svgs\\inline_icon_369fcf41d00d.svg",
+      "bytes": 78,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/",
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "local://svg/inline_icon_d1f5d0f6dddb.svg",
+      "local_file": "assets/original/svgs\\inline_icon_d1f5d0f6dddb.svg",
+      "bytes": 211,
+      "dimensions": "auto",
+      "alt_text": "Inline SVG icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/about/",
+        "https://diezaesthetics.com/treatments/",
+        "https://diezaesthetics.com/gallery/",
+        "https://diezaesthetics.com/prices/",
+        "https://diezaesthetics.com/contact/"
+      ],
+      "role": "icon",
+      "status": "downloaded",
+      "fail_reason": null,
+      "variants_count": 0,
+      "variants": []
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn1.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn1-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn1-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn1-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn2.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn2-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn2-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn2-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn3.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn3-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn3-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn3-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn4.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn4-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn4-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn4-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn5.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn5-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn5-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn5-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn6.png",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics icon",
+      "pages_where_used": [
+        "https://diezaesthetics.com/treatments/"
+      ],
+      "role": "icon",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 3,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn6-300x300.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn6-150x150.png",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/iconn6-768x768.png"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.11-PM-2.jpeg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics other",
+      "pages_where_used": [
+        "https://diezaesthetics.com/prices/"
+      ],
+      "role": "other",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 4,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.11-PM-2-676x1024.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.11-PM-2-198x300.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.11-PM-2-768x1164.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.11-PM-2-1013x1536.jpeg"
+      ]
+    },
+    {
+      "original_url": "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.12-PM.jpeg",
+      "local_file": "",
+      "bytes": 0,
+      "dimensions": "auto",
+      "alt_text": "Diez Aesthetics other",
+      "pages_where_used": [
+        "https://diezaesthetics.com/prices/"
+      ],
+      "role": "other",
+      "status": "pending_browser_extract",
+      "fail_reason": "Direct terminal curl blocked by Cloudflare (HTTP 403); DOM reference captured, awaiting browser asset unpack",
+      "variants_count": 4,
+      "variants": [
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.12-PM-737x1024.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.12-PM-216x300.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.12-PM-768x1067.jpeg",
+        "https://diezaesthetics.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-2.30.12-PM-1106x1536.jpeg"
+      ]
+    }
+  ]
+}

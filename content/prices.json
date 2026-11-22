@@ -1,0 +1,124 @@
+{
+  "header": {
+    "subtitle": "PRICING PACKAGES",
+    "title": "Simple & Transparent Pricing",
+    "description": "Honest, competitive pricing with no hidden costs. Consultations are complimentary when proceeding with treatment."
+  },
+  "categories": [
+    {
+      "category": "Anti-Wrinkle Injections",
+      "note": "Botulinum toxin treatment for fine lines and muscle relaxation.",
+      "items": [
+        {
+          "name": "1 Area",
+          "price": "£150",
+          "duration": "30 mins"
+        },
+        {
+          "name": "2 Areas",
+          "price": "£200",
+          "duration": "30 mins"
+        },
+        {
+          "name": "3 Areas",
+          "price": "£250",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Masseter / Jaw Slimming",
+          "price": "£250",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Gummy Smile / Bunny Lines",
+          "price": "£120",
+          "duration": "20 mins"
+        }
+      ]
+    },
+    {
+      "category": "Dermal Fillers",
+      "note": "Premium Hyaluronic Acid fillers.",
+      "items": [
+        {
+          "name": "Lip Filler (0.5ml)",
+          "price": "£150",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Lip Filler (1.0ml)",
+          "price": "£220",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Cheek Filler (1ml)",
+          "price": "£240",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Jawline & Chin Contouring (2ml)",
+          "price": "£420",
+          "duration": "60 mins"
+        },
+        {
+          "name": "Nasolabial / Marionette Folds",
+          "price": "£220",
+          "duration": "45 mins"
+        }
+      ]
+    },
+    {
+      "category": "Skin Boosters & Polynucleotides",
+      "note": "Regenerative deep hydration and cellular repair.",
+      "items": [
+        {
+          "name": "Profhilo (Face - 1 Session)",
+          "price": "£250",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Profhilo (Course of 2)",
+          "price": "£450",
+          "duration": "2 Sessions"
+        },
+        {
+          "name": "Polynucleotides Eyes (1 Session)",
+          "price": "£200",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Polynucleotides Eyes (Course of 3)",
+          "price": "£520",
+          "duration": "3 Sessions"
+        },
+        {
+          "name": "Seventy Hyal 2000 (1 Session)",
+          "price": "£150",
+          "duration": "45 mins"
+        }
+      ]
+    },
+    {
+      "category": "Skin Rejuvenation & Microneedling",
+      "note": "Collagen induction therapy.",
+      "items": [
+        {
+          "name": "Medical Microneedling (Single)",
+          "price": "£130",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Medical Microneedling (Course of 3)",
+          "price": "£330",
+          "duration": "3 Sessions"
+        },
+        {
+          "name": "Microneedling + Hyaluronic Cocktail",
+          "price": "£160",
+          "duration": "60 mins"
+        }
+      ]
+    }
+  ],
+  "booking_note": "A deposit is required to secure your appointment. 48-hour cancellation policy applies."
+}

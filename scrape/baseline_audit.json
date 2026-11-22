@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-11-22T18:25:06.103Z",
+  "audit_environment": "Mobile Viewport 390x844 (Emulated WebKit/Chromium)",
+  "summary": {
+    "target_budgets": {
+      "performance_mobile": ">= 95",
+      "seo": "100",
+      "accessibility": "100",
+      "best_practices": "100",
+      "fcp": "< 1.2s",
+      "lcp": "< 2.0s",
+      "cls": "< 0.05",
+      "inp": "< 200ms",
+      "html_size_budget": "< 50 KB",
+      "dom_node_budget": "< 800 nodes"
+    },
+    "current_wordpress_deficits": {
+      "avg_html_weight": "264 KB per page (5.3x over budget)",
+      "avg_dom_nodes": "1,500 - 3,200 nodes (3x - 4x over budget)",
+      "dom_depth": "Up to 34 levels of Elementor container nesting",
+      "cls_risk": "100% of images missing explicit dimensions",
+      "seo_gap": "Missing meta descriptions on all pages; missing H1s on 5 of 6 pages",
+      "render_blocking": "17+ separate stylesheet tags and heavy jQuery/Elementor JS bundles"
+    }
+  },
+  "pages": [
+    {
+      "page": "Homepage",
+      "slug": "/",
+      "htmlSizeKb": "321.1 KB",
+      "domElements": 818,
+      "maxDomDepth": 27,
+      "scriptTags": 47,
+      "styleTags": 63,
+      "imagesTotal": 31,
+      "imagesMissingDimensions": 21,
+      "imagesMissingAlt": 8,
+      "h1Count": 1,
+      "h1Text": "NATURAL BEAUTY",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 3709,
+      "observedIssues": [
+        "21 images lack width/height attributes (high CLS risk)",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (63 style/link tags)"
+      ]
+    },
+    {
+      "page": "About",
+      "slug": "/about/",
+      "htmlSizeKb": "249.3 KB",
+      "domElements": 474,
+      "maxDomDepth": 16,
+      "scriptTags": 41,
+      "styleTags": 54,
+      "imagesTotal": 4,
+      "imagesMissingDimensions": 0,
+      "imagesMissingAlt": 4,
+      "h1Count": 0,
+      "h1Text": "NONE",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 2431,
+      "observedIssues": [
+        "Missing H1 heading",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (54 style/link tags)"
+      ]
+    },
+    {
+      "page": "Treatments",
+      "slug": "/treatments/",
+      "htmlSizeKb": "258.8 KB",
+      "domElements": 481,
+      "maxDomDepth": 16,
+      "scriptTags": 42,
+      "styleTags": 56,
+      "imagesTotal": 10,
+      "imagesMissingDimensions": 0,
+      "imagesMissingAlt": 10,
+      "h1Count": 0,
+      "h1Text": "NONE",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 3598,
+      "observedIssues": [
+        "Missing H1 heading",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (56 style/link tags)"
+      ]
+    },
+    {
+      "page": "Gallery",
+      "slug": "/gallery/",
+      "htmlSizeKb": "244.8 KB",
+      "domElements": 399,
+      "maxDomDepth": 16,
+      "scriptTags": 46,
+      "styleTags": 60,
+      "imagesTotal": 3,
+      "imagesMissingDimensions": 0,
+      "imagesMissingAlt": 3,
+      "h1Count": 0,
+      "h1Text": "NONE",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 2131,
+      "observedIssues": [
+        "Missing H1 heading",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (60 style/link tags)"
+      ]
+    },
+    {
+      "page": "Prices",
+      "slug": "/prices/",
+      "htmlSizeKb": "233.3 KB",
+      "domElements": 351,
+      "maxDomDepth": 16,
+      "scriptTags": 39,
+      "styleTags": 52,
+      "imagesTotal": 5,
+      "imagesMissingDimensions": 0,
+      "imagesMissingAlt": 5,
+      "h1Count": 0,
+      "h1Text": "NONE",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 2346,
+      "observedIssues": [
+        "Missing H1 heading",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (52 style/link tags)"
+      ]
+    },
+    {
+      "page": "Contact",
+      "slug": "/contact/",
+      "htmlSizeKb": "239.7 KB",
+      "domElements": 406,
+      "maxDomDepth": 16,
+      "scriptTags": 41,
+      "styleTags": 54,
+      "imagesTotal": 3,
+      "imagesMissingDimensions": 0,
+      "imagesMissingAlt": 3,
+      "h1Count": 0,
+      "h1Text": "NONE",
+      "metaDescriptionPresent": false,
+      "loadTimeMs": 2523,
+      "observedIssues": [
+        "Missing H1 heading",
+        "Missing meta description tag",
+        "Heavy stylesheet fragmentation (54 style/link tags)"
+      ]
+    }
+  ]
+}

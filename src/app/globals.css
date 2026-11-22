@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAF8F5;
+  --foreground: #1c1917;
+  --primary-gold: #b89047;
+  --primary-gold-light: #d4af37;
+  --primary-gold-dark: #8c6b2d;
+}
+
+@layer base {
+  * {
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #b89047;
+    color: #ffffff;
+  }
+}
+
+/* Warm metallic gold text gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #b89047 0%, #8c6b2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Delicate subtle border glow */
+.gold-glow-border {
+  border: 1px solid rgba(184, 144, 71, 0.35);
+  box-shadow: 0 4px 20px rgba(184, 144, 71, 0.1);
+}
+
+/* Luxury Continuous Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 50s linear infinite;
+}
+
+.pause-on-hover:hover .animate-marquee,
+.pause-on-hover:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}

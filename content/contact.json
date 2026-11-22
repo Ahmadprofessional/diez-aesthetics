@@ -1,0 +1,39 @@
+{
+  "header": {
+    "subtitle": "OUR CONTACT",
+    "title": "Get in Touch With Us",
+    "description": "Have a question or want to discuss your treatment goals? Reach out via WhatsApp, phone, or visit our King’s Cross clinic."
+  },
+  "contact_methods": [
+    {
+      "type": "Phone / WhatsApp",
+      "value": "+44 7348 947988",
+      "link": "tel:+447348947988"
+    },
+    {
+      "type": "Email",
+      "value": "info@diezaesthetics.com",
+      "link": "mailto:info@diezaesthetics.com"
+    },
+    {
+      "type": "Location",
+      "value": "260 Pentonville Road, London, N1 9JY",
+      "link": "https://maps.google.com/?q=260+Pentonville+Road+London+N1+9JY"
+    }
+  ],
+  "opening_hours": [
+    {
+      "day": "Monday – Friday",
+      "hours": "10:00 AM – 7:00 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10:00 AM – 6:00 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "transit_info": "Conveniently located 4 minutes walk from King’s Cross St. Pancras station."
+}

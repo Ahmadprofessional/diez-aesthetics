@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="533" viewBox="0 0 800 533" fill="none">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c5a059" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="800" y2="533" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181818"/>
+      <stop offset="1" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfbe7a"/>
+      <stop offset="50%" stop-color="#c5a059"/>
+      <stop offset="100%" stop-color="#9d7c38"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="533" fill="url(#cardGrad)"/>
+  <circle cx="400" cy="266" r="300" fill="url(#goldGlow)"/>
+
+  <!-- Subtle aesthetic geometric ring -->
+  <circle cx="400" cy="220" r="90" stroke="#c5a059" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6 4"/>
+  <circle cx="400" cy="220" r="70" stroke="#c5a059" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Inner Icon Symbol -->
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#c5a059" transform="translate(376, 196) scale(2)"/>
+
+  <!-- Typography -->
+  <text x="400" y="360" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="400" fill="url(#goldText)" text-anchor="middle" letter-spacing="3">
+    LIP ENHANCEMENT (AFTER)
+  </text>
+  <text x="400" y="395" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="300" fill="#a3a3a3" text-anchor="middle" letter-spacing="4">
+    BALANCED NATURAL VOLUME & HYDRATION
+  </text>
+  <text x="400" y="440" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="500" fill="#c5a059" text-anchor="middle" letter-spacing="5">
+    DIEZ ANTI-AGING AESTHETICS • KING'S CROSS
+  </text>
+</svg>

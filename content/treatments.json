@@ -1,0 +1,108 @@
+{
+  "header": {
+    "subtitle": "OUR SERVICES",
+    "title": "Comprehensive Dermatology & Skin Care Services",
+    "description": "Targeted aesthetic treatments delivering visible, natural improvements in skin quality, tone, and facial balance."
+  },
+  "services": [
+    {
+      "slug": "anti-wrinkle-injections",
+      "title": "Anti-Wrinkle Injections",
+      "icon": "/assets/images/iconn1.png",
+      "description": "Smooth out forehead lines, frown lines, and crow’s feet with precision anti-wrinkle treatments designed to preserve natural mobility.",
+      "areas": [
+        "Forehead lines",
+        "Frown / Glabellar lines",
+        "Crow’s feet",
+        "Bunny lines",
+        "Gummy smile",
+        "Masseter / Jaw slimming"
+      ],
+      "cta": {
+        "label": "Book Treatment",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    },
+    {
+      "slug": "dermal-fillers",
+      "title": "Dermal Fillers",
+      "icon": "/assets/images/iconn2.png",
+      "description": "Restore lost facial volume, sculpt jawlines, and enhance lip shape with premium hyaluronic acid dermal fillers.",
+      "areas": [
+        "Lips (definition & volume)",
+        "Cheeks",
+        "Jawline",
+        "Chin",
+        "Nasolabial folds",
+        "Marionette lines"
+      ],
+      "cta": {
+        "label": "Book Treatment",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    },
+    {
+      "slug": "polynucleotides",
+      "title": "Polynucleotides",
+      "icon": "/assets/images/iconn3.png",
+      "description": "Regenerative biostimulators that promote cellular repair, boost microcirculation, and improve under-eye dark circles and crepey skin.",
+      "areas": [
+        "Under eyes / Tear troughs",
+        "Full face revitalization",
+        "Neck & Décolletage",
+        "Acne scars & tissue repair"
+      ],
+      "cta": {
+        "label": "Book Treatment",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    },
+    {
+      "slug": "skin-boosters",
+      "title": "Skin Boosters (Profhilo & Seventy Hyal)",
+      "icon": "/assets/images/iconn4.png",
+      "description": "High-concentration hyaluronic acid injections that intensely hydrate the skin from deep within, stimulating collagen and restoring luminosity.",
+      "areas": [
+        "Face glow",
+        "Neck rejuvenation",
+        "Hands",
+        "Décolletage"
+      ],
+      "cta": {
+        "label": "Book Treatment",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    },
+    {
+      "slug": "medical-microneedling",
+      "title": "Medical Microneedling",
+      "icon": "/assets/images/iconn5.png",
+      "description": "Collagen induction therapy creating controlled micro-channels to trigger natural collagen remodeling and skin texture renewal.",
+      "areas": [
+        "Acne scars",
+        "Enlarged pores",
+        "Hyperpigmentation",
+        "Fine texture refinement"
+      ],
+      "cta": {
+        "label": "Book Treatment",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    },
+    {
+      "slug": "bespoke-facial-harmonisation",
+      "title": "Bespoke Facial Harmonisation",
+      "icon": "/assets/images/iconn6.png",
+      "description": "A holistic assessment and treatment package combining multiple modalities for balanced, proportional facial balance.",
+      "areas": [
+        "Full face profile balancing",
+        "Multi-area rejuvenation",
+        "Bespoke aesthetic plans"
+      ],
+      "cta": {
+        "label": "Book Consultation",
+        "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      }
+    }
+  ]
+}

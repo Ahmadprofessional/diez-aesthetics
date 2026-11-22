@@ -1,0 +1,33 @@
+{
+  "header": {
+    "subtitle": "ABOUT US",
+    "title": "Welcoming Diez ANTI-AGING AESTHETICS",
+    "subtitle2": "Focused on natural-looking results and skin rejuvenation."
+  },
+  "director_section": {
+    "heading": "Led by Our Clinical Director",
+    "bio": "With three years of injecting experience, I have developed a deep passion for regenerative treatments such as polynucleotides and medicalmicroneedling. I strongly believe that true aesthetic medicine is about improving skin quality, stimulating natural regeneration, and creating long-term, healthy results, not just temporary changes. Diez Anti-Aging Aesthetics is led by a Clinical Director with three years of injecting experience and a strong passion for regenerative aesthetic treatments. His approach is calm, precise, and client-focused. He believes true aesthetic medicine is not just about quick changes, it is about improving skin quality, encouraging natural regeneration, and creating results that look healthy, balanced, and long-lasting. Advanced aesthetic and regenerative treatments designed to enhance your natural features and elevate your confidence with subtle, balanced results.",
+    "values": [
+      {
+        "title": "Artistry & Precision",
+        "desc": "Combining medical knowledge with a detailed artistic perspective."
+      },
+      {
+        "title": "Patient-Centric Care",
+        "desc": "Unrushed consultations and individualized treatment journeys."
+      },
+      {
+        "title": "Safety First",
+        "desc": "Practicing in a pristine medical environment with comprehensive aftercare."
+      }
+    ]
+  },
+  "cta_section": {
+    "heading": "Ready to Achieve Healthier, Clearer Skin?",
+    "subtitle": "Book your one-on-one consultation today.",
+    "cta": {
+      "label": "Book Appointment",
+      "href": "https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+    }
+  }
+}
