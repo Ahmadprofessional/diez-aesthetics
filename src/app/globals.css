@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #FAF8F5;
+  --background: #efebe8;
   --foreground: #1c1917;
-  --primary-gold: #b89047;
-  --primary-gold-light: #d4af37;
-  --primary-gold-dark: #8c6b2d;
+  --color-cashmere: #efebe8;
+  --color-stone-soft: #e8e4e0;
+  --color-stone-mineral: #747476;
+  --color-slate-deep: #545358;
+  --color-slate-dark: #3b3b3d;
+  --color-terracotta: #c48b7e;
 }
 
 @layer base {
@@ -31,7 +34,7 @@
   }
 
   ::selection {
-    background-color: #b89047;
+    background-color: #c48b7e;
     color: #ffffff;
   }
 }
