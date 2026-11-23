@@ -3,34 +3,34 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const steps = [
   {
     step: '01/04',
     title: 'Private Consultation',
-    desc: 'Anatomy, skin health, and your personal goals thoroughly reviewed. No rush, no pressure.',
+    desc: 'Anatomy, skin health, and your personal aesthetic goals thoroughly reviewed by Daniel Diez. No rush, no pressure.',
     image: '/assets/images/why choose diez image.webp',
     tag: 'Pre-Treatment Assessment',
   },
   {
     step: '02/04',
     title: 'Bespoke Aesthetic Plan',
-    desc: 'A tailored plan designed to harmonize your natural features rather than overpower them.',
+    desc: 'A tailored plan designed to harmonize your natural features rather than overpower them with artificial volume.',
     image: '/assets/images/anti-wrinkle.png',
     tag: 'Individualized Blueprint',
   },
   {
     step: '03/04',
     title: 'Precision Procedure',
-    desc: 'Performed in a pristine, medical-grade setting using premium CE-marked products.',
+    desc: 'Performed in a pristine, medical-grade King’s Cross setting using premium CE-marked products and conservative technique.',
     image: '/assets/images/skin-booster.png',
     tag: 'Clinical Treatment',
   },
   {
     step: '04/04',
     title: 'Dedicated Aftercare',
-    desc: 'Comprehensive post-procedure guidance and direct clinician check-ins to ensure optimal healing.',
+    desc: 'Comprehensive post-procedure guidance and direct clinician check-ins to ensure optimal cellular healing and longevity.',
     image: '/assets/images/dermal-fillers.png',
     tag: 'Ongoing Support',
   },
@@ -45,28 +45,34 @@ export function ClinicalJourney({ bookingUrl }: ClinicalJourneyProps) {
   const current = steps[activeStep];
 
   return (
-    <section className="py-24 sm:py-32 bg-[#0c0b0e] text-white border-t border-b border-white/[0.08] relative overflow-hidden">
+    <section className="py-24 sm:py-32 bg-[#f7f5f3] text-[#1c1917] border-t border-b border-[#e5dfd8] relative overflow-hidden transition-colors duration-500">
       {/* Background ambient light */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[500px] bg-[#c48b7e]/10 rounded-full blur-[170px]" />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[500px] bg-[#e8e4e0]/70 rounded-full blur-[170px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Editorial Heading */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-white/[0.06] text-[#c48b7e] border border-white/10">
-            <Sparkles className="w-3.5 h-3.5 text-[#c48b7e]" />
-            <span>THE CLINICAL PROCESS</span>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center max-w-3xl mx-auto space-y-3 mb-16"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-[#ded8d2] text-[#545358] border border-black/[0.06]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span>04 / THE CLINICAL PROCESS</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-light text-white tracking-tight leading-[1.12]">
+          <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight leading-[1.12]">
             Informed Decisions Supported <br className="hidden sm:inline" />
             <span className="italic text-[#c48b7e] font-normal">by Expert Guidance</span>
           </h2>
-          <p className="font-space text-xs text-zinc-400 font-light max-w-lg mx-auto uppercase tracking-wider">
+          <p className="font-space text-xs text-[#747476] font-light max-w-lg mx-auto uppercase tracking-wider">
             From initial consultation through to aftercare, every stage is guided by clinical rigor and artistic balance.
           </p>
-        </div>
+        </motion.div>
 
         {/* 3-Column Editorial Stage */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-5xl mx-auto">
@@ -82,112 +88,82 @@ export function ClinicalJourney({ bookingUrl }: ClinicalJourneyProps) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="font-serif text-2xl sm:text-3xl font-normal text-white"
+                className="font-serif text-2xl sm:text-3xl font-normal text-[#1c1917]"
               >
                 {current.title}
               </motion.h3>
             </AnimatePresence>
-            <p className="text-[11px] uppercase tracking-wider text-zinc-400 font-space">
+            <p className="text-[11px] uppercase tracking-wider text-[#747476] font-space">
               {current.tag}
             </p>
           </div>
 
           {/* Center Column: Framed Stage Image */}
           <div className="lg:col-span-6 order-1 lg:order-2">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-[#161418] shadow-[0_25px_60px_rgba(0,0,0,0.8)] border border-white/10 group">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-black/[0.08] group">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={current.image}
-                  initial={{ opacity: 0, scale: 1.05 }}
+                  initial={{ opacity: 0, scale: 0.98 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.5 }}
-                  className="relative w-full h-full"
+                  exit={{ opacity: 0, scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                  className="absolute inset-0"
                 >
                   <Image
                     src={current.image}
                     alt={current.title}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 550px"
+                    sizes="(max-width: 768px) 100vw, 550px"
                     className="object-cover"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 </motion.div>
               </AnimatePresence>
-              <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-space tracking-wider uppercase bg-black/60 backdrop-blur-md text-white border border-white/20">
-                {current.step}
-              </div>
             </div>
           </div>
 
-          {/* Right Column: Stage Description & Controls */}
-          <div className="lg:col-span-3 text-center lg:text-left space-y-6 order-3">
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={current.desc}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="text-xs sm:text-sm text-zinc-300 font-light leading-relaxed"
-              >
+          {/* Right Column: Narrative Card & Navigators */}
+          <div className="lg:col-span-3 space-y-6 text-center lg:text-left order-3">
+            <div className="p-6 rounded-2xl bg-white border border-black/[0.08] shadow-sm space-y-3">
+              <p className="text-xs sm:text-sm text-[#545358] font-light leading-relaxed">
                 {current.desc}
-              </motion.p>
-            </AnimatePresence>
-
-            {/* Stepper Controls */}
-            <div className="flex items-center justify-center lg:justify-start gap-4">
-              <div className="flex items-center gap-1.5">
-                {steps.map((_, idx) => (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => setActiveStep(idx)}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      activeStep === idx
-                        ? 'w-7 bg-[#c48b7e]'
-                        : 'w-1.5 bg-white/20 hover:bg-white/40'
-                    }`}
-                    aria-label={`Go to step ${idx + 1}`}
-                  />
-                ))}
-              </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() =>
-                    setActiveStep((prev) => (prev > 0 ? prev - 1 : steps.length - 1))
-                  }
-                  className="w-9 h-9 rounded-full border border-white/20 bg-[#161418] hover:border-[#c48b7e] hover:bg-[#c48b7e]/10 text-white flex items-center justify-center transition-all active:scale-95"
-                  aria-label="Previous step"
+              </p>
+              <div className="pt-2">
+                <a
+                  href={bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#3b3b3d] hover:text-[#c48b7e] font-space uppercase tracking-wider font-semibold transition-colors"
                 >
-                  <ChevronLeft className="w-4 h-4" />
-                </button>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setActiveStep((prev) => (prev < steps.length - 1 ? prev + 1 : 0))
-                  }
-                  className="w-9 h-9 rounded-full border border-white/20 bg-[#161418] hover:border-[#c48b7e] hover:bg-[#c48b7e]/10 text-white flex items-center justify-center transition-all active:scale-95"
-                  aria-label="Next step"
-                >
-                  <ChevronRight className="w-4 h-4" />
-                </button>
+                  <span>Book Consultation</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
 
-            <div className="pt-2">
-              <a
-                href={bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-[#E5A93C] hover:text-white uppercase font-space tracking-wider font-semibold transition-colors"
+            {/* Step Controls */}
+            <div className="flex items-center justify-center lg:justify-start gap-3">
+              <button
+                type="button"
+                onClick={() => setActiveStep((prev) => (prev > 0 ? prev - 1 : steps.length - 1))}
+                className="w-10 h-10 rounded-full border border-black/[0.1] bg-white text-[#3b3b3d] hover:bg-[#3b3b3d] hover:text-[#efebe8] flex items-center justify-center transition-colors shadow-sm"
+                aria-label="Previous clinical step"
               >
-                <span>Book Consultation</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </a>
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <span className="font-space text-xs text-[#747476] font-medium tracking-widest">
+                {current.step}
+              </span>
+              <button
+                type="button"
+                onClick={() => setActiveStep((prev) => (prev < steps.length - 1 ? prev + 1 : 0))}
+                className="w-10 h-10 rounded-full border border-black/[0.1] bg-white text-[#3b3b3d] hover:bg-[#3b3b3d] hover:text-[#efebe8] flex items-center justify-center transition-colors shadow-sm"
+                aria-label="Next clinical step"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>
