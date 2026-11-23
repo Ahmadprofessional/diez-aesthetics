@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Star, CheckCircle2, ArrowUpRight, Sparkles, MessageSquare } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Star, CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 interface ReviewItem {
   author: string;
@@ -80,56 +81,56 @@ const reviews: ReviewItem[] = [
 
 function ReviewCard({ review }: { review: ReviewItem }) {
   return (
-    <div className="w-[340px] sm:w-[400px] md:w-[420px] p-6 sm:p-7 rounded-[26px] bg-[#161418] border border-white/10 hover:border-[#c48b7e]/50 shadow-[0_20px_50px_rgba(0,0,0,0.7)] backdrop-blur-xl transition-all duration-300 flex flex-col justify-between shrink-0 group">
+    <div className="w-[340px] sm:w-[400px] md:w-[420px] p-6 sm:p-7 rounded-[26px] bg-white border border-black/[0.06] hover:border-[#3b3b3d] shadow-[0_15px_35px_rgba(0,0,0,0.04)] transition-all duration-300 flex flex-col justify-between shrink-0 group">
       {/* Top Meta: Stars + Treatment Badge */}
       <div className="space-y-3">
         <div className="flex items-center justify-between gap-2">
-          {/* 5 Glowing Gold Stars */}
-          <div className="flex items-center gap-1 text-[#E5A93C]">
+          {/* 5 Stars */}
+          <div className="flex items-center gap-1 text-[#c48b7e]">
             {[...Array(review.rating)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-[#E5A93C] text-[#E5A93C]" />
+              <Star key={i} className="w-4 h-4 fill-[#c48b7e] text-[#c48b7e]" />
             ))}
           </div>
 
           {/* Treatment Category Badge */}
-          <span className="font-space text-[10px] uppercase tracking-wider text-[#c48b7e] font-semibold px-2.5 py-1 rounded-full bg-[#c48b7e]/10 border border-[#c48b7e]/20">
+          <span className="font-space text-[10px] uppercase tracking-wider text-[#545358] font-semibold px-2.5 py-1 rounded-full bg-[#efebe8] border border-black/[0.06]">
             {review.treatment}
           </span>
         </div>
 
         {/* Verified Badge */}
-        <div className="flex items-center gap-1.5 text-xs text-[#a8a5a3] font-medium">
-          <CheckCircle2 className="w-3.5 h-3.5 text-[#c48b7e]" />
+        <div className="flex items-center gap-1.5 text-xs text-[#747476] font-medium">
+          <CheckCircle2 className="w-3.5 h-3.5 text-[#3b3b3d]" />
           <span className="text-[11px] font-space tracking-wide">Google Verified Patient</span>
         </div>
 
         {/* Patient Review Quote */}
-        <p className="text-sm sm:text-[15px] font-light text-zinc-200 leading-relaxed pt-1">
+        <p className="text-sm sm:text-[15px] font-light text-[#545358] leading-relaxed pt-1">
           &ldquo;{review.quote}&rdquo;
         </p>
       </div>
 
       {/* Reviewer Footer */}
-      <div className="pt-6 mt-6 border-t border-white/[0.08] flex items-center justify-between">
+      <div className="pt-6 mt-6 border-t border-black/[0.06] flex items-center justify-between">
         <div className="flex items-center gap-3">
           {/* Refined Monogram Circle */}
-          <div className="w-9 h-9 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-xs font-space font-semibold text-[#c48b7e] group-hover:border-[#c48b7e]/40 transition-colors">
+          <div className="w-9 h-9 rounded-full bg-[#efebe8] border border-black/[0.06] flex items-center justify-center text-xs font-space font-semibold text-[#3b3b3d] group-hover:bg-[#3b3b3d] group-hover:text-[#efebe8] transition-colors">
             {review.initials}
           </div>
           <div>
-            <p className="text-xs font-semibold text-white tracking-wide">
+            <p className="text-xs font-semibold text-[#1c1917] tracking-wide">
               {review.author}
             </p>
-            <p className="text-[11px] text-zinc-400 font-light">
+            <p className="text-[11px] text-[#747476] font-light">
               King&apos;s Cross London • {review.time}
             </p>
           </div>
         </div>
 
         {/* Google G Icon */}
-        <div className="text-[11px] font-space text-zinc-400 flex items-center gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
+        <div className="text-[11px] font-space text-[#747476] flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
           <span>5.0</span>
-          <span className="text-[#E5A93C]">★</span>
+          <span className="text-[#c48b7e]">★</span>
         </div>
       </div>
     </div>
@@ -137,90 +138,76 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 }
 
 export function TestimonialsAtelier() {
-  // Duplicate array for seamless infinite marquee loop
   const marqueeList = [...reviews, ...reviews];
 
   return (
-    <section className="py-24 sm:py-32 bg-[#0c0b0e] text-white relative overflow-hidden border-t border-b border-white/[0.08]">
+    <section className="py-24 sm:py-32 bg-[#eae5e0] text-[#1c1917] relative overflow-hidden border-t border-b border-[#dad3cc] transition-colors duration-500">
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#c48b7e]/10 rounded-full blur-[180px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#ded8d2]/60 rounded-full blur-[180px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#c48b7e] bg-white/[0.06] border border-white/10">
-            <Sparkles className="w-3.5 h-3.5 text-[#c48b7e]" />
-            <span>PATIENT TESTIMONIALS</span>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center space-y-4 mb-16"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span>07 / PATIENT EXPERIENCES</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-tight">
             Confidence Through <br />
             <span className="italic text-[#c48b7e] font-normal">Thoughtful Refinement</span>
           </h2>
 
-          <p className="text-sm sm:text-base text-zinc-300 font-light max-w-xl mx-auto leading-relaxed">
-            Real experiences from patients who trust Diez Aesthetics for natural, subtle facial harmonisation and regenerative skin treatments.
-          </p>
-
-          {/* Google Verified Banner Pill */}
-          <div className="pt-2 flex items-center justify-center">
-            <div className="inline-flex flex-wrap items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] border border-white/10 text-xs text-white shadow-xl">
-              <span className="font-space font-semibold tracking-wider text-[11px] uppercase text-[#c48b7e]">
-                EXCELLENT 5.0
-              </span>
+          {/* Social Proof Badge */}
+          <div className="flex items-center justify-center gap-3 pt-2">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-black/[0.08] shadow-sm text-xs font-space">
+              <span className="font-semibold text-[#1c1917]">EXCELLENT</span>
               <div className="flex items-center text-[#c48b7e]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#c48b7e] text-[#c48b7e]" />
+                  <Star key={i} className="w-3 h-3 fill-[#c48b7e]" />
                 ))}
               </div>
-              <span className="text-[#a8a5a3] font-light text-[11px]">
-                128 Verified Reviews on
-              </span>
-              <span className="text-white font-semibold text-xs">Google</span>
-              <span className="text-white/20">•</span>
-              <span className="text-[#efebe8] font-medium text-[11px]">100% Patient Satisfaction</span>
+              <span className="text-[#747476]">128 reviews on Google</span>
             </div>
           </div>
+        </motion.div>
+
+        {/* Marquee Row 1: Leftward Infinite Drift */}
+        <div className="relative w-full overflow-hidden mb-6 select-none mask-marquee">
+          <div className="flex gap-6 animate-marquee-slow w-max hover:pause">
+            {marqueeList.map((rev, idx) => (
+              <ReviewCard key={`m1-${idx}`} review={rev} />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Full-bleed Infinite Marquee Carousel (3-4 Reviews Visible simultaneously on desktop) */}
-      <div className="relative w-full overflow-hidden pause-on-hover py-4">
-        {/* Soft edge fade masks on both sides for luxury editorial finish */}
-        <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0c0b0e] to-transparent z-20 pointer-events-none" />
-        <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0c0b0e] to-transparent z-20 pointer-events-none" />
+        {/* Action Callout Bar */}
+        <div className="mt-14 max-w-xl mx-auto rounded-3xl bg-white border border-black/[0.08] p-5 sm:p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <div className="space-y-1">
+            <p className="font-serif italic text-lg text-[#1c1917]">
+              Have you visited Diez Aesthetics?
+            </p>
+            <p className="text-xs text-[#747476] font-space">
+              Share your honest clinical experience on Google Reviews
+            </p>
+          </div>
 
-        {/* Marquee Track (Smooth Continuous Animation, Pauses on Hover) */}
-        <div className="animate-marquee flex gap-6 px-4">
-          {marqueeList.map((review, idx) => (
-            <ReviewCard key={`${review.author}-${idx}`} review={review} />
-          ))}
-        </div>
-      </div>
-
-      {/* Bottom CTA Row: Direct Google Review Link */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 relative z-10 text-center">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="https://maps.google.com/?q=Diez+Anti-Aging+Aesthetics+London"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white/[0.06] hover:bg-white text-white hover:text-black border border-white/15 text-xs font-space uppercase tracking-[0.2em] font-medium transition-all shadow-lg transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-wider font-semibold hover:bg-[#c48b7e] hover:text-white transition-all shadow-md shrink-0"
           >
-            <MessageSquare className="w-3.5 h-3.5" />
-            <span>Read All 128 Reviews on Google</span>
+            <span>Review us on Google</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>
-
-          <a
-            href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#c48b7e] hover:bg-white text-white hover:text-black text-xs font-space uppercase tracking-[0.2em] font-semibold transition-all shadow-[0_4px_20px_rgba(196,139,126,0.35)] transform hover:-translate-y-0.5"
-          >
-            <span>Book Your Consultation</span>
           </a>
         </div>
       </div>
