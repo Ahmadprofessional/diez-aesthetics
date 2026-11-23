@@ -35,7 +35,7 @@ const reviews: ReviewItem[] = [
   {
     author: 'Elena R.',
     initials: 'ER',
-    treatment: 'Polynucleotides (Eye & Face)',
+    treatment: 'Polynucleotides',
     time: '4 months ago',
     rating: 5,
     quote:
@@ -44,7 +44,7 @@ const reviews: ReviewItem[] = [
   {
     author: 'Jesmin Begum',
     initials: 'JB',
-    treatment: 'Facial Aesthetics Care',
+    treatment: 'Facial Harmonisation',
     time: '6 months ago',
     rating: 5,
     quote:
@@ -53,7 +53,7 @@ const reviews: ReviewItem[] = [
   {
     author: 'Samiyah N.',
     initials: 'SN',
-    treatment: 'Microneedling with Exosomes',
+    treatment: 'Exosome Microneedling',
     time: '6 months ago',
     rating: 5,
     quote:
@@ -62,7 +62,7 @@ const reviews: ReviewItem[] = [
   {
     author: 'Marcus T.',
     initials: 'MT',
-    treatment: 'Anti-Wrinkle Treatments',
+    treatment: 'Anti-Wrinkle Injections',
     time: '3 months ago',
     rating: 5,
     quote:
@@ -81,56 +81,58 @@ const reviews: ReviewItem[] = [
 
 function ReviewCard({ review }: { review: ReviewItem }) {
   return (
-    <div className="w-[340px] sm:w-[400px] md:w-[420px] p-6 sm:p-7 rounded-[26px] bg-white border border-black/[0.06] hover:border-[#3b3b3d] shadow-[0_15px_35px_rgba(0,0,0,0.04)] transition-all duration-300 flex flex-col justify-between shrink-0 group">
-      {/* Top Meta: Stars + Treatment Badge */}
+    <div className="w-[300px] sm:w-[320px] lg:w-[320px] xl:w-[330px] p-5 sm:p-6 rounded-[26px] bg-white border border-black/[0.06] hover:border-[#3b3b3d] shadow-[0_15px_35px_rgba(0,0,0,0.04)] transition-all duration-300 flex flex-col justify-between shrink-0 group">
+      {/* Top Meta: Stars on left, Verified Patient on right */}
       <div className="space-y-3">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between pb-0.5">
           {/* 5 Stars */}
-          <div className="flex items-center gap-1 text-[#c48b7e]">
+          <div className="flex items-center gap-1 text-[#eab308]">
             {[...Array(review.rating)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-[#c48b7e] text-[#c48b7e]" />
+              <Star key={i} className="w-3.5 h-3.5 fill-[#eab308] text-[#eab308]" />
             ))}
           </div>
 
-          {/* Treatment Category Badge */}
-          <span className="font-space text-[10px] uppercase tracking-wider text-[#545358] font-semibold px-2.5 py-1 rounded-full bg-[#efebe8] border border-black/[0.06]">
+          {/* Verified Badge */}
+          <div className="flex items-center gap-1 text-[11px] text-[#747476] font-space font-medium">
+            <CheckCircle2 className="w-3.5 h-3.5 text-[#3b3b3d]" />
+            <span>Verified Patient</span>
+          </div>
+        </div>
+
+        {/* Treatment Category Badge (Full Row, Zero Cramping) */}
+        <div>
+          <span className="inline-flex items-center font-space text-[10px] uppercase tracking-wider text-[#545358] font-semibold px-2.5 py-1 rounded-full bg-[#efebe8] border border-black/[0.06] whitespace-nowrap">
             {review.treatment}
           </span>
         </div>
 
-        {/* Verified Badge */}
-        <div className="flex items-center gap-1.5 text-xs text-[#747476] font-medium">
-          <CheckCircle2 className="w-3.5 h-3.5 text-[#3b3b3d]" />
-          <span className="text-[11px] font-space tracking-wide">Google Verified Patient</span>
-        </div>
-
         {/* Patient Review Quote */}
-        <p className="text-sm sm:text-[15px] font-light text-[#545358] leading-relaxed pt-1">
+        <p className="text-sm sm:text-[14px] font-light text-[#545358] leading-relaxed pt-1">
           &ldquo;{review.quote}&rdquo;
         </p>
       </div>
 
       {/* Reviewer Footer */}
-      <div className="pt-6 mt-6 border-t border-black/[0.06] flex items-center justify-between">
-        <div className="flex items-center gap-3">
+      <div className="pt-5 mt-5 border-t border-black/[0.06] flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2.5 min-w-0">
           {/* Refined Monogram Circle */}
-          <div className="w-9 h-9 rounded-full bg-[#efebe8] border border-black/[0.06] flex items-center justify-center text-xs font-space font-semibold text-[#3b3b3d] group-hover:bg-[#3b3b3d] group-hover:text-[#efebe8] transition-colors">
+          <div className="w-8 h-8 rounded-full bg-[#efebe8] border border-black/[0.06] flex items-center justify-center text-xs font-space font-semibold text-[#3b3b3d] group-hover:bg-[#3b3b3d] group-hover:text-[#efebe8] transition-colors shrink-0">
             {review.initials}
           </div>
-          <div>
-            <p className="text-xs font-semibold text-[#1c1917] tracking-wide">
+          <div className="min-w-0">
+            <p className="text-xs font-semibold text-[#1c1917] tracking-wide truncate">
               {review.author}
             </p>
-            <p className="text-[11px] text-[#747476] font-light">
-              King&apos;s Cross London • {review.time}
+            <p className="text-[11px] text-[#747476] font-light truncate">
+              King&apos;s Cross • {review.time}
             </p>
           </div>
         </div>
 
-        {/* Google G Icon */}
-        <div className="text-[11px] font-space text-[#747476] flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
-          <span>5.0</span>
-          <span className="text-[#c48b7e]">★</span>
+        {/* Rating Pill */}
+        <div className="text-[11px] font-space text-[#747476] flex items-center gap-1 shrink-0 bg-[#efebe8]/80 px-2 py-0.5 rounded-full border border-black/[0.04]">
+          <span className="font-semibold text-[#1c1917]">5.0</span>
+          <span className="text-[#eab308]">★</span>
         </div>
       </div>
     </div>
@@ -138,7 +140,7 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 }
 
 export function TestimonialsAtelier() {
-  const marqueeList = [...reviews, ...reviews];
+  const marqueeList = [...reviews, ...reviews, ...reviews, ...reviews];
 
   return (
     <section className="py-24 sm:py-32 bg-[#eae5e0] text-[#1c1917] relative overflow-hidden border-t border-b border-[#dad3cc] transition-colors duration-500">
@@ -157,22 +159,22 @@ export function TestimonialsAtelier() {
           className="text-center space-y-4 mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>07 / PATIENT EXPERIENCES</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-tight">
             Confidence Through <br />
-            <span className="italic text-[#c48b7e] font-normal">Thoughtful Refinement</span>
+            <span className="italic text-[#545358] font-normal">Thoughtful Refinement</span>
           </h2>
 
           {/* Social Proof Badge */}
           <div className="flex items-center justify-center gap-3 pt-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-black/[0.08] shadow-sm text-xs font-space">
               <span className="font-semibold text-[#1c1917]">EXCELLENT</span>
-              <div className="flex items-center text-[#c48b7e]">
+              <div className="flex items-center text-[#eab308]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-[#c48b7e]" />
+                  <Star key={i} className="w-3 h-3 fill-[#eab308] text-[#eab308]" />
                 ))}
               </div>
               <span className="text-[#747476]">128 reviews on Google</span>
@@ -180,9 +182,9 @@ export function TestimonialsAtelier() {
           </div>
         </motion.div>
 
-        {/* Marquee Row 1: Leftward Infinite Drift */}
-        <div className="relative w-full overflow-hidden mb-6 select-none mask-marquee">
-          <div className="flex gap-6 animate-marquee-slow w-max hover:pause">
+        {/* Marquee Row: Leftward Infinite Continuous Drift (4 reviews visible on desktop) */}
+        <div className="relative w-full overflow-hidden mb-6 select-none">
+          <div className="animate-marquee gap-5 sm:gap-6 py-2">
             {marqueeList.map((rev, idx) => (
               <ReviewCard key={`m1-${idx}`} review={rev} />
             ))}
@@ -204,7 +206,7 @@ export function TestimonialsAtelier() {
             href="https://maps.google.com/?q=Diez+Anti-Aging+Aesthetics+London"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-wider font-semibold hover:bg-[#c48b7e] hover:text-white transition-all shadow-md shrink-0"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-wider font-semibold hover:bg-[#545358] hover:text-white transition-all shadow-md shrink-0"
           >
             <span>Review us on Google</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

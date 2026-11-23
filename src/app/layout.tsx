@@ -100,11 +100,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.png', sizes: '128x128', type: 'image/png' },
       { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
-      { url: '/icon.png', sizes: '128x128', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -123,7 +124,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="font-sans bg-[#efebe8] text-[#1c1917] antialiased selection:bg-[#c48b7e] selection:text-white"
+        className="font-sans bg-[#efebe8] text-[#1c1917] antialiased selection:bg-[#545358] selection:text-white"
         suppressHydrationWarning
       >
         <script

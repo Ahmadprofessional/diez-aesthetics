@@ -117,18 +117,18 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
           className="text-left mb-10 space-y-2"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>01 / CURATED PROTOCOLS</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1a19] tracking-tight leading-tight">
-            Choose a <span className="italic text-[#c48b7e] font-normal">treatment</span>
+            Choose a <span className="italic text-[#545358] font-normal">treatment</span>
           </h2>
 
           <div className="pt-1">
             <Link
               href="/prices/"
-              className="inline-flex items-center gap-1.5 text-xs font-space font-semibold uppercase tracking-wider text-[#1c1a19] hover:text-[#c48b7e] underline underline-offset-4 decoration-1 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-space font-semibold uppercase tracking-wider text-[#1c1a19] hover:text-[#545358] underline underline-offset-4 decoration-1 transition-colors"
             >
               <span>Full price list</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -152,16 +152,25 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 key={item.id}
                 type="button"
                 onClick={() => setSelectedId(item.id)}
-                className={`relative group aspect-square rounded-full flex items-center justify-center p-3 text-center transition-all duration-300 select-none ${
+                className={`relative group aspect-square rounded-full flex items-center justify-center p-3 text-center transition-all duration-300 select-none overflow-hidden ${
                   isSelected
-                    ? 'bg-[#545358] shadow-lg ring-2 ring-[#1c1a19] ring-offset-4 ring-offset-[#efebe8] scale-[1.03]'
-                    : 'bg-[#747476] hover:bg-[#68686a] shadow-md hover:scale-[1.02]'
+                    ? 'ring-2 ring-[#1c1a19] ring-offset-4 ring-offset-[#efebe8] scale-[1.04] shadow-xl'
+                    : 'shadow-md hover:shadow-lg hover:scale-[1.02] opacity-90 hover:opacity-100'
                 }`}
               >
-                {/* Subtle stone texture shimmer */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                {/* Authentic Diez Brand Gray Marble Texture */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center rounded-full pointer-events-none transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url('/assets/images/diez-gray-marble-bg.webp')` }}
+                />
+                {/* Soft ambient tint for contrast */}
+                <div 
+                  className={`absolute inset-0 rounded-full transition-colors duration-300 ${
+                    isSelected ? 'bg-black/25' : 'bg-black/15 group-hover:bg-black/05'
+                  }`}
+                />
 
-                <span className="font-serif italic text-white text-xs sm:text-sm md:text-sm lg:text-base leading-snug px-1 line-clamp-2">
+                <span className="relative z-10 font-serif italic text-white text-xs sm:text-sm md:text-sm lg:text-base leading-snug px-1 line-clamp-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
                   {item.name}
                 </span>
               </button>
@@ -240,7 +249,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#3b3b3d] hover:bg-[#232325] text-white font-space text-xs uppercase tracking-[0.2em] font-semibold transition-all shadow-md transform hover:-translate-y-0.5"
               >
-                <Calendar className="w-4 h-4 text-[#c48b7e]" />
+                <Calendar className="w-4 h-4 text-[#545358]" />
                 <span>Book your treatment</span>
               </a>
             </div>

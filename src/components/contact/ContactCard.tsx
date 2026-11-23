@@ -36,7 +36,7 @@ export function ContactCard({ content }: ContactCardProps) {
                     href={method.link}
                     target={method.link.startsWith('http') ? '_blank' : undefined}
                     rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="text-sm sm:text-base text-[#1c1a19] hover:text-[#c48b7e] transition-colors font-medium"
+                    className="text-sm sm:text-base text-[#1c1a19] hover:text-[#545358] transition-colors font-medium"
                   >
                     {method.value}
                   </a>
@@ -48,7 +48,7 @@ export function ContactCard({ content }: ContactCardProps) {
 
         {/* Transit Badge */}
         <div className="p-4 rounded-xl bg-[#efebe8] border border-[#747476]/20 flex items-start gap-3 text-xs text-[#57534e]">
-          <Train className="w-5 h-5 text-[#c48b7e] shrink-0 mt-0.5" />
+          <Train className="w-5 h-5 text-[#545358] shrink-0 mt-0.5" />
           <div>
             <strong className="block text-[#1c1a19] font-semibold mb-0.5">Transit &amp; Accessibility</strong>
             <span>{content.transit_info}</span>

@@ -44,7 +44,7 @@ export function GalleryGrid({ content }: GalleryGridProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: (idx % 6) * 0.08 }}
             onClick={() => setSelectedImage(item.url)}
-            className="group relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-[#747476]/20 hover:border-[#c48b7e] cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500"
+            className="group relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-[#747476]/20 hover:border-[#545358] cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500"
           >
             <Image
               src={item.url}
@@ -83,7 +83,7 @@ export function GalleryGrid({ content }: GalleryGridProps) {
             {/* Top Bar with Clear Close Button and Branding */}
             <div className="w-full max-w-6xl flex items-center justify-between pb-4 z-10" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#c48b7e]" />
+                <span className="w-2 h-2 rounded-full bg-[#545358]" />
                 <span className="text-xs uppercase font-space tracking-[0.2em] text-[#efebe8]">
                   Clinical Case Inspection
                 </span>

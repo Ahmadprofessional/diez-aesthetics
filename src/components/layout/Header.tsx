@@ -103,10 +103,10 @@ export function Header({ config }: HeaderProps) {
                     href={item.href}
                     className={`text-[11px] uppercase tracking-[0.22em] font-medium transition-all relative py-1 ${
                       isActive
-                        ? 'text-[#c48b7e] font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#c48b7e]'
+                        ? 'text-[#545358] font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#545358]'
                         : isDarkHero
-                        ? 'text-zinc-300 hover:text-[#c48b7e]'
-                        : 'text-[#3b3b3d] hover:text-[#c48b7e]'
+                        ? 'text-zinc-300 hover:text-[#545358]'
+                        : 'text-[#3b3b3d] hover:text-[#545358]'
                     }`}
                   >
                     {item.label}
@@ -136,7 +136,7 @@ export function Header({ config }: HeaderProps) {
                 href={config.booking_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-5 py-2 text-[11px] uppercase tracking-[0.2em] font-semibold rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
+                className="flex items-center gap-1.5 px-5 py-2 text-[11px] uppercase tracking-[0.2em] font-semibold rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] hover:bg-[#545358] hover:border-[#545358] hover:text-white transition-all transform hover:-translate-y-0.5 active:translate-y-0 shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
               >
                 <Calendar className="w-3.5 h-3.5" />
                 <span>Consultation</span>
@@ -149,7 +149,7 @@ export function Header({ config }: HeaderProps) {
                 href={config.booking_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-1.5 text-[10px] uppercase font-space tracking-wider font-semibold rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] hover:bg-[#c48b7e] transition-colors"
+                className="px-3.5 py-1.5 text-[10px] uppercase font-space tracking-wider font-semibold rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] hover:bg-[#545358] transition-colors"
               >
                 Book
               </a>

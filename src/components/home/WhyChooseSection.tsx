@@ -28,11 +28,11 @@ export function WhyChooseSection({ content }: WhyChooseSectionProps) {
           className="text-center max-w-3xl mx-auto space-y-3 mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-[#ded8d2] text-[#545358] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>06 / THE DIEZ STANDARD</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight leading-tight">
-            Committed to Excellence &amp; <span className="italic text-[#c48b7e] font-normal">Safety</span>
+            Committed to Excellence &amp; <span className="italic text-[#545358] font-normal">Safety</span>
           </h2>
           <p className="font-space text-xs text-[#747476] font-light max-w-lg mx-auto uppercase tracking-wider">
             Medical rigor, transparent consultation, and natural-looking artistry.

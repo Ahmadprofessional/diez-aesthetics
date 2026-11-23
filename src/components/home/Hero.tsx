@@ -41,11 +41,11 @@ export function Hero({ content }: HeroProps) {
       onMouseLeave={handleMouseLeave}
       className="relative w-full min-h-screen bg-[#18171a] overflow-hidden flex flex-col justify-between pt-20 sm:pt-28 lg:pt-32 text-white"
     >
-      {/* Rich ambient atmospheric stone gray & subtle terracotta lighting */}
+      {/* Rich ambient atmospheric stone gray & subtle champagne bronze lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[750px] bg-[#545358]/25 rounded-full blur-[200px]" />
         <div className="absolute top-20 right-1/4 w-[550px] h-[400px] bg-[#747476]/15 rounded-full blur-[170px]" />
-        <div className="absolute bottom-10 left-1/4 w-[400px] h-[300px] bg-[#c48b7e]/08 rounded-full blur-[150px]" />
+        <div className="absolute bottom-10 left-1/4 w-[400px] h-[300px] bg-white/05 rounded-full blur-[150px]" />
       </div>
 
       {/* 3-ZONE EDITORIAL MAIN STAGE */}
@@ -58,7 +58,7 @@ export function Hero({ content }: HeroProps) {
           className="lg:col-span-4 flex flex-col justify-center space-y-4 sm:space-y-5 text-left z-20 max-w-md mx-auto lg:mx-0"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[9px] sm:text-[10px] font-space uppercase tracking-[0.25em] text-[#efebe8] w-fit shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
             <span>King&apos;s Cross Clinical Atelier</span>
           </div>
 
@@ -75,7 +75,7 @@ export function Hero({ content }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-serif italic text-3xl sm:text-5xl xl:text-6xl font-light text-[#c48b7e] tracking-tight leading-[1.02]"
+              className="font-serif italic text-3xl sm:text-5xl xl:text-6xl font-light text-[#dcd8d4] tracking-tight leading-[1.02]"
             >
               Refinement
             </motion.div>
@@ -100,7 +100,7 @@ export function Hero({ content }: HeroProps) {
               href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 sm:px-6 py-3 sm:py-3.5 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-[10px] sm:text-[11px] font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-all shadow-lg transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-5 sm:px-6 py-3 sm:py-3.5 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-[10px] sm:text-[11px] font-space uppercase tracking-[0.2em] font-semibold hover:bg-white hover:border-white hover:text-[#1c1917] transition-all shadow-lg transform hover:-translate-y-0.5"
             >
               Book Consultation
             </a>
@@ -178,7 +178,7 @@ export function Hero({ content }: HeroProps) {
 
           <div className="space-y-1">
             <div className="text-3xl font-serif text-white">
-              5.0 <span className="text-[#c48b7e]">★</span>
+              5.0 <span className="text-[#eab308]">★</span>
             </div>
             <p className="text-[10px] font-space uppercase tracking-[0.2em] text-[#747476]">
               128 Verified Patient Reviews
@@ -190,7 +190,7 @@ export function Hero({ content }: HeroProps) {
 
           {/* Monthly Focus Glass Card */}
           <div className="rounded-2xl bg-[#222025]/85 backdrop-blur-xl border border-white/10 p-5 text-left space-y-2 hover:border-[#545358] transition-colors shadow-2xl">
-            <span className="text-[10px] uppercase font-space tracking-widest text-[#c48b7e] font-semibold block">
+            <span className="text-[10px] uppercase font-space tracking-widest text-[#dcd8d4] font-semibold block">
               THIS MONTH&apos;S EXCLUSIVE
             </span>
             <p className="text-xs text-zinc-300 font-light leading-relaxed">
@@ -200,7 +200,7 @@ export function Hero({ content }: HeroProps) {
               href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-[#efebe8] hover:text-[#c48b7e] font-semibold pt-1 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs text-[#efebe8] hover:text-[#dcd8d4] font-semibold pt-1 transition-colors"
             >
               <span>Reserve Consultation</span>
               <Eye className="w-3.5 h-3.5 ml-1" />
@@ -214,7 +214,7 @@ export function Hero({ content }: HeroProps) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
           <div className="space-y-0.5">
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
               <span className="text-[10px] uppercase font-space tracking-[0.25em] text-[#efebe8] font-semibold">
                 LIMITED CLINICAL AVAILABILITY
               </span>

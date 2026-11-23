@@ -148,7 +148,7 @@ export function CookieBanner() {
           <button
             type="button"
             onClick={handleAcceptAll}
-            className="px-3.5 py-1.5 rounded-lg bg-[#3b3b3d] text-[#efebe8] hover:bg-[#c48b7e] hover:text-white font-semibold text-[11px] flex items-center gap-1 shadow-sm transition-colors"
+            className="px-3.5 py-1.5 rounded-lg bg-[#3b3b3d] text-[#efebe8] hover:bg-[#545358] hover:text-white font-semibold text-[11px] flex items-center gap-1 shadow-sm transition-colors"
           >
             <Check className="w-3.5 h-3.5" />
             <span>Accept All</span>

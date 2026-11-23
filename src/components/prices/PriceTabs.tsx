@@ -54,14 +54,14 @@ export function PriceTabs({ content, bookingUrl }: PriceTabsProps) {
           {activeCategory.items.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 sm:p-6 rounded-2xl bg-white border border-[#747476]/15 hover:border-[#c48b7e]/50 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group shadow-sm hover:shadow-md"
+              className="p-5 sm:p-6 rounded-2xl bg-white border border-[#747476]/15 hover:border-[#545358]/50 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 group shadow-sm hover:shadow-md"
             >
               <div className="space-y-1">
-                <h3 className="text-base sm:text-lg font-serif font-normal text-[#1c1a19] group-hover:text-[#c48b7e] transition-colors">
+                <h3 className="text-base sm:text-lg font-serif font-normal text-[#1c1a19] group-hover:text-[#545358] transition-colors">
                   {item.name}
                 </h3>
                 <div className="flex items-center gap-2 text-xs text-[#747476]">
-                  <Clock className="w-3.5 h-3.5 text-[#c48b7e]" />
+                  <Clock className="w-3.5 h-3.5 text-[#545358]" />
                   <span>{item.duration}</span>
                 </div>
               </div>
@@ -75,9 +75,9 @@ export function PriceTabs({ content, bookingUrl }: PriceTabsProps) {
                   href={bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#3b3b3d] text-white hover:bg-[#c48b7e] text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-sm transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#3b3b3d] text-white hover:bg-[#545358] text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-sm transform hover:-translate-y-0.5"
                 >
-                  <Calendar className="w-3.5 h-3.5 text-[#c48b7e]" />
+                  <Calendar className="w-3.5 h-3.5 text-[#545358]" />
                   <span>Book</span>
                 </a>
               </div>
@@ -88,7 +88,7 @@ export function PriceTabs({ content, bookingUrl }: PriceTabsProps) {
 
       {/* Deposit & Cancellation Policy Callout */}
       <div className="max-w-4xl mx-auto p-6 rounded-2xl bg-white border border-[#747476]/20 flex items-start gap-3.5 text-xs text-[#57534e] shadow-sm">
-        <AlertCircle className="w-4 h-4 text-[#c48b7e] shrink-0 mt-0.5" />
+        <AlertCircle className="w-4 h-4 text-[#545358] shrink-0 mt-0.5" />
         <div className="space-y-1">
           <p className="text-[#1c1a19] font-space font-semibold uppercase tracking-wider text-[11px]">Deposit &amp; Appointment Policy</p>
           <p className="leading-relaxed font-light">{content.booking_note}</p>
