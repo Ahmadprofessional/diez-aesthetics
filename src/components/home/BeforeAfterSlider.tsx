@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ReactCompareSlider, ReactCompareSliderHandle } from 'react-compare-slider';
-import { ArrowRight, CheckCircle2, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { HomeContent } from '@/types/content';
 
 interface BeforeAfterSliderProps {
@@ -47,7 +47,7 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
           className="text-center max-w-3xl mx-auto space-y-3 mb-12"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-medium tracking-[0.25em] uppercase bg-black/[0.04] text-[#8c6b2d] border border-black/[0.06]">
-            <Sparkles className="w-3.5 h-3.5 text-[#b89047]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
             <span>REAL RESULTS</span>
           </div>
 
