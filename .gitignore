@@ -12,7 +12,6 @@ dist/
 # Development & Test Scripts
 scripts/
 *.log
-rebuild_git_history.*
 
 # Raw Crawl Dumps & Archives
 archive/
