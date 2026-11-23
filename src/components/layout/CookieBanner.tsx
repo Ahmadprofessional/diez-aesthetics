@@ -68,12 +68,12 @@ export function CookieBanner() {
       className="fixed bottom-20 md:bottom-6 left-4 right-4 md:left-auto md:right-6 md:max-w-md z-40 bg-white border border-black/10 rounded-2xl p-5 shadow-2xl text-[#44403c] text-xs"
     >
       <div className="flex items-start gap-3">
-        <div className="w-8 h-8 rounded-full bg-[#f4ebd2] border border-[#b89047]/30 flex items-center justify-center text-[#8c6b2d] shrink-0">
+        <div className="w-8 h-8 rounded-full bg-[#e8e4e0] border border-black/[0.08] flex items-center justify-center text-[#3b3b3d] shrink-0">
           <Shield className="w-4 h-4" />
         </div>
         <div className="space-y-1">
-          <h4 className="font-semibold text-[#1c1917] text-sm">Privacy & Cookie Choices</h4>
-          <p className="text-[#57534e] leading-relaxed text-[11px]">
+          <h4 className="font-semibold text-[#1c1917] text-sm">Privacy &amp; Cookie Choices</h4>
+          <p className="text-[#545358] leading-relaxed text-[11px]">
             We use cookies to enhance navigation, analyze site performance, and ensure secure medical appointment booking.
           </p>
         </div>
@@ -84,34 +84,34 @@ export function CookieBanner() {
           <div className="flex items-center justify-between">
             <div>
               <span className="font-medium text-[#1c1917]">Essential Cookies</span>
-              <p className="text-[#78716c] text-[10px]">Required for security and booking functions.</p>
+              <p className="text-[#747476] text-[10px]">Required for security and booking functions.</p>
             </div>
-            <span className="text-[#8c6b2d] font-semibold text-[10px] uppercase">Always Active</span>
+            <span className="text-[#3b3b3d] font-semibold text-[10px] uppercase">Always Active</span>
           </div>
 
           <div className="flex items-center justify-between">
             <div>
               <span className="font-medium text-[#1c1917]">Analytics Cookies</span>
-              <p className="text-[#78716c] text-[10px]">Anonymous visitor metrics (GA4).</p>
+              <p className="text-[#747476] text-[10px]">Anonymous visitor metrics (GA4).</p>
             </div>
             <input
               type="checkbox"
               checked={consent.analytics}
               onChange={(e) => setConsent({ ...consent, analytics: e.target.checked })}
-              className="accent-[#b89047] w-4 h-4 rounded cursor-pointer"
+              className="accent-[#3b3b3d] w-4 h-4 rounded cursor-pointer"
             />
           </div>
 
           <div className="flex items-center justify-between">
             <div>
               <span className="font-medium text-[#1c1917]">Marketing Cookies</span>
-              <p className="text-[#78716c] text-[10px]">Campaign attribution & Instagram integration.</p>
+              <p className="text-[#747476] text-[10px]">Campaign attribution &amp; Instagram integration.</p>
             </div>
             <input
               type="checkbox"
               checked={consent.marketing}
               onChange={(e) => setConsent({ ...consent, marketing: e.target.checked })}
-              className="accent-[#b89047] w-4 h-4 rounded cursor-pointer"
+              className="accent-[#3b3b3d] w-4 h-4 rounded cursor-pointer"
             />
           </div>
         </div>
@@ -121,7 +121,7 @@ export function CookieBanner() {
         <button
           type="button"
           onClick={() => setShowPreferences(!showPreferences)}
-          className="text-[#78716c] hover:text-black underline text-[10px]"
+          className="text-[#747476] hover:text-[#1c1917] underline text-[10px]"
         >
           {showPreferences ? 'Hide Options' : 'Preferences'}
         </button>
@@ -131,7 +131,7 @@ export function CookieBanner() {
             <button
               type="button"
               onClick={handleSavePreferences}
-              className="px-3 py-1.5 rounded-lg bg-[#e7e5e4] text-[#1c1917] hover:bg-[#d6d3cd] text-[11px] font-medium"
+              className="px-3 py-1.5 rounded-lg bg-[#e8e4e0] text-[#1c1917] hover:bg-[#d6d3cd] text-[11px] font-medium"
             >
               Save Choices
             </button>
@@ -139,7 +139,7 @@ export function CookieBanner() {
             <button
               type="button"
               onClick={handleEssentialOnly}
-              className="px-3 py-1.5 rounded-lg bg-[#e7e5e4] text-[#1c1917] hover:bg-[#d6d3cd] text-[11px] font-medium"
+              className="px-3 py-1.5 rounded-lg bg-[#e8e4e0] text-[#1c1917] hover:bg-[#d6d3cd] text-[11px] font-medium"
             >
               Essential Only
             </button>
@@ -148,7 +148,7 @@ export function CookieBanner() {
           <button
             type="button"
             onClick={handleAcceptAll}
-            className="px-3.5 py-1.5 rounded-lg bg-[#1c1917] text-white hover:bg-[#b89047] font-semibold text-[11px] flex items-center gap-1 shadow-sm"
+            className="px-3.5 py-1.5 rounded-lg bg-[#3b3b3d] text-[#efebe8] hover:bg-[#c48b7e] hover:text-white font-semibold text-[11px] flex items-center gap-1 shadow-sm transition-colors"
           >
             <Check className="w-3.5 h-3.5" />
             <span>Accept All</span>

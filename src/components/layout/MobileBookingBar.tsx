@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Calendar, MessageCircle } from 'lucide-react';
+import { Calendar } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/ui/Icons';
 import { GlobalConfig } from '@/types/content';
 
 interface MobileBookingBarProps {
@@ -12,7 +13,7 @@ export function MobileBookingBar({ config }: MobileBookingBarProps) {
   return (
     <aside
       aria-label="Quick booking actions"
-      className="fixed bottom-0 left-0 right-0 z-30 md:hidden bg-[#FAF8F5]/95 backdrop-blur-md border-t border-black/10 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]"
+      className="fixed bottom-0 left-0 right-0 z-30 md:hidden bg-[#efebe8]/95 backdrop-blur-md border-t border-black/10 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]"
     >
       <div className="grid grid-cols-2 gap-2.5">
         <a
@@ -22,7 +23,7 @@ export function MobileBookingBar({ config }: MobileBookingBarProps) {
           className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-white border border-[#747476]/30 text-[#1c1a19] text-xs uppercase tracking-wider font-medium hover:bg-zinc-100 transition-colors shadow-sm"
           aria-label="Contact us on WhatsApp"
         >
-          <MessageCircle className="w-4 h-4 shrink-0 text-[#747476]" />
+          <WhatsAppIcon className="w-4 h-4 shrink-0 text-[#747476]" />
           <span>WhatsApp</span>
         </a>
 
