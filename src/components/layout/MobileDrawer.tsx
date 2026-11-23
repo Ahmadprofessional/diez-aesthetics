@@ -3,7 +3,8 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { X, Phone, MessageCircle, Calendar, MapPin, Clock } from 'lucide-react';
+import { X, Phone, Calendar, MapPin, Clock } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/ui/Icons';
 import { GlobalConfig } from '@/types/content';
 
 interface MobileDrawerProps {
@@ -29,7 +30,7 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 md:hidden" role="dialog" aria-modal="true">
+    <div className="fixed inset-0 z-[90] md:hidden" role="dialog" aria-modal="true">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
@@ -38,7 +39,7 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
       />
 
       {/* Drawer Content */}
-      <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-[#121212] border-l border-white/10 p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
+      <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-[#18171a] border-l border-white/10 p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-white/10">
@@ -100,7 +101,7 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-2 py-3 rounded-full border border-white/15 text-zinc-300 bg-white/[0.04] text-xs uppercase tracking-wider font-medium hover:bg-white/10 hover:text-white transition-colors"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4" />
             <span>Chat on WhatsApp</span>
           </a>
 
