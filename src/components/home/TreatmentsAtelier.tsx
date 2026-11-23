@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, ArrowRight, CheckCircle2, Sparkles, Clock, ShieldCheck } from 'lucide-react';
+import { Calendar, ArrowRight, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 import { TreatmentsContent } from '@/types/content';
 
 interface TreatmentsAtelierProps {
@@ -106,13 +106,20 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
     treatmentCategories.find((t) => t.id === selectedId) || treatmentCategories[5];
 
   return (
-    <section id="treatments" className="py-20 sm:py-28 bg-[#efebe8] text-[#1c1a19] relative overflow-hidden transition-colors duration-500">
+    <section id="treatments" className="py-24 sm:py-32 bg-[#efebe8] text-[#1c1a19] relative overflow-hidden transition-colors duration-500 border-b border-[#ded7d0]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header Matching Client Screenshot */}
-        <div className="text-left mb-10 space-y-2">
-          <p className="font-space text-xs uppercase tracking-[0.25em] text-[#75716b] font-medium">
-            TREATMENTS
-          </p>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="text-left mb-10 space-y-2"
+        >
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span>01 / CURATED PROTOCOLS</span>
+          </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1a19] tracking-tight leading-tight">
             Choose a <span className="italic text-[#c48b7e] font-normal">treatment</span>
@@ -127,10 +134,16 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* 6 Circular Treatment Selector Grid (Exact match to Client Screenshot) */}
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 md:gap-5 mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 md:gap-5 mb-10"
+        >
           {treatmentCategories.map((item) => {
             const isSelected = item.id === selectedId;
 
@@ -154,7 +167,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
               </button>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Dynamic Detail Card Below (Exact match to Client Screenshot) */}
         <AnimatePresence mode="wait">
