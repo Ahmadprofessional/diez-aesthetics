@@ -13,14 +13,14 @@ interface FooterProps {
 
 export function Footer({ config }: FooterProps) {
   return (
-    <footer className="relative bg-[#585b63] text-white overflow-hidden border-t border-white/10 pt-10 sm:pt-14 pb-10 sm:pb-12">
-      {/* Authentic Gray Marble Texture Background */}
+    <footer className="relative bg-[#5a5a5b] text-white overflow-hidden border-t border-white/10 pt-10 sm:pt-14 pb-10 sm:pb-12">
+      {/* Authentic Diez Brand Gray Marble Texture */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url('/assets/images/diez-gray-marble-bg.webp')` }}
       />
-      {/* Ambient Depth Tint */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#4e5158]/50 via-transparent to-[#3f4248]/70 pointer-events-none" />
+      {/* Subtle depth overlay for high-contrast typography */}
+      <div className="absolute inset-0 bg-black/15 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Top 4-Column Directory matching Diez Aesthetics Reference */}
