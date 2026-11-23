@@ -152,16 +152,25 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 key={item.id}
                 type="button"
                 onClick={() => setSelectedId(item.id)}
-                className={`relative group aspect-square rounded-full flex items-center justify-center p-3 text-center transition-all duration-300 select-none ${
+                className={`relative group aspect-square rounded-full flex items-center justify-center p-3 text-center transition-all duration-300 select-none overflow-hidden ${
                   isSelected
-                    ? 'bg-[#545358] shadow-lg ring-2 ring-[#1c1a19] ring-offset-4 ring-offset-[#efebe8] scale-[1.03]'
-                    : 'bg-[#747476] hover:bg-[#68686a] shadow-md hover:scale-[1.02]'
+                    ? 'ring-2 ring-[#1c1a19] ring-offset-4 ring-offset-[#efebe8] scale-[1.04] shadow-xl'
+                    : 'shadow-md hover:shadow-lg hover:scale-[1.02] opacity-90 hover:opacity-100'
                 }`}
               >
-                {/* Subtle stone texture shimmer */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                {/* Authentic Diez Brand Gray Marble Texture */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center rounded-full pointer-events-none transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url('/assets/images/diez-gray-marble-bg.webp')` }}
+                />
+                {/* Soft ambient tint for contrast */}
+                <div 
+                  className={`absolute inset-0 rounded-full transition-colors duration-300 ${
+                    isSelected ? 'bg-black/25' : 'bg-black/15 group-hover:bg-black/05'
+                  }`}
+                />
 
-                <span className="font-serif italic text-white text-xs sm:text-sm md:text-sm lg:text-base leading-snug px-1 line-clamp-2">
+                <span className="relative z-10 font-serif italic text-white text-xs sm:text-sm md:text-sm lg:text-base leading-snug px-1 line-clamp-2 drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
                   {item.name}
                 </span>
               </button>

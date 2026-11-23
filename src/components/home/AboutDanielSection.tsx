@@ -42,24 +42,14 @@ export function AboutDanielSection() {
                 {/* Subtle bottom gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
 
-                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
-                  <div>
-                    <p className="font-serif italic text-xl leading-tight">Daniel Diez</p>
-                    <p className="text-[11px] uppercase tracking-wider text-[#545358] font-space font-medium">
-                      Clinical Director &amp; Founder
-                    </p>
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                    <CheckCircle2 className="w-4 h-4 text-[#545358]" />
-                  </div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <p className="font-serif italic text-2xl leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                    Daniel Diez
+                  </p>
+                  <p className="text-[11px] uppercase tracking-wider text-white/90 font-space font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] pt-1">
+                    Clinical Director &amp; Founder
+                  </p>
                 </div>
-              </div>
-
-              {/* Floating luxury credential tag */}
-              <div className="hidden sm:flex absolute -bottom-5 -right-4 items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white shadow-xl border border-black/[0.08] text-xs text-[#1c1917]">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#545358] animate-pulse" />
-                <span className="font-space font-medium tracking-wide">Consultations Open</span>
-                <span className="text-[#747476] font-space text-[11px]">King&apos;s Cross</span>
               </div>
             </div>
           </motion.div>
