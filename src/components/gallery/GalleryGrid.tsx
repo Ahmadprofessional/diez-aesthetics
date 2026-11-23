@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ZoomIn, Sparkles } from 'lucide-react';
+import { X, ZoomIn } from 'lucide-react';
 import { GalleryContent } from '@/types/content';
 
 interface GalleryGridProps {
@@ -16,17 +16,17 @@ export function GalleryGrid({ content }: GalleryGridProps) {
 
   return (
     <div className="space-y-12">
-      {/* Category Pills */}
-      <div className="flex flex-wrap items-center justify-center gap-2">
+      {/* Category Pills in Client Stone Styling */}
+      <div className="flex flex-wrap items-center justify-center gap-2.5">
         {content.categories.map((cat) => (
           <button
             key={cat}
             type="button"
             onClick={() => setActiveCategory(cat)}
-            className={`px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-medium transition-all ${
+            className={`px-5 py-2.5 rounded-full text-xs font-space uppercase tracking-wider font-semibold transition-all select-none ${
               activeCategory === cat
-                ? 'bg-[#1c1917] text-white font-semibold shadow-md'
-                : 'bg-white text-[#57534e] hover:text-black border border-black/10 hover:border-black/20 shadow-sm'
+                ? 'bg-[#3b3b3d] text-white shadow-lg ring-2 ring-[#1c1a19] ring-offset-2 ring-offset-[#efebe8] scale-[1.02]'
+                : 'bg-white text-[#545358] hover:text-[#1c1a19] border border-[#747476]/25 hover:border-[#747476] shadow-sm'
             }`}
           >
             {cat}
@@ -44,7 +44,7 @@ export function GalleryGrid({ content }: GalleryGridProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: (idx % 6) * 0.08 }}
             onClick={() => setSelectedImage(item.url)}
-            className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-white border border-black/10 hover:border-[#8c6b2d]/50 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500"
+            className="group relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-[#747476]/20 hover:border-[#c48b7e] cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500"
           >
             <Image
               src={item.url}
@@ -54,12 +54,12 @@ export function GalleryGrid({ content }: GalleryGridProps) {
               className="object-cover group-hover:scale-105 transition-transform duration-700"
               priority={idx < 4}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
               <div className="flex items-center justify-between w-full text-white">
-                <span className="text-xs font-medium uppercase tracking-wider">
+                <span className="text-xs font-space font-medium uppercase tracking-wider">
                   {item.treatment}
                 </span>
-                <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white">
+                <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white">
                   <ZoomIn className="w-4 h-4" />
                 </div>
               </div>
@@ -68,7 +68,7 @@ export function GalleryGrid({ content }: GalleryGridProps) {
         ))}
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox Modal with Highest Z-Index (Z-[100]) so it never conflicts with navbar */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -77,26 +77,37 @@ export function GalleryGrid({ content }: GalleryGridProps) {
             exit={{ opacity: 0 }}
             role="dialog"
             aria-modal="true"
-            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-2xl flex flex-col items-center justify-between p-4 sm:p-8"
             onClick={() => setSelectedImage(null)}
           >
-            <button
-              type="button"
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-6 right-6 p-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors"
-              aria-label="Close image preview"
-            >
-              <X className="w-6 h-6" />
-            </button>
+            {/* Top Bar with Clear Close Button and Branding */}
+            <div className="w-full max-w-6xl flex items-center justify-between pb-4 z-10" onClick={(e) => e.stopPropagation()}>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#c48b7e]" />
+                <span className="text-xs uppercase font-space tracking-[0.2em] text-[#efebe8]">
+                  Clinical Case Inspection
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedImage(null)}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all text-xs font-space uppercase tracking-wider font-semibold shadow-lg"
+                aria-label="Close image preview"
+              >
+                <span>Close</span>
+                <X className="w-4 h-4" />
+              </button>
+            </div>
 
             <motion.div
-              initial={{ scale: 0.95 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.95 }}
-              className="relative max-w-4xl max-h-[85vh] w-full h-full flex items-center justify-center"
+              initial={{ scale: 0.94, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.94, opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="relative max-w-4xl max-h-[75vh] w-full h-full flex items-center justify-center my-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.9)] border border-white/10">
                 <Image
                   src={selectedImage}
                   alt="Enlarged clinical result"
@@ -106,6 +117,10 @@ export function GalleryGrid({ content }: GalleryGridProps) {
                 />
               </div>
             </motion.div>
+
+            <div className="w-full text-center text-xs text-[#a8a5a3] font-space tracking-wider pt-2">
+              Unretouched clinical case • Diez Aesthetics London
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
