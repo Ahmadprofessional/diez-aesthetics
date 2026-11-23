@@ -429,25 +429,35 @@ export function BeforeAfterCarousel() {
                   key={caseItem.id}
                   type="button"
                   onClick={() => setSelectedCaseIdx(idx)}
-                  className={`group relative rounded-2xl overflow-hidden aspect-[4/3] border transition-all duration-300 text-left p-2 flex flex-col justify-between ${
+                  className={`group relative rounded-2xl overflow-hidden border transition-all duration-300 text-left p-2 flex flex-col justify-between ${
                     isSelected
                       ? 'bg-white border-[#3b3b3d] shadow-lg ring-2 ring-[#3b3b3d] ring-offset-2 ring-offset-[#eae5e0] scale-[1.02]'
-                      : 'bg-white/70 hover:bg-white border-black/[0.08] hover:border-black/20'
+                      : 'bg-white/80 hover:bg-white border-black/[0.08] hover:border-black/20'
                   }`}
                 >
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-[10px] font-space uppercase tracking-wider text-[#747476] font-semibold">
-                      Case 0{caseItem.id}
-                    </span>
+                  {/* Real Clinical Result Photo Thumbnail */}
+                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-[#e8e4e0] mb-2">
+                    <Image
+                      src={caseItem.after}
+                      alt={`${caseItem.title} result`}
+                      fill
+                      unoptimized
+                      style={{ objectPosition: caseItem.objectPosition || 'center center' }}
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-black/70 backdrop-blur-md text-[9px] font-space font-semibold text-white">
+                      0{caseItem.id}
+                    </div>
                     {isSelected && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+                      <div className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[#c48b7e] ring-2 ring-white" />
                     )}
                   </div>
-                  <div>
+
+                  <div className="px-0.5 pb-0.5">
                     <p className="text-xs font-serif text-[#1c1917] font-medium leading-tight truncate">
                       {caseItem.title}
                     </p>
-                    <p className="text-[10px] font-space text-[#747476] truncate">
+                    <p className="text-[10px] font-space text-[#747476] uppercase tracking-wider truncate">
                       {caseItem.categoryKey}
                     </p>
                   </div>

@@ -74,16 +74,21 @@
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 45s linear infinite;
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 .animate-marquee-reverse {
   display: flex;
   width: max-content;
-  animation: marquee-reverse 50s linear infinite;
+  animation: marquee-reverse 35s linear infinite;
+  will-change: transform;
 }
 
-.pause-on-hover:hover .animate-marquee,
-.pause-on-hover:hover .animate-marquee-reverse {
+.animate-marquee-reverse:hover {
   animation-play-state: paused;
 }

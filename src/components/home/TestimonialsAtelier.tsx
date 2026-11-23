@@ -81,7 +81,7 @@ const reviews: ReviewItem[] = [
 
 function ReviewCard({ review }: { review: ReviewItem }) {
   return (
-    <div className="w-[340px] sm:w-[400px] md:w-[420px] p-6 sm:p-7 rounded-[26px] bg-white border border-black/[0.06] hover:border-[#3b3b3d] shadow-[0_15px_35px_rgba(0,0,0,0.04)] transition-all duration-300 flex flex-col justify-between shrink-0 group">
+    <div className="w-[280px] sm:w-[300px] lg:w-[290px] xl:w-[298px] p-5 sm:p-6 rounded-[24px] bg-white border border-black/[0.06] hover:border-[#3b3b3d] shadow-[0_15px_35px_rgba(0,0,0,0.04)] transition-all duration-300 flex flex-col justify-between shrink-0 group">
       {/* Top Meta: Stars + Treatment Badge */}
       <div className="space-y-3">
         <div className="flex items-center justify-between gap-2">
@@ -138,7 +138,7 @@ function ReviewCard({ review }: { review: ReviewItem }) {
 }
 
 export function TestimonialsAtelier() {
-  const marqueeList = [...reviews, ...reviews];
+  const marqueeList = [...reviews, ...reviews, ...reviews, ...reviews];
 
   return (
     <section className="py-24 sm:py-32 bg-[#eae5e0] text-[#1c1917] relative overflow-hidden border-t border-b border-[#dad3cc] transition-colors duration-500">
@@ -180,9 +180,9 @@ export function TestimonialsAtelier() {
           </div>
         </motion.div>
 
-        {/* Marquee Row 1: Leftward Infinite Drift */}
-        <div className="relative w-full overflow-hidden mb-6 select-none mask-marquee">
-          <div className="flex gap-6 animate-marquee-slow w-max hover:pause">
+        {/* Marquee Row: Leftward Infinite Continuous Drift (4 reviews visible on desktop) */}
+        <div className="relative w-full overflow-hidden mb-6 select-none">
+          <div className="animate-marquee gap-5 sm:gap-6 py-2">
             {marqueeList.map((rev, idx) => (
               <ReviewCard key={`m1-${idx}`} review={rev} />
             ))}
