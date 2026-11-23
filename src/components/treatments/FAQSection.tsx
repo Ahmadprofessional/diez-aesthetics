@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Sparkles } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
@@ -53,19 +53,19 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-24 bg-[#FAF8F5] border-t border-black/[0.05]">
+    <section className="py-24 bg-[#efebe8] border-t border-[#747476]/15">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-medium tracking-[0.25em] uppercase bg-black/[0.04] text-[#8c6b2d] border border-black/[0.06]">
-            <Sparkles className="w-3.5 h-3.5 text-[#b89047]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-white border border-[#747476]/20 text-[#545358]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
             <span>COMMON QUESTIONS</span>
           </div>
-          <h2 className="font-sans text-3xl sm:text-4xl font-light text-[#1c1917] leading-tight">
-            Frequently Asked <span className="font-serif italic text-[#8c6b2d] font-normal">Questions</span>
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#1c1a19] leading-tight">
+            Frequently Asked <span className="italic text-[#c48b7e]">Questions</span>
           </h2>
           <p className="text-sm text-[#57534e] font-light">
             Everything you need to know about your consultation, procedure, and aftercare.
@@ -78,7 +78,7 @@ export function FAQSection() {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-black/[0.07] bg-white overflow-hidden shadow-sm transition-all"
+                className="rounded-2xl border border-[#747476]/15 bg-white overflow-hidden shadow-sm transition-all"
               >
                 <button
                   type="button"
@@ -86,12 +86,12 @@ export function FAQSection() {
                   className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm sm:text-base font-medium text-[#1c1917]">
+                  <span className="text-sm sm:text-base font-serif text-[#1c1a19]">
                     {faq.question}
                   </span>
                   <div
-                    className={`w-7 h-7 rounded-full border border-black/10 flex items-center justify-center shrink-0 transition-transform ${
-                      isOpen ? 'rotate-180 text-[#8c6b2d] border-[#8c6b2d]/30 bg-[#FAF8F5]' : 'text-zinc-400'
+                    className={`w-7 h-7 rounded-full border border-[#747476]/20 flex items-center justify-center shrink-0 transition-transform ${
+                      isOpen ? 'rotate-180 text-white border-[#3b3b3d] bg-[#3b3b3d]' : 'text-[#747476]'
                     }`}
                   >
                     <ChevronDown className="w-3.5 h-3.5" />

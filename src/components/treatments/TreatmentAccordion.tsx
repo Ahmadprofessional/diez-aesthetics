@@ -26,8 +26,8 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
             key={service.slug}
             className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
               isOpen
-                ? 'bg-white border-[#8c6b2d]/30 shadow-[0_15px_35px_rgba(0,0,0,0.06)]'
-                : 'bg-white/80 border-black/[0.06] hover:border-black/15 shadow-sm'
+                ? 'bg-white border-[#747476]/30 shadow-[0_20px_50px_rgba(0,0,0,0.06)]'
+                : 'bg-white/90 border-[#747476]/15 hover:border-[#747476]/40 shadow-sm'
             }`}
           >
             <button
@@ -37,7 +37,7 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
               aria-expanded={isOpen}
             >
               <div className="flex items-center gap-4">
-                <span className="font-mono text-xs uppercase tracking-widest text-[#8c6b2d] font-semibold">
+                <span className="font-space text-xs uppercase tracking-widest text-[#747476] font-semibold">
                   0{idx + 1}
                 </span>
                 <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                       />
                     </div>
                   )}
-                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#1c1917]">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#1c1a19]">
                     {service.title}
                   </h3>
                 </div>
@@ -61,8 +61,8 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
               <div
                 className={`w-9 h-9 rounded-full border flex items-center justify-center shrink-0 transition-transform duration-300 ${
                   isOpen
-                    ? 'border-[#8c6b2d] text-[#8c6b2d] rotate-180 bg-[#FAF8F5]'
-                    : 'border-black/10 text-zinc-400 bg-white'
+                    ? 'border-[#3b3b3d] text-white bg-[#3b3b3d] rotate-180'
+                    : 'border-[#747476]/20 text-[#747476] bg-white'
                 }`}
               >
                 <ChevronDown className="w-4 h-4" />
@@ -76,23 +76,23 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="px-6 sm:px-7 pb-7 pt-2 border-t border-black/[0.05] space-y-6"
+                  className="px-6 sm:px-7 pb-7 pt-2 border-t border-[#747476]/10 space-y-6"
                 >
                   <p className="text-sm sm:text-base text-[#57534e] font-light leading-relaxed">
                     {service.description}
                   </p>
 
                   <div className="space-y-3">
-                    <h4 className="text-xs uppercase tracking-wider font-semibold text-[#8c6b2d]">
+                    <h4 className="text-xs uppercase font-space tracking-wider font-semibold text-[#747476]">
                       Common Treatment Areas &amp; Targets
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {service.areas.map((area, aIdx) => (
                         <span
                           key={aIdx}
-                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-light bg-[#FAF8F5] border border-black/[0.06] text-[#44403c]"
+                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-light bg-[#efebe8] border border-[#747476]/15 text-[#1c1a19]"
                         >
-                          <CheckCircle className="w-3.5 h-3.5 text-[#8c6b2d]" />
+                          <CheckCircle className="w-3.5 h-3.5 text-[#c48b7e]" />
                           <span>{area}</span>
                         </span>
                       ))}
@@ -104,18 +104,18 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                       href={service.cta.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1c1917] text-white text-xs uppercase tracking-wider font-semibold hover:bg-[#8c6b2d] transition-all shadow-sm"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#3b3b3d] hover:bg-[#c48b7e] text-white text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-sm"
                     >
-                      <Calendar className="w-4 h-4 text-[#ded5c6]" />
+                      <Calendar className="w-4 h-4 text-[#c48b7e]" />
                       <span>{service.cta.label}</span>
                     </a>
 
                     <a
                       href="/prices/"
-                      className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-medium text-[#78716c] hover:text-[#1c1917] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-space uppercase tracking-wider font-semibold text-[#545358] hover:text-[#1c1a19] transition-colors"
                     >
                       <span>View Pricing &amp; Packages</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-[#8c6b2d]" />
+                      <ArrowRight className="w-3.5 h-3.5 text-[#c48b7e]" />
                     </a>
                   </div>
                 </motion.div>
