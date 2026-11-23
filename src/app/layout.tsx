@@ -6,6 +6,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { MobileBookingBar } from '@/components/layout/MobileBookingBar';
 import { CookieBanner } from '@/components/layout/CookieBanner';
+import { FixedWhatsAppButton } from '@/components/layout/FixedWhatsAppButton';
+import { ConciergeChatWidget } from '@/components/layout/ConciergeChatWidget';
 import { getClinicJsonLd } from '@/lib/jsonld';
 
 const cormorant = Cormorant_Garamond({
@@ -49,8 +51,8 @@ const config = getGlobalConfig();
 export const metadata: Metadata = {
   metadataBase: new URL('https://diezaesthetics.com'),
   title: {
-    default: 'Diez Anti-Aging Aesthetics | King’s Cross London',
-    template: '%s | Diez Anti-Aging Aesthetics',
+    default: 'Diez Aesthetics | King’s Cross London',
+    template: '%s | Diez Aesthetics',
   },
   description:
     'Doctor-led aesthetic clinic in King’s Cross, London (260 Pentonville Road). Specialising in subtle anti-wrinkle injections, dermal fillers, polynucleotides, skin boosters, and medical microneedling.',
@@ -65,7 +67,7 @@ export const metadata: Metadata = {
     'Daniel Diez aesthetics',
   ],
   authors: [{ name: 'Daniel Diez' }],
-  creator: 'Diez Anti-Aging Aesthetics',
+  creator: 'Diez Aesthetics',
   alternates: {
     canonical: 'https://diezaesthetics.com/',
   },
@@ -73,8 +75,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://diezaesthetics.com/',
-    siteName: 'Diez Anti-Aging Aesthetics',
-    title: 'Diez Anti-Aging Aesthetics | King’s Cross London',
+    siteName: 'Diez Aesthetics',
+    title: 'Diez Aesthetics | King’s Cross London',
     description:
       'Doctor-led aesthetic clinic in King’s Cross, London. Specialising in subtle anti-wrinkle treatments, dermal fillers, polynucleotides, and skin boosters.',
     images: [
@@ -82,19 +84,28 @@ export const metadata: Metadata = {
         url: 'https://diezaesthetics.com/wp-content/uploads/2026/06/hero-clinic.jpg',
         width: 1200,
         height: 630,
-        alt: 'Diez Anti-Aging Aesthetics Clinic King’s Cross London',
+        alt: 'Diez Aesthetics Clinic King’s Cross London',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Diez Anti-Aging Aesthetics | King’s Cross London',
+    title: 'Diez Aesthetics | King’s Cross London',
     description:
       'Doctor-led aesthetic clinic in King’s Cross, London. Subtle, natural-looking results.',
   },
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '128x128', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [
+      { url: '/icon.png', sizes: '128x128', type: 'image/png' },
+    ],
   },
 };
 
@@ -112,7 +123,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="font-sans bg-[#0c0b0e] text-white antialiased selection:bg-[#c084fc] selection:text-black"
+        className="font-sans bg-[#efebe8] text-[#1c1917] antialiased selection:bg-[#c48b7e] selection:text-white"
         suppressHydrationWarning
       >
         <script
@@ -123,6 +134,8 @@ export default function RootLayout({
         <main className="min-h-screen pb-16 md:pb-0">{children}</main>
         <Footer config={config} />
         <MobileBookingBar config={config} />
+        <FixedWhatsAppButton config={config} />
+        <ConciergeChatWidget config={config} />
         <CookieBanner />
       </body>
     </html>
