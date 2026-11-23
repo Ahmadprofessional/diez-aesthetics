@@ -8,20 +8,26 @@ import { Languages, Award, ArrowRight, HeartPulse, CheckCircle2 } from 'lucide-r
 
 export function AboutDanielSection() {
   return (
-    <section id="daniel" className="py-24 sm:py-32 bg-[#0c0b0e] text-white relative overflow-hidden border-t border-b border-white/[0.08]">
+    <section id="daniel" className="py-24 sm:py-32 bg-[#eae5e0] text-[#1c1917] relative overflow-hidden border-t border-b border-[#dad3cc] transition-colors duration-500">
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 -left-48 w-96 h-96 bg-[#545358]/20 rounded-full blur-[140px]" />
-        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#c48b7e]/12 rounded-full blur-[140px]" />
+        <div className="absolute top-1/2 -left-48 w-96 h-96 bg-[#ded8d2]/60 rounded-full blur-[140px]" />
+        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#c48b7e]/10 rounded-full blur-[140px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Official Danial Portrait in Editorial Architectural Frame */}
-          <div className="lg:col-span-5 relative">
+          {/* Left Column: Official Daniel Portrait in Editorial Architectural Frame */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-5 relative"
+          >
             <div className="relative mx-auto max-w-sm lg:max-w-none">
-              {/* Outer decorative card frame with dark luxury shadow */}
-              <div className="relative rounded-[32px] overflow-hidden shadow-[0_30px_70px_rgba(0,0,0,0.85)] border border-white/10 bg-[#161418] group">
+              {/* Outer decorative card frame with luxury shadow */}
+              <div className="relative rounded-[32px] overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-black/[0.08] bg-white group">
                 <div className="relative aspect-[3/4] w-full">
                   <Image
                     src="/assets/images/danial-image.png"
@@ -34,7 +40,7 @@ export function AboutDanielSection() {
                 </div>
 
                 {/* Subtle bottom gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
 
                 <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
                   <div>
@@ -43,30 +49,37 @@ export function AboutDanielSection() {
                       Clinical Director &amp; Founder
                     </p>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
+                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
                     <CheckCircle2 className="w-4 h-4 text-[#c48b7e]" />
                   </div>
                 </div>
               </div>
 
               {/* Floating luxury credential tag */}
-              <div className="hidden sm:flex absolute -bottom-5 -right-4 items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-[#1e1d21]/90 backdrop-blur-xl shadow-2xl border border-white/15 text-xs text-white">
+              <div className="hidden sm:flex absolute -bottom-5 -right-4 items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white shadow-xl border border-black/[0.08] text-xs text-[#1c1917]">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#c48b7e] animate-pulse" />
                 <span className="font-space font-medium tracking-wide">Consultations Open</span>
-                <span className="text-[#a8a5a3] font-space text-[11px]">King&apos;s Cross</span>
+                <span className="text-[#747476] font-space text-[11px]">King&apos;s Cross</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: High-End Editorial Typography */}
-          <div className="lg:col-span-7 space-y-8">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-7 space-y-8"
+          >
             {/* Header / Eyebrow */}
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-white/[0.06] text-[#c48b7e] border border-white/10">
-                <span>ABOUT DANIEL • CLINICAL DIRECTOR</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-[#ded8d2] text-[#545358] border border-black/[0.06]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+                <span>03 / CLINICAL LEADERSHIP</span>
               </div>
 
-              <h2 className="font-sans text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
+              <h2 className="font-sans text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-[1.08]">
                 NATURAL. BALANCED. <br />
                 <span className="font-serif italic font-normal text-[#c48b7e]">
                   BEAUTIFULLY YOU.
@@ -75,7 +88,7 @@ export function AboutDanielSection() {
             </div>
 
             {/* Verbatim Bio Copy from Client Reference */}
-            <div className="space-y-4 text-zinc-300 font-light text-sm sm:text-base leading-relaxed">
+            <div className="space-y-4 text-[#545358] font-light text-sm sm:text-base leading-relaxed">
               <p>
                 As Clinical Director of Diez Aesthetics, my goal is simple — to help my patients feel confident, refreshed, and naturally enhanced.
               </p>
@@ -87,71 +100,71 @@ export function AboutDanielSection() {
               </p>
             </div>
 
-            {/* Three Refined Luxury Dark Glass Feature Cards */}
+            {/* Three Refined Luxury Feature Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-              <div className="p-4 rounded-2xl bg-[#161418] border border-white/10 shadow-lg flex items-center gap-3 hover:border-[#545358] transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-white/[0.05] flex items-center justify-center shrink-0 border border-white/10 text-[#c48b7e]">
+              <div className="p-4 rounded-2xl bg-white border border-black/[0.06] shadow-sm flex items-center gap-3 hover:border-[#3b3b3d] transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-[#efebe8] flex items-center justify-center shrink-0 border border-black/[0.06] text-[#3b3b3d]">
                   <Languages className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-white tracking-wide uppercase font-space">
+                  <p className="text-xs font-semibold text-[#1c1917] tracking-wide uppercase font-space">
                     Bilingual
                   </p>
-                  <p className="text-[11px] text-[#a8a5a3] font-light">
-                    English &amp; Spanish Spoken
+                  <p className="text-[11px] text-[#747476] font-light">
+                    English &amp; Spanish consultations
                   </p>
                 </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-[#161418] border border-white/10 shadow-lg flex items-center gap-3 hover:border-[#545358] transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-white/[0.05] flex items-center justify-center shrink-0 border border-white/10 text-[#747476]">
-                  <Award className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-xs font-semibold text-white tracking-wide uppercase font-space">
-                    3+ Years
-                  </p>
-                  <p className="text-[11px] text-[#a8a5a3] font-light">
-                    Injecting Experience
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-[#161418] border border-white/10 shadow-lg flex items-center gap-3 hover:border-[#545358] transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-white/[0.05] flex items-center justify-center shrink-0 border border-white/10 text-[#efebe8]">
+              <div className="p-4 rounded-2xl bg-white border border-black/[0.06] shadow-sm flex items-center gap-3 hover:border-[#3b3b3d] transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-[#efebe8] flex items-center justify-center shrink-0 border border-black/[0.06] text-[#3b3b3d]">
                   <HeartPulse className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-white tracking-wide uppercase font-space">
+                  <p className="text-xs font-semibold text-[#1c1917] tracking-wide uppercase font-space">
+                    Doctor-Led
+                  </p>
+                  <p className="text-[11px] text-[#747476] font-light">
+                    Safety &amp; complications trained
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-white border border-black/[0.06] shadow-sm flex items-center gap-3 hover:border-[#3b3b3d] transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-[#efebe8] flex items-center justify-center shrink-0 border border-black/[0.06] text-[#3b3b3d]">
+                  <Award className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-[#1c1917] tracking-wide uppercase font-space">
                     Regenerative
                   </p>
-                  <p className="text-[11px] text-zinc-400 font-light">
-                    Cellular Repair Approach
+                  <p className="text-[11px] text-[#747476] font-light">
+                    DNA polynucleotide specialist
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Action CTA Row */}
-            <div className="pt-3 flex flex-col sm:flex-row items-center gap-4">
-              <Link
-                href="/about/"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-white text-[#0f0e11] hover:bg-[#c48b7e] hover:text-black font-space font-semibold text-xs uppercase tracking-[0.2em] transition-all transform hover:-translate-y-0.5 shadow-lg"
-              >
-                <span>More About Us</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-
+            {/* CTAs */}
+            <div className="flex flex-wrap items-center gap-4 pt-4">
               <a
                 href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-white/20 text-white hover:border-[#c48b7e] hover:bg-[#c48b7e]/10 font-space font-medium text-xs uppercase tracking-[0.2em] transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:text-white transition-all shadow-md transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Book Consultation</span>
+                <span>Book Consultation with Daniel</span>
+                <ArrowRight className="w-4 h-4" />
               </a>
+
+              <Link
+                href="/about/"
+                className="inline-flex items-center gap-1.5 text-xs font-space font-medium uppercase tracking-wider text-[#545358] hover:text-[#1c1917] py-2 border-b border-[#747476]/30 hover:border-[#1c1917] transition-all"
+              >
+                <span>Read Full Biography &amp; Credentials</span>
+              </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
