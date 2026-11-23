@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useSpring, useMotionValue, useTransform } from 'framer-motion';
-import { Eye, ShieldCheck, Star } from 'lucide-react';
+import { Eye, ShieldCheck, ArrowRight } from 'lucide-react';
 import { HomeContent } from '@/types/content';
 
 interface HeroProps {
@@ -18,8 +18,8 @@ export function Hero({ content }: HeroProps) {
   const mouseY = useMotionValue(0);
 
   const springConfig = { damping: 30, stiffness: 100 };
-  const tiltX = useSpring(useTransform(mouseY, [-0.5, 0.5], [5, -5]), springConfig);
-  const tiltY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-6, 6]), springConfig);
+  const tiltX = useSpring(useTransform(mouseY, [-0.5, 0.5], [4, -4]), springConfig);
+  const tiltY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-5, 5]), springConfig);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -39,118 +39,138 @@ export function Hero({ content }: HeroProps) {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full min-h-screen bg-[#141316] overflow-hidden flex flex-col justify-between pt-24 sm:pt-28 pb-8 sm:pb-12 px-4 sm:px-8 lg:px-12 text-white"
+      className="relative w-full min-h-screen bg-[#18171a] overflow-hidden flex flex-col justify-between pt-20 sm:pt-28 lg:pt-32 text-white"
     >
-      {/* Ambient atmospheric stone gray & subtle terracotta glow */}
+      {/* Rich ambient atmospheric stone gray & subtle terracotta lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[700px] bg-[#545358]/18 rounded-full blur-[190px]" />
-        <div className="absolute top-16 right-1/4 w-[500px] h-[350px] bg-[#c48b7e]/08 rounded-full blur-[160px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[750px] bg-[#545358]/25 rounded-full blur-[200px]" />
+        <div className="absolute top-20 right-1/4 w-[550px] h-[400px] bg-[#747476]/15 rounded-full blur-[170px]" />
+        <div className="absolute bottom-10 left-1/4 w-[400px] h-[300px] bg-[#c48b7e]/08 rounded-full blur-[150px]" />
       </div>
 
-      {/* TOP STATUS BAR (Under header, subtle stone gray divider) */}
-      <div className="relative z-20 flex items-center justify-between w-full max-w-7xl mx-auto pb-4 border-b border-white/[0.06]">
-        <div className="flex items-center gap-2 font-space text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#a8a5a3]">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
-          <span>King&apos;s Cross London</span>
-          <span className="text-white/20">•</span>
-          <span className="text-[#efebe8]">Doctor-Led Clinical Atelier</span>
-        </div>
-
-        <div className="hidden sm:flex items-center gap-6 font-space text-[11px] uppercase tracking-[0.2em] text-[#747476]">
-          <span className="hover:text-white transition-colors">Bespoke Facial Harmonisation</span>
-          <span className="text-white/20">•</span>
-          <span className="hover:text-white transition-colors">Polynucleotides</span>
-        </div>
-      </div>
-
-      {/* GIGANTIC ARCHITECTURAL CONDENSED TYPOGRAPHY BEHIND THE SUBJECT */}
-      <div className="absolute top-[36%] sm:top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden px-2">
+      {/* 3-ZONE EDITORIAL MAIN STAGE */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto my-auto px-4 sm:px-8 lg:px-12 py-3 sm:py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+        {/* LEFT FLANK: EDITORIAL TYPOGRAPHY WITH SMOOTH REVEAL */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-[15vw] sm:text-[16vw] font-black uppercase tracking-tight leading-none whitespace-nowrap block"
-          style={{
-            letterSpacing: '-0.03em',
-            background: 'linear-gradient(180deg, #545358 0%, #3b3b3d 50%, #1c1a19 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            filter: 'drop-shadow(0 20px 50px rgba(0,0,0,0.8))',
-          }}
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-4 flex flex-col justify-center space-y-4 sm:space-y-5 text-left z-20 max-w-md mx-auto lg:mx-0"
         >
-          DIEZ AESTHETICS
-        </motion.div>
-      </div>
-
-      {/* 3-ZONE EDITORIAL MAIN STAGE (ZERO TEXT OVER HER SKIN) */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto my-auto py-6 sm:py-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        {/* LEFT FLANK: HIGH-CONTRAST EDITORIAL TYPOGRAPHY */}
-        <div className="lg:col-span-4 flex flex-col justify-center space-y-4 text-left z-20 max-w-md">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/[0.04] text-[10px] font-space uppercase tracking-[0.25em] text-[#efebe8] w-fit">
+          <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[9px] sm:text-[10px] font-space uppercase tracking-[0.25em] text-[#efebe8] w-fit shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
-            <span>London Clinical Atelier</span>
+            <span>King&apos;s Cross Clinical Atelier</span>
           </div>
 
-          <div className="space-y-1">
-            <h1 className="font-serif text-5xl sm:text-6xl xl:text-7xl text-white font-normal leading-[1.02] tracking-tight">
+          <div className="space-y-0.5 sm:space-y-1">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="font-serif text-4xl sm:text-6xl xl:text-7xl text-white font-normal leading-[1.02] tracking-tight"
+            >
               Natural
-            </h1>
-            <div className="font-serif italic text-4xl sm:text-5xl xl:text-6xl font-light text-[#c48b7e] tracking-tight leading-[1.02]">
+            </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="font-serif italic text-3xl sm:text-5xl xl:text-6xl font-light text-[#c48b7e] tracking-tight leading-[1.02]"
+            >
               Refinement
-            </div>
+            </motion.div>
           </div>
 
-          <p className="text-xs sm:text-sm text-[#a8a5a3] font-light leading-relaxed pt-1">
-            Doctor-led facial harmonisation and regenerative skin longevity, designed to elevate your natural features with subtle, undetectable precision.
-          </p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xs sm:text-sm text-[#a8a5a3] font-light leading-relaxed pt-0.5"
+          >
+            Doctor-led facial harmonisation and regenerative skin longevity, designed to elevate your authentic features with subtle, undetectable precision.
+          </motion.p>
 
-          <div className="pt-2 flex items-center gap-3">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            className="pt-1 sm:pt-2 flex flex-wrap items-center gap-2.5 sm:gap-3"
+          >
             <a
               href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-[11px] font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-all shadow-lg"
+              className="inline-flex items-center justify-center px-5 sm:px-6 py-3 sm:py-3.5 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-[10px] sm:text-[11px] font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-all shadow-lg transform hover:-translate-y-0.5"
             >
               Book Consultation
             </a>
             <a
               href="#treatments"
-              className="inline-flex items-center justify-center px-4 py-2.5 rounded-full border border-white/15 text-[#a8a5a3] text-[11px] font-space uppercase tracking-[0.2em] hover:border-white hover:text-white transition-all"
+              className="inline-flex items-center justify-center px-4 sm:px-5 py-3 sm:py-3.5 rounded-full border border-white/15 text-[#a8a5a3] text-[10px] sm:text-[11px] font-space uppercase tracking-[0.2em] hover:border-white hover:text-white transition-all"
             >
               Treatments
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        {/* CENTERPIECE: RADIANT BEAUTY MUSE (SKIN IS 100% UNTOUCHED, ZERO LETTERS ON FACE OR CHEST) */}
-        <div className="lg:col-span-4 flex items-center justify-center relative">
+        {/* CENTERPIECE: ELEGANTLY CLOTHED COUTURE BEAUTY MUSE WITH ARCHITECTURAL TYPOGRAPHY LOCKED BEHIND HER */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.94 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-4 flex items-center justify-center relative my-2 sm:my-4 lg:my-0"
+        >
+          {/* GIGANTIC CONDENSED TYPOGRAPHY BEHIND THE MUSE - LOCKED MATHEMATICALLY TO HER SHOULDERS */}
+          <div className="absolute top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen pointer-events-none select-none z-0 text-center overflow-hidden px-2">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="font-display text-[15vw] sm:text-[16vw] font-black uppercase tracking-tight leading-none whitespace-nowrap block"
+              style={{
+                letterSpacing: '-0.03em',
+                background: 'linear-gradient(180deg, #6c6970 0%, #46444a 50%, #201f22 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                filter: 'drop-shadow(0 25px 60px rgba(0,0,0,0.85))',
+              }}
+            >
+              DIEZ AESTHETICS
+            </motion.div>
+          </div>
+
           <motion.div
             style={{
               rotateX: tiltX,
               rotateY: tiltY,
             }}
-            className="relative w-72 sm:w-88 md:w-[420px] lg:w-[460px] aspect-[3/4] mx-auto filter drop-shadow-[0_30px_70px_rgba(0,0,0,0.95)] z-10"
+            className="relative w-64 sm:w-80 md:w-[400px] lg:w-[460px] aspect-[3/4] mx-auto filter drop-shadow-[0_35px_80px_rgba(0,0,0,0.95)] z-10"
           >
             <motion.div
-              animate={{ y: [-5, 5, -5] }}
+              animate={{ y: [-4, 4, -4] }}
               transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
               className="absolute inset-0"
             >
               <Image
-                src="/assets/images/hero_terracotta_muse.webp"
-                alt="Diez Aesthetics London - Warm Natural Beauty Campaign"
+                src="/assets/images/hero_muse_rembg.webp"
+                alt="Diez Aesthetics London - Natural Refinement Beauty Campaign"
                 fill
                 unoptimized
-                sizes="(max-width: 640px) 288px, (max-width: 1024px) 420px, 460px"
+                sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 460px"
                 className="object-contain object-bottom pointer-events-none"
                 priority
               />
             </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
 
         {/* RIGHT FLANK: CLINICAL DISTINCTION DOSSIER */}
-        <div className="lg:col-span-4 hidden lg:flex flex-col justify-center space-y-4 text-right z-20 max-w-xs ml-auto">
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-4 hidden lg:flex flex-col justify-center space-y-4 text-right z-20 max-w-xs ml-auto"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-md text-[10px] uppercase font-space tracking-widest text-[#efebe8] ml-auto">
             <ShieldCheck className="w-3.5 h-3.5 text-[#747476]" />
             <span>Doctor-Led Excellence</span>
@@ -168,8 +188,8 @@ export function Hero({ content }: HeroProps) {
             </p>
           </div>
 
-          {/* Monthly Focus Glass Card in Client's Slate Gray Tone */}
-          <div className="rounded-2xl bg-[#1e1d21]/80 backdrop-blur-xl border border-white/10 p-5 text-left space-y-2 hover:border-[#545358] transition-colors shadow-2xl">
+          {/* Monthly Focus Glass Card */}
+          <div className="rounded-2xl bg-[#222025]/85 backdrop-blur-xl border border-white/10 p-5 text-left space-y-2 hover:border-[#545358] transition-colors shadow-2xl">
             <span className="text-[10px] uppercase font-space tracking-widest text-[#c48b7e] font-semibold block">
               THIS MONTH&apos;S EXCLUSIVE
             </span>
@@ -186,41 +206,29 @@ export function Hero({ content }: HeroProps) {
               <Eye className="w-3.5 h-3.5 ml-1" />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      {/* BOTTOM ROW: EDITORIAL LOCATION & SUB-INFO */}
-      <div className="relative z-20 grid grid-cols-1 md:grid-cols-12 gap-6 items-end justify-between pt-4 border-t border-white/[0.06] max-w-7xl mx-auto w-full">
-        <div className="md:col-span-6 space-y-1 text-center md:text-left">
-          <span className="text-[10px] uppercase font-space tracking-[0.25em] text-[#747476] font-semibold block">
-            LIMITED CLINICAL AVAILABILITY
-          </span>
-          <p className="text-xs text-[#a8a5a3] font-light leading-relaxed max-w-sm mx-auto md:mx-0">
-            Personalised one-to-one consultations with Clinical Director Daniel Diez.
-          </p>
-          <div className="flex items-center justify-center md:justify-start gap-3 pt-1 text-[11px] text-[#747476] font-space">
-            <span className="text-[#efebe8]">✦ Doctor-led Clinic</span>
-            <span>•</span>
-            <span>King&apos;s Cross N1 9JY</span>
+      {/* CRISP ARCHITECTURAL GROUNDING RIBBON (ZERO DANGLING TEXT / NO BLUR OVERLAY) */}
+      <div className="relative z-20 w-full border-t border-white/10 bg-[#141316]/95 backdrop-blur-md py-4 sm:py-5 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <div className="space-y-0.5">
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+              <span className="text-[10px] uppercase font-space tracking-[0.25em] text-[#efebe8] font-semibold">
+                LIMITED CLINICAL AVAILABILITY
+              </span>
+            </div>
+            <p className="text-xs text-[#a8a5a3] font-light leading-relaxed">
+              Personalised one-to-one consultations with Clinical Director Daniel Diez.
+            </p>
           </div>
-        </div>
 
-        {/* Mobile / Tablet Quick View */}
-        <div className="md:col-span-6 lg:hidden flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a
-            href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-xs font-space uppercase tracking-widest font-semibold text-center hover:bg-[#c48b7e] transition-colors"
-          >
-            Book Consultation
-          </a>
-          <a
-            href="#treatments"
-            className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/15 text-[#a8a5a3] text-xs font-space uppercase tracking-widest text-center hover:text-white transition-colors"
-          >
-            View Treatments
-          </a>
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 text-xs text-[#a8a5a3] font-space">
+            <span className="text-[#efebe8] font-medium">Doctor-led Clinic</span>
+            <span className="text-white/20">•</span>
+            <span>260 Pentonville Road, King&apos;s Cross N1 9JY</span>
+          </div>
         </div>
       </div>
     </section>
