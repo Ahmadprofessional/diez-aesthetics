@@ -24,12 +24,12 @@ export default function AboutPage() {
       <section className="py-20 text-center border-b border-[#747476]/15 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#747476]/20 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-semibold text-[#545358] shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>King&apos;s Cross Clinical Atelier</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-[#1c1a19] tracking-tight leading-[1.08]">
-            Welcoming <span className="italic text-[#c48b7e]">Diez Aesthetics</span>
+            Welcoming <span className="italic text-[#545358]">Diez Aesthetics</span>
           </h1>
 
           <p className="text-base sm:text-lg text-[#57534e] font-light max-w-2xl mx-auto leading-relaxed">
@@ -61,11 +61,11 @@ export default function AboutPage() {
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="text-[#1c1a19] text-base font-serif italic">Daniel Diez</p>
-                          <p className="text-[#c48b7e] text-xs font-space uppercase tracking-wider font-semibold">
+                          <p className="text-[#545358] text-xs font-space uppercase tracking-wider font-semibold">
                             Clinical Director &amp; Injector
                           </p>
                         </div>
-                        <CheckCircle2 className="w-5 h-5 text-[#c48b7e]" />
+                        <CheckCircle2 className="w-5 h-5 text-[#545358]" />
                       </div>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
                 {/* Floating Credential Tag */}
                 <div className="hidden sm:flex absolute -bottom-4 -right-4 items-center gap-2 px-4 py-2 rounded-2xl bg-[#3b3b3d] text-white text-xs shadow-xl border border-white/20">
-                  <span className="w-2 h-2 rounded-full bg-[#c48b7e] animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-[#545358] animate-pulse" />
                   <span className="font-space font-medium tracking-wide">3+ Years Injecting Experience</span>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </span>
                 <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#1c1a19] tracking-tight leading-tight">
                   Natural. Balanced. <br />
-                  <span className="italic text-[#c48b7e]">Beautifully You.</span>
+                  <span className="italic text-[#545358]">Beautifully You.</span>
                 </h2>
               </div>
 
@@ -116,7 +116,7 @@ export default function AboutPage() {
 
                 <div className="p-5 rounded-2xl bg-white border border-[#747476]/15 space-y-2 shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-9 h-9 rounded-xl bg-[#efebe8] flex items-center justify-center text-[#545358]">
-                    <ShieldCheck className="w-4 h-4 text-[#c48b7e]" />
+                    <ShieldCheck className="w-4 h-4 text-[#545358]" />
                   </div>
                   <h3 className="font-serif text-base font-normal text-[#1c1a19]">
                     Doctor-Led Care
@@ -147,7 +147,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#3b3b3d] hover:bg-[#1c1a19] text-white font-space text-xs uppercase tracking-[0.2em] font-semibold transition-all shadow-md transform hover:-translate-y-0.5"
                 >
-                  <Calendar className="w-4 h-4 text-[#c48b7e]" />
+                  <Calendar className="w-4 h-4 text-[#545358]" />
                   <span>Book Private Consultation</span>
                 </a>
 

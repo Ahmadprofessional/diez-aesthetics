@@ -54,7 +54,7 @@ export function ContactForm() {
     return (
       <div className="rounded-[24px] bg-white border border-[#747476]/20 p-8 sm:p-12 text-center space-y-4 shadow-sm">
         <div className="w-14 h-14 rounded-full bg-[#efebe8] border border-[#747476]/25 flex items-center justify-center text-[#545358] mx-auto">
-          <CheckCircle2 className="w-7 h-7 text-[#c48b7e]" />
+          <CheckCircle2 className="w-7 h-7 text-[#545358]" />
         </div>
         <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#1c1917]">
           Thank You for Reaching Out
@@ -75,7 +75,7 @@ export function ContactForm() {
               honeypot: '',
             });
           }}
-          className="text-xs uppercase font-space tracking-wider text-[#c48b7e] font-semibold underline hover:text-black pt-2"
+          className="text-xs uppercase font-space tracking-wider text-[#545358] font-semibold underline hover:text-black pt-2"
         >
           Send Another Message
         </button>
@@ -112,14 +112,14 @@ export function ContactForm() {
       {/* Name */}
       <div className="space-y-1.5">
         <label className="text-xs uppercase tracking-wider text-[#44403c] font-medium font-mono">
-          Full Name <span className="text-[#8c6b2d]">*</span>
+          Full Name <span className="text-[#3b3b3d]">*</span>
         </label>
         <input
           type="text"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder="e.g. Sarah Jenkins"
-          className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#8c6b2d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
+          className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#3b3b3d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
         />
         {errors.name && <p className="text-xs text-rose-500">{errors.name}</p>}
       </div>
@@ -128,28 +128,28 @@ export function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="space-y-1.5">
           <label className="text-xs uppercase tracking-wider text-[#44403c] font-medium font-mono">
-            Email Address <span className="text-[#8c6b2d]">*</span>
+            Email Address <span className="text-[#3b3b3d]">*</span>
           </label>
           <input
             type="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="name@example.com"
-            className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#8c6b2d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
+            className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#3b3b3d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
           />
           {errors.email && <p className="text-xs text-rose-500">{errors.email}</p>}
         </div>
 
         <div className="space-y-1.5">
           <label className="text-xs uppercase tracking-wider text-[#44403c] font-medium font-mono">
-            Phone Number <span className="text-[#8c6b2d]">*</span>
+            Phone Number <span className="text-[#3b3b3d]">*</span>
           </label>
           <input
             type="tel"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="+44 7123 456789"
-            className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#8c6b2d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
+            className="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-black/10 text-[#1c1917] text-sm focus:border-[#3b3b3d] focus:bg-white focus:outline-none transition-all placeholder:text-[#a8a29e]"
           />
           {errors.phone && <p className="text-xs text-rose-500">{errors.phone}</p>}
         </div>
@@ -163,7 +163,7 @@ export function ContactForm() {
         <select
           value={formData.treatment}
           onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
-          className="w-full px-4 py-3 rounded-xl bg-[#efebe8] border border-[#747476]/20 text-[#1c1a19] text-sm focus:border-[#c48b7e] focus:bg-white focus:outline-none transition-all"
+          className="w-full px-4 py-3 rounded-xl bg-[#efebe8] border border-[#747476]/20 text-[#1c1a19] text-sm focus:border-[#545358] focus:bg-white focus:outline-none transition-all"
         >
           <option value="Anti-Wrinkle Injections">Anti-Wrinkle Injections</option>
           <option value="Dermal & Lip Fillers">Dermal &amp; Lip Fillers</option>
@@ -178,14 +178,14 @@ export function ContactForm() {
       {/* Message */}
       <div className="space-y-1.5">
         <label className="text-xs uppercase tracking-wider text-[#545358] font-medium font-space">
-          How can we help you? <span className="text-[#c48b7e]">*</span>
+          How can we help you? <span className="text-[#545358]">*</span>
         </label>
         <textarea
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder="Tell us about your aesthetic goals or any questions you have..."
-          className="w-full px-4 py-3 rounded-xl bg-[#efebe8] border border-[#747476]/20 text-[#1c1a19] text-sm focus:border-[#c48b7e] focus:bg-white focus:outline-none transition-all resize-none placeholder:text-[#a8a5a3]"
+          className="w-full px-4 py-3 rounded-xl bg-[#efebe8] border border-[#747476]/20 text-[#1c1a19] text-sm focus:border-[#545358] focus:bg-white focus:outline-none transition-all resize-none placeholder:text-[#a8a5a3]"
         />
         {errors.message && <p className="text-xs text-rose-500">{errors.message}</p>}
       </div>
@@ -194,7 +194,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-4 px-6 rounded-full bg-[#3b3b3d] hover:bg-[#c48b7e] text-white text-xs font-space uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-md disabled:opacity-50"
+        className="w-full py-4 px-6 rounded-full bg-[#3b3b3d] hover:bg-[#545358] text-white text-xs font-space uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-md disabled:opacity-50"
       >
         <Send className="w-4 h-4 text-[#efebe8]" />
         <span>{isSubmitting ? 'Sending...' : 'Send Consultation Inquiry'}</span>

@@ -15,7 +15,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
       {/* Background ambient cashmere warmth */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-[#e8e4e0]/60 rounded-full blur-[160px]" />
-        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#c48b7e]/08 rounded-full blur-[140px]" />
+        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#545358]/08 rounded-full blur-[140px]" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -28,12 +28,12 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
           className="max-w-3xl mx-auto text-center space-y-3 mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-[#e8e4e0] text-[#545358] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>02 / CLINICAL SANCTUARY</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight">
-            Craft Over <span className="italic text-[#c48b7e] font-normal">Volume</span>
+            Craft Over <span className="italic text-[#545358] font-normal">Volume</span>
           </h2>
           <p className="font-space text-xs text-[#747476] uppercase tracking-[0.2em] pt-1">
             Bespoke Regenerative Aesthetics • Doctor-led Care
@@ -81,7 +81,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
             <div className="space-y-0.5 sm:space-y-1">
               <div className="font-serif text-2xl sm:text-4xl md:text-5xl font-light text-[#1c1917] tracking-tight flex items-center justify-center md:justify-start gap-1">
                 <span>5.0</span>
-                <span className="text-[#c48b7e] text-xl sm:text-3xl">★</span>
+                <span className="text-[#eab308] text-xl sm:text-3xl">★</span>
               </div>
               <p className="text-[10px] sm:text-xs uppercase font-space tracking-wider text-[#3b3b3d] font-semibold leading-tight">
                 Google Verified

@@ -10,7 +10,8 @@
   --color-stone-mineral: #747476;
   --color-slate-deep: #545358;
   --color-slate-dark: #3b3b3d;
-  --color-terracotta: #c48b7e;
+  --color-accent: #3b3b3d;
+  --color-slate-accent: #3b3b3d;
 }
 
 @layer base {
@@ -34,22 +35,22 @@
   }
 
   ::selection {
-    background-color: #c48b7e;
+    background-color: #3b3b3d;
     color: #ffffff;
   }
 }
 
 /* Warm metallic gold text gradient */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #b89047 0%, #8c6b2d 100%);
+  background: linear-gradient(135deg, #1c1917 0%, #545358 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Delicate subtle border glow */
 .gold-glow-border {
-  border: 1px solid rgba(184, 144, 71, 0.35);
-  box-shadow: 0 4px 20px rgba(184, 144, 71, 0.1);
+  border: 1px solid rgba(84, 83, 88, 0.35);
+  box-shadow: 0 4px 20px rgba(84, 83, 88, 0.08);
 }
 
 /* Luxury Continuous Marquee Animation */
@@ -74,7 +75,7 @@
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 35s linear infinite;
+  animation: marquee 65s linear infinite;
   will-change: transform;
 }
 
@@ -85,7 +86,7 @@
 .animate-marquee-reverse {
   display: flex;
   width: max-content;
-  animation: marquee-reverse 35s linear infinite;
+  animation: marquee-reverse 65s linear infinite;
   will-change: transform;
 }
 

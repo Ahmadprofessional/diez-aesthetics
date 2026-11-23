@@ -92,7 +92,7 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                           key={aIdx}
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-light bg-[#efebe8] border border-[#747476]/15 text-[#1c1a19]"
                         >
-                          <CheckCircle className="w-3.5 h-3.5 text-[#c48b7e]" />
+                          <CheckCircle className="w-3.5 h-3.5 text-[#545358]" />
                           <span>{area}</span>
                         </span>
                       ))}
@@ -104,9 +104,9 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                       href={service.cta.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#3b3b3d] hover:bg-[#c48b7e] text-white text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-sm"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#3b3b3d] hover:bg-[#545358] text-white text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-sm"
                     >
-                      <Calendar className="w-4 h-4 text-[#c48b7e]" />
+                      <Calendar className="w-4 h-4 text-[#545358]" />
                       <span>{service.cta.label}</span>
                     </a>
 
@@ -115,7 +115,7 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                       className="inline-flex items-center gap-1.5 text-xs font-space uppercase tracking-wider font-semibold text-[#545358] hover:text-[#1c1a19] transition-colors"
                     >
                       <span>View Pricing &amp; Packages</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-[#c48b7e]" />
+                      <ArrowRight className="w-3.5 h-3.5 text-[#545358]" />
                     </a>
                   </div>
                 </motion.div>

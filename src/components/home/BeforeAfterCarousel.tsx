@@ -172,7 +172,7 @@ export function BeforeAfterCarousel() {
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[700px] h-[600px] bg-[#ded8d2]/60 rounded-full blur-[180px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[500px] bg-[#c48b7e]/08 rounded-full blur-[170px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[500px] bg-[#545358]/08 rounded-full blur-[170px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -186,12 +186,12 @@ export function BeforeAfterCarousel() {
         >
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
               <span>05 / CLINICAL PORTFOLIO</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-tight">
-              Before &amp; After <span className="italic text-[#c48b7e] font-normal">Transformations</span>
+              Before &amp; After <span className="italic text-[#545358] font-normal">Transformations</span>
             </h2>
 
             <p className="text-sm sm:text-base text-[#545358] font-light leading-relaxed">
@@ -315,11 +315,11 @@ export function BeforeAfterCarousel() {
                 <div className="space-y-6">
                   {/* Case Kicker & Verified Badge */}
                   <div className="flex items-center justify-between pb-3 border-b border-black/[0.08]">
-                    <span className="text-[11px] font-space uppercase tracking-[0.2em] text-[#c48b7e] font-semibold">
+                    <span className="text-[11px] font-space uppercase tracking-[0.2em] text-[#545358] font-semibold">
                       CASE 0{activeCase.id} / {activeCase.category}
                     </span>
                     <div className="flex items-center gap-1.5 text-[11px] text-[#545358] font-space font-medium">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e] animate-pulse" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#545358] animate-pulse" />
                       <span>Verified Patient</span>
                     </div>
                   </div>
@@ -401,7 +401,7 @@ export function BeforeAfterCarousel() {
                     href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] font-space text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:text-white transition-all transform hover:-translate-y-0.5 shadow-md"
+                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] font-space text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#545358] hover:text-white transition-all transform hover:-translate-y-0.5 shadow-md"
                   >
                     <span>Book Similar Treatment</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -449,7 +449,7 @@ export function BeforeAfterCarousel() {
                       0{caseItem.id}
                     </div>
                     {isSelected && (
-                      <div className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[#c48b7e] ring-2 ring-white" />
+                      <div className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[#545358] ring-2 ring-white" />
                     )}
                   </div>
 
@@ -471,7 +471,7 @@ export function BeforeAfterCarousel() {
         <div className="mt-12 text-center">
           <Link
             href="/gallery/"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] hover:bg-[#c48b7e] hover:text-white text-xs uppercase font-space tracking-[0.2em] font-semibold transition-all shadow-md transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] hover:bg-[#545358] hover:text-white text-xs uppercase font-space tracking-[0.2em] font-semibold transition-all shadow-md transform hover:-translate-y-0.5"
           >
             <span>Explore Complete Patient Gallery</span>
             <ArrowRight className="w-3.5 h-3.5" />

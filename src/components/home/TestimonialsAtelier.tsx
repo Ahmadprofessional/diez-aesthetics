@@ -86,9 +86,9 @@ function ReviewCard({ review }: { review: ReviewItem }) {
       <div className="space-y-3">
         <div className="flex items-center justify-between pb-0.5">
           {/* 5 Stars */}
-          <div className="flex items-center gap-1 text-[#c48b7e]">
+          <div className="flex items-center gap-1 text-[#eab308]">
             {[...Array(review.rating)].map((_, i) => (
-              <Star key={i} className="w-3.5 h-3.5 fill-[#c48b7e] text-[#c48b7e]" />
+              <Star key={i} className="w-3.5 h-3.5 fill-[#eab308] text-[#eab308]" />
             ))}
           </div>
 
@@ -132,7 +132,7 @@ function ReviewCard({ review }: { review: ReviewItem }) {
         {/* Rating Pill */}
         <div className="text-[11px] font-space text-[#747476] flex items-center gap-1 shrink-0 bg-[#efebe8]/80 px-2 py-0.5 rounded-full border border-black/[0.04]">
           <span className="font-semibold text-[#1c1917]">5.0</span>
-          <span className="text-[#c48b7e]">★</span>
+          <span className="text-[#eab308]">★</span>
         </div>
       </div>
     </div>
@@ -159,22 +159,22 @@ export function TestimonialsAtelier() {
           className="text-center space-y-4 mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>07 / PATIENT EXPERIENCES</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-tight">
             Confidence Through <br />
-            <span className="italic text-[#c48b7e] font-normal">Thoughtful Refinement</span>
+            <span className="italic text-[#545358] font-normal">Thoughtful Refinement</span>
           </h2>
 
           {/* Social Proof Badge */}
           <div className="flex items-center justify-center gap-3 pt-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-black/[0.08] shadow-sm text-xs font-space">
               <span className="font-semibold text-[#1c1917]">EXCELLENT</span>
-              <div className="flex items-center text-[#c48b7e]">
+              <div className="flex items-center text-[#eab308]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-[#c48b7e]" />
+                  <Star key={i} className="w-3 h-3 fill-[#eab308] text-[#eab308]" />
                 ))}
               </div>
               <span className="text-[#747476]">128 reviews on Google</span>
@@ -206,7 +206,7 @@ export function TestimonialsAtelier() {
             href="https://maps.google.com/?q=Diez+Anti-Aging+Aesthetics+London"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-wider font-semibold hover:bg-[#c48b7e] hover:text-white transition-all shadow-md shrink-0"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-wider font-semibold hover:bg-[#545358] hover:text-white transition-all shadow-md shrink-0"
           >
             <span>Review us on Google</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

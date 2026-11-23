@@ -46,13 +46,13 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
           transition={{ duration: 0.7 }}
           className="text-center max-w-3xl mx-auto space-y-3 mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-medium tracking-[0.25em] uppercase bg-black/[0.04] text-[#8c6b2d] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-medium tracking-[0.25em] uppercase bg-black/[0.04] text-[#3b3b3d] border border-black/[0.06]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>REAL RESULTS</span>
           </div>
 
           <h2 className="font-sans text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight leading-tight">
-            Before &amp; After <span className="font-serif italic font-normal text-[#8c6b2d]">Transformations</span>
+            Before &amp; After <span className="font-serif italic font-normal text-[#3b3b3d]">Transformations</span>
           </h2>
           <p className="text-sm sm:text-base text-[#57534e] font-light max-w-xl mx-auto">
             Subtle, balanced enhancements showcasing natural regenerative results. Unretouched clinical documentation.
@@ -114,7 +114,7 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
                       className="object-cover"
                       priority
                     />
-                    <div className="absolute top-4 right-4 px-3.5 py-1 rounded-full bg-[#8c6b2d] text-white text-[11px] uppercase tracking-wider font-semibold shadow-sm">
+                    <div className="absolute top-4 right-4 px-3.5 py-1 rounded-full bg-[#3b3b3d] text-white text-[11px] uppercase tracking-wider font-semibold shadow-sm">
                       After
                     </div>
                   </div>
@@ -122,13 +122,13 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
                 handle={
                   <ReactCompareSliderHandle
                     buttonStyle={{
-                      backgroundColor: '#8c6b2d',
+                      backgroundColor: '#3b3b3d',
                       border: '2px solid #ffffff',
                       color: '#ffffff',
                       boxShadow: '0 4px 15px rgba(0,0,0,0.25)',
                     }}
                     linesStyle={{
-                      color: '#8c6b2d',
+                      color: '#3b3b3d',
                       width: 2,
                     }}
                   />
@@ -156,7 +156,7 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
         <div className="mt-12 text-center">
           <a
             href="/gallery/"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-black/10 bg-white text-xs uppercase tracking-[0.2em] font-semibold text-[#8c6b2d] hover:bg-[#FAF8F5] transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-black/10 bg-white text-xs uppercase tracking-[0.2em] font-semibold text-[#3b3b3d] hover:bg-[#FAF8F5] transition-colors shadow-sm"
           >
             <span>View Full Clinical Gallery (14 Cases)</span>
             <ArrowRight className="w-4 h-4" />

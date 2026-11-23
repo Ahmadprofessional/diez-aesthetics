@@ -23,12 +23,12 @@ export default function TreatmentsPage() {
       <section className="py-20 text-center border-b border-[#747476]/15">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#747476]/20 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-semibold text-[#545358] shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>TREATMENT PROTOCOLS</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl font-normal text-[#1c1a19] tracking-tight leading-tight">
-            Comprehensive Facial Harmonisation &amp; <span className="italic text-[#c48b7e]">Aesthetic Care</span>
+            Comprehensive Facial Harmonisation &amp; <span className="italic text-[#545358]">Aesthetic Care</span>
           </h1>
 
           <p className="text-base sm:text-lg text-[#57534e] font-light max-w-2xl mx-auto leading-relaxed">

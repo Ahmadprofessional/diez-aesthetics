@@ -47,7 +47,7 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
               <span className="font-serif text-lg font-light tracking-[0.2em] text-white">
                 DIEZ
               </span>
-              <span className="text-[8px] tracking-[0.3em] text-[#c48b7e] uppercase">
+              <span className="text-[8px] tracking-[0.3em] text-[#545358] uppercase">
                 AESTHETICS
               </span>
             </div>
@@ -72,11 +72,11 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
                   href={item.href}
                   onClick={onClose}
                   className={`text-sm uppercase tracking-[0.2em] font-medium py-2 transition-colors flex items-center justify-between ${
-                    isActive ? 'text-[#c48b7e] font-semibold' : 'text-zinc-300 hover:text-white'
+                    isActive ? 'text-[#545358] font-semibold' : 'text-zinc-300 hover:text-white'
                   }`}
                 >
                   <span>{item.label}</span>
-                  {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />}
+                  {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />}
                 </Link>
               );
             })}
@@ -89,7 +89,7 @@ export function MobileDrawer({ isOpen, onClose, config }: MobileDrawerProps) {
             href={config.booking_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-2 py-3 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-xs uppercase tracking-wider font-semibold shadow-lg hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-colors"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-full bg-[#3b3b3d] border border-white/20 text-[#efebe8] text-xs uppercase tracking-wider font-semibold shadow-lg hover:bg-[#545358] hover:border-[#545358] hover:text-white transition-colors"
           >
             <Calendar className="w-4 h-4" />
             <span>Book Consultation</span>

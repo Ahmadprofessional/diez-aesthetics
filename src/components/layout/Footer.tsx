@@ -13,231 +13,217 @@ interface FooterProps {
 
 export function Footer({ config }: FooterProps) {
   return (
-    <footer className="bg-[#efebe8] text-[#1c1917] relative overflow-hidden border-t border-black/[0.08] pt-16 sm:pt-20 pb-28 md:pb-12">
-      {/* Background ambient cashmere warmth */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-[#e4deda] rounded-full blur-[160px] opacity-70" />
-      </div>
+    <footer className="relative bg-[#585b63] text-white overflow-hidden border-t border-white/10 pt-10 sm:pt-14 pb-10 sm:pb-12">
+      {/* Authentic Gray Marble Texture Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: `url('/assets/images/diez-gray-marble-bg.webp')` }}
+      />
+      {/* Ambient Depth Tint */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#4e5158]/50 via-transparent to-[#3f4248]/70 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Top 4-Column Minimalist Luxury Directory */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16 pb-16">
-          {/* Column 1: Diez Aesthetics Navigation */}
+        {/* Top 4-Column Directory matching Diez Aesthetics Reference */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pb-8">
+          
+          {/* Column 1: Brand & Clinical Philosophy */}
+          <div className="space-y-4 md:col-span-1">
+            <div className="relative h-11 w-36">
+              <Image
+                src="/assets/images/logo-diez-aesthetics.png"
+                alt="Diez Aesthetics London"
+                fill
+                unoptimized
+                className="object-contain object-left brightness-100"
+              />
+            </div>
+            <p className="text-xs sm:text-sm font-light text-white/85 leading-relaxed pt-1">
+              Advanced aesthetic and regenerative treatments designed to enhance your natural features and elevate your confidence with subtle, balanced results.
+            </p>
+            <div className="pt-2 flex items-center gap-2 text-xs text-white/70">
+              <ShieldCheck className="w-4 h-4 text-white/90 shrink-0" />
+              <span>Doctor-Led &amp; Complications Trained</span>
+            </div>
+          </div>
+
+          {/* Column 2: Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-serif text-base sm:text-lg font-normal text-[#1c1917]">
-              Diez Atelier
-            </h3>
-            <ul className="space-y-3 text-xs sm:text-sm font-light text-[#545358]">
+            <div>
+              <h3 className="font-space text-xs sm:text-sm font-semibold tracking-widest uppercase text-white">
+                Quick Links
+              </h3>
+              <div className="w-8 h-[2px] bg-white/70 mt-2 mb-4" />
+            </div>
+            <ul className="space-y-2.5 text-xs sm:text-sm font-light text-white/80">
               <li>
-                <Link href="/" className="hover:text-[#c48b7e] transition-colors">
+                <Link href="/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
                   Home Atelier
                 </Link>
               </li>
               <li>
-                <Link href="/about/" className="hover:text-[#c48b7e] transition-colors">
+                <Link href="/about/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
                   About Daniel
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors">
-                  Clinical Protocols
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery/" className="hover:text-[#c48b7e] transition-colors">
+                <Link href="/gallery/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
                   Patient Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/prices/" className="hover:text-[#c48b7e] transition-colors">
-                  Treatment Menu
+                <Link href="/prices/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
+                  Treatment Menu &amp; Prices
                 </Link>
               </li>
               <li>
-                <Link href="/contact/" className="hover:text-[#c48b7e] transition-colors">
+                <Link href="/contact/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
                   Contact Clinic
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 2: Clinical Treatments */}
-          <div className="space-y-4">
-            <h3 className="font-serif text-base sm:text-lg font-normal text-[#1c1917]">
-              Treatments
-            </h3>
-            <ul className="space-y-3 text-xs sm:text-sm font-light text-[#545358]">
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Anti-Wrinkle Injections</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Dermal &amp; Lip Fillers</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Polynucleotides (Eye &amp; Face)</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Skin Boosters (Profhilo)</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Medical Microneedling</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatments/" className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group">
-                  <span>Bespoke Harmonisation</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Clinic & Practice */}
-          <div className="space-y-4">
-            <h3 className="font-serif text-base sm:text-lg font-normal text-[#1c1917]">
-              Clinic &amp; Practice
-            </h3>
-            <ul className="space-y-3 text-xs sm:text-sm font-light text-[#545358]">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#747476] shrink-0 mt-0.5" />
-                <span>260 Pentonville Road, London N1 9JY</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#747476] shrink-0" />
-                <span>Mon–Fri: 10:00–19:00, Sat: 10:00–18:00</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#3b3b3d] shrink-0" />
-                <span>Doctor &amp; Complications Trained</span>
-              </li>
-              <li className="pt-2 text-xs text-[#747476]">
-                <span>King&apos;s Cross St. Pancras (4 mins walk)</span>
-              </li>
-              <li className="text-xs text-[#747476]">
-                <span>Appointments strictly by advance booking</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Connect & Booking */}
-          <div className="space-y-4">
-            <h3 className="font-serif text-base sm:text-lg font-normal text-[#1c1917]">
-              Connect &amp; Book
-            </h3>
-            <ul className="space-y-3 text-xs sm:text-sm font-light text-[#545358]">
-              <li>
-                <a
-                  href={config.booking_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group"
-                >
-                  <span className="font-medium text-[#1c1917]">FacesConsent Booking</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href={config.whatsapp_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group"
-                >
-                  <span className="font-medium text-[#3b3b3d] flex items-center gap-1.5">
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-[#3b3b3d]" />
-                    <span>WhatsApp Clinician</span>
-                  </span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
-                </a>
               </li>
               <li>
                 <a
                   href="https://maps.google.com/?q=Diez+Anti-Aging+Aesthetics+London"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#c48b7e] transition-colors flex items-center justify-between group"
+                  className="hover:text-white hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5"
                 >
-                  <span className="flex items-center gap-1.5">
-                    <span>Google 5.0 ★ Reviews</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#3b3b3d] text-[#efebe8] font-semibold">128</span>
-                  </span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:text-[#c48b7e] transition-opacity" />
+                  <span>Google 5.0 <span className="text-[#eab308]">★</span> Reviews (128)</span>
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Treatments */}
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-space text-xs sm:text-sm font-semibold tracking-widest uppercase text-white">
+                Treatments
+              </h3>
+              <div className="w-8 h-[2px] bg-white/70 mt-2 mb-4" />
+            </div>
+            <ul className="space-y-2.5 text-xs sm:text-sm font-light text-white/80">
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Lip Fillers &amp; Definition</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Anti-Wrinkle Injections</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Polynucleotides (Eye &amp; Face)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Medical Microneedling</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Skin Boosters (Profhilo)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                  <span>Bespoke Harmonisation</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact & Location */}
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-space text-xs sm:text-sm font-semibold tracking-widest uppercase text-white">
+                Contact
+              </h3>
+              <div className="w-8 h-[2px] bg-white/70 mt-2 mb-4" />
+            </div>
+            <ul className="space-y-3 text-xs sm:text-sm font-light text-white/80">
               <li>
                 <a
                   href={`tel:${config.phone.replace(/\s+/g, '')}`}
-                  className="hover:text-[#c48b7e] transition-colors flex items-center gap-1.5"
+                  className="hover:text-white transition-colors flex items-center gap-2 group"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#747476]" />
-                  <span>{config.phone}</span>
+                  <Phone className="w-4 h-4 text-white/90 shrink-0" />
+                  <span className="font-medium text-white">{config.phone}</span>
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${config.email}`}
-                  className="hover:text-[#c48b7e] transition-colors flex items-center gap-1.5"
+                  className="hover:text-white transition-colors flex items-center gap-2 group"
                 >
-                  <Mail className="w-3.5 h-3.5 text-[#747476]" />
+                  <Mail className="w-4 h-4 text-white/90 shrink-0" />
                   <span>{config.email}</span>
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-white/90 shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-white block font-medium">London, UK</span>
+                  <span className="text-white/70 text-xs">260 Pentonville Road, N1 9JY (King&apos;s Cross)</span>
+                </div>
+              </li>
+              <li className="flex items-center gap-2 text-white/70 text-xs pt-1">
+                <Clock className="w-3.5 h-3.5 text-white/80 shrink-0" />
+                <span>Mon–Fri: 10:00–19:00, Sat: 10:00–18:00</span>
+              </li>
+              <li className="pt-2">
+                <a
+                  href={config.booking_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/25 text-xs text-white transition-colors"
+                >
+                  <span>Book Online (FacesConsent)</span>
+                  <ArrowUpRight className="w-3 h-3" />
                 </a>
               </li>
             </ul>
           </div>
+
         </div>
 
-        {/* Divider hairline matching reference */}
-        <div className="border-t border-black/[0.08] pt-8 pb-4 flex flex-col sm:flex-row items-center justify-between text-xs text-[#747476] gap-4">
+        {/* Divider hairline */}
+        <div className="border-t border-white/15 pt-5 pb-3 flex flex-col sm:flex-row items-center justify-between text-xs text-white/70 gap-3">
           <div className="flex items-center gap-3">
-            <div className="relative h-9 w-28">
-              <Image
-                src="/assets/images/logo-diez-aesthetics-dark.png"
-                alt="Diez Aesthetics London"
-                fill
-                unoptimized
-                className="object-contain object-left"
-              />
-            </div>
-            <span className="text-black/20">•</span>
-            <span className="font-space text-[11px] uppercase tracking-wider text-[#545358]">
-              Doctor-led Aesthetics Atelier
+            <span className="font-space text-[11px] uppercase tracking-wider text-white/80">
+              Doctor-Led Aesthetics Atelier London
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-[11px] font-space">
+          <div className="flex flex-wrap items-center gap-3 text-[11px] font-space text-white/70">
             <span>© 2026 Diez Aesthetics. All rights reserved.</span>
-            <span className="text-black/20">•</span>
+            <span className="text-white/30">•</span>
             <span>260 Pentonville Road, King&apos;s Cross London</span>
           </div>
         </div>
 
-        {/* GIGANTIC DEEP-ENGRAVED STONE WORDMARK AT BOTTOM */}
-        <div className="w-full overflow-hidden select-none pointer-events-none pt-6 sm:pt-10">
+        {/* FULL, COMPACT DIEZ AESTHETICS WORDMARK (TIGHT & NEVER CUT OFF) */}
+        <div className="w-full select-none pointer-events-none pt-4 sm:pt-6 pb-1">
           <div
-            className="font-serif text-[9vw] sm:text-[7.5vw] md:text-[7.8vw] leading-none font-normal tracking-[0.05em] text-center -mb-2 sm:-mb-6 uppercase whitespace-nowrap"
+            className="font-serif text-[4.8vw] sm:text-[4.2vw] md:text-[3.8vw] lg:text-[3.4vw] leading-tight font-normal tracking-[0.08em] text-center uppercase whitespace-nowrap"
             style={{
-              color: 'rgba(59, 59, 61, 0.35)',
-              textShadow: '0 2px 1px rgba(255, 255, 255, 0.9), 0 -2px 2px rgba(0, 0, 0, 0.4)',
-              filter: 'drop-shadow(0 1px 1px rgba(255, 255, 255, 0.6))',
+              color: 'rgba(255, 255, 255, 0.25)',
+              textShadow: '0 1px 3px rgba(0, 0, 0, 0.45), 0 -1px 1px rgba(255, 255, 255, 0.3)',
+              letterSpacing: '0.1em',
             }}
           >
             DIEZ AESTHETICS
           </div>
         </div>
+
       </div>
     </footer>
   );

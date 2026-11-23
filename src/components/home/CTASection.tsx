@@ -44,14 +44,14 @@ export function CTASection({ config }: CTASectionProps) {
           </div>
 
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-white/[0.08] text-[#c48b7e] border border-white/15">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-white/[0.08] text-white/90 border border-white/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-white" />
               <span>08 / PRIVATE CONSULTATION</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
               Ready to Begin Your <br />
-              <span className="italic text-[#c48b7e] font-normal">Aesthetic Journey?</span>
+              <span className="italic text-[#dcd8d4] font-normal">Aesthetic Journey?</span>
             </h2>
 
             <p className="text-zinc-300 text-sm sm:text-base font-light max-w-xl mx-auto leading-relaxed pt-1">
@@ -65,7 +65,7 @@ export function CTASection({ config }: CTASectionProps) {
               href={config.booking_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#c48b7e] text-white font-space text-xs uppercase tracking-[0.2em] font-semibold hover:bg-white hover:text-[#1c1917] transition-all transform hover:-translate-y-0.5 shadow-lg"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-white text-[#1c1917] font-space text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#efebe8] transition-all transform hover:-translate-y-0.5 shadow-lg"
             >
               <Calendar className="w-4 h-4" />
               <span>Book Consultation Slot</span>
@@ -75,9 +75,9 @@ export function CTASection({ config }: CTASectionProps) {
               href={config.whatsapp_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full border border-white/20 bg-white/[0.05] text-[#efebe8] font-space text-xs uppercase tracking-[0.2em] font-medium hover:border-white hover:bg-white/10 hover:text-white transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full border border-white/25 bg-white/[0.08] text-white font-space text-xs uppercase tracking-[0.2em] font-medium hover:border-white hover:bg-white/15 transition-all"
             >
-              <WhatsAppIcon className="w-4 h-4 text-[#efebe8]" />
+              <WhatsAppIcon className="w-4 h-4 text-white" />
               <span>Message on WhatsApp</span>
             </a>
           </div>
@@ -85,7 +85,7 @@ export function CTASection({ config }: CTASectionProps) {
           {/* Location & Transit Footer */}
           <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-300 font-space">
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#c48b7e]" />
+              <MapPin className="w-3.5 h-3.5 text-white/70" />
               <span>260 Pentonville Road, King&apos;s Cross N1 9JY</span>
             </div>
             <div className="flex items-center gap-2 text-zinc-400">

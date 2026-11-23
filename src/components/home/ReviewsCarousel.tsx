@@ -30,11 +30,11 @@ export function ReviewsCarousel({ content }: ReviewsCarouselProps) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div className="space-y-3">
-            <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#8c6b2d]">
+            <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#3b3b3d]">
               {content.label}
             </span>
             <h2 className="font-sans text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight leading-tight">
-              Real Stories. <span className="font-serif italic font-normal text-[#8c6b2d]">Real Confidence</span>
+              Real Stories. <span className="font-serif italic font-normal text-[#3b3b3d]">Real Confidence</span>
             </h2>
             <div className="flex items-center gap-3 pt-1">
               <div className="flex items-center text-amber-500">
@@ -83,7 +83,7 @@ export function ReviewsCarousel({ content }: ReviewsCarouselProps) {
                           <Star key={i} className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
                         ))}
                       </div>
-                      <Quote className="w-5 h-5 text-[#8c6b2d]/30" />
+                      <Quote className="w-5 h-5 text-[#3b3b3d]/30" />
                     </div>
 
                     {/* Review Body */}

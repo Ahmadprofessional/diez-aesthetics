@@ -158,7 +158,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3b3b3d] text-[#efebe8] border border-white/20 shadow-[0_12px_35px_rgba(0,0,0,0.35)] hover:bg-[#c48b7e] hover:border-[#c48b7e] hover:text-white transition-all duration-300 transform hover:scale-105 active:scale-95"
+          className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#3b3b3d] text-[#efebe8] border border-white/20 shadow-[0_12px_35px_rgba(0,0,0,0.35)] hover:bg-[#545358] hover:border-[#545358] hover:text-white transition-all duration-300 transform hover:scale-105 active:scale-95"
           aria-label={isOpen ? "Close concierge chat" : "Open clinical concierge chat"}
         >
           {isOpen ? (
@@ -197,7 +197,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
                   <h3 className="font-serif text-base font-normal tracking-tight text-[#efebe8] leading-tight">
                     Diez Aesthetics
                   </h3>
-                  <p className="text-[11px] font-space text-[#c48b7e] font-light">
+                  <p className="text-[11px] font-space text-[#545358] font-light">
                     Usually replies in seconds
                   </p>
                 </div>
@@ -273,7 +273,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
                           href={msg.action.href}
                           target={msg.action.href.startsWith('http') ? '_blank' : '_self'}
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-[10px] font-space tracking-wider uppercase font-semibold hover:bg-[#c48b7e] transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-[10px] font-space tracking-wider uppercase font-semibold hover:bg-[#545358] transition-colors"
                         >
                           <span>{msg.action.label}</span>
                           <ArrowUpRight className="w-3 h-3" />
@@ -293,7 +293,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
             <div className="px-4 py-2 bg-[#e8e4e0] border-t border-b border-black/[0.06] flex items-center justify-center gap-4 text-xs font-space text-[#3b3b3d] shrink-0">
               <a
                 href={`tel:${config.phone.replace(/\s+/g, '')}`}
-                className="flex items-center gap-1.5 hover:text-[#c48b7e] font-medium transition-colors"
+                className="flex items-center gap-1.5 hover:text-[#545358] font-medium transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#545358]" />
                 <span>{config.phone}</span>
@@ -303,7 +303,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
                 href={config.booking_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 hover:text-[#c48b7e] font-semibold transition-colors"
+                className="flex items-center gap-1.5 hover:text-[#545358] font-semibold transition-colors"
               >
                 <Calendar className="w-3.5 h-3.5 text-[#545358]" />
                 <span>Book Consultation</span>
@@ -328,7 +328,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
               <button
                 type="submit"
                 disabled={!inputValue.trim()}
-                className="w-8 h-8 rounded-full bg-[#3b3b3d] text-[#efebe8] hover:bg-[#c48b7e] disabled:opacity-40 disabled:hover:bg-[#3b3b3d] flex items-center justify-center transition-all shrink-0 shadow-sm"
+                className="w-8 h-8 rounded-full bg-[#3b3b3d] text-[#efebe8] hover:bg-[#545358] disabled:opacity-40 disabled:hover:bg-[#3b3b3d] flex items-center justify-center transition-all shrink-0 shadow-sm"
                 aria-label="Send message"
               >
                 <ArrowRight className="w-3.5 h-3.5" />

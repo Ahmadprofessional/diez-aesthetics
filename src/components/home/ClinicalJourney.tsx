@@ -61,13 +61,13 @@ export function ClinicalJourney({ bookingUrl }: ClinicalJourneyProps) {
           className="text-center max-w-3xl mx-auto space-y-3 mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-[#ded8d2] text-[#545358] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>04 / THE CLINICAL PROCESS</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight leading-[1.12]">
             Informed Decisions Supported <br className="hidden sm:inline" />
-            <span className="italic text-[#c48b7e] font-normal">by Expert Guidance</span>
+            <span className="italic text-[#545358] font-normal">by Expert Guidance</span>
           </h2>
           <p className="font-space text-xs text-[#747476] font-light max-w-lg mx-auto uppercase tracking-wider">
             From initial consultation through to aftercare, every stage is guided by clinical rigor and artistic balance.
@@ -78,7 +78,7 @@ export function ClinicalJourney({ bookingUrl }: ClinicalJourneyProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-5xl mx-auto">
           {/* Left Column: Stage Label & Counter */}
           <div className="lg:col-span-3 text-center lg:text-left space-y-2 order-2 lg:order-1">
-            <span className="text-xs uppercase tracking-[0.25em] text-[#c48b7e] font-space font-semibold">
+            <span className="text-xs uppercase tracking-[0.25em] text-[#545358] font-space font-semibold">
               STAGE {current.step}
             </span>
             <AnimatePresence mode="wait">
@@ -135,7 +135,7 @@ export function ClinicalJourney({ bookingUrl }: ClinicalJourneyProps) {
                   href={bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-[#3b3b3d] hover:text-[#c48b7e] font-space uppercase tracking-wider font-semibold transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#3b3b3d] hover:text-[#545358] font-space uppercase tracking-wider font-semibold transition-colors"
                 >
                   <span>Book Consultation</span>
                   <ArrowRight className="w-3.5 h-3.5" />

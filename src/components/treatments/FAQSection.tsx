@@ -61,11 +61,11 @@ export function FAQSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3 mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-space font-medium tracking-[0.25em] uppercase bg-white border border-[#747476]/20 text-[#545358]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>COMMON QUESTIONS</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-[#1c1a19] leading-tight">
-            Frequently Asked <span className="italic text-[#c48b7e]">Questions</span>
+            Frequently Asked <span className="italic text-[#545358]">Questions</span>
           </h2>
           <p className="text-sm text-[#57534e] font-light">
             Everything you need to know about your consultation, procedure, and aftercare.

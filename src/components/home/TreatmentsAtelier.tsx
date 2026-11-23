@@ -117,18 +117,18 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
           className="text-left mb-10 space-y-2"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
             <span>01 / CURATED PROTOCOLS</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1a19] tracking-tight leading-tight">
-            Choose a <span className="italic text-[#c48b7e] font-normal">treatment</span>
+            Choose a <span className="italic text-[#545358] font-normal">treatment</span>
           </h2>
 
           <div className="pt-1">
             <Link
               href="/prices/"
-              className="inline-flex items-center gap-1.5 text-xs font-space font-semibold uppercase tracking-wider text-[#1c1a19] hover:text-[#c48b7e] underline underline-offset-4 decoration-1 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-space font-semibold uppercase tracking-wider text-[#1c1a19] hover:text-[#545358] underline underline-offset-4 decoration-1 transition-colors"
             >
               <span>Full price list</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -240,7 +240,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#3b3b3d] hover:bg-[#232325] text-white font-space text-xs uppercase tracking-[0.2em] font-semibold transition-all shadow-md transform hover:-translate-y-0.5"
               >
-                <Calendar className="w-4 h-4 text-[#c48b7e]" />
+                <Calendar className="w-4 h-4 text-[#545358]" />
                 <span>Book your treatment</span>
               </a>
             </div>

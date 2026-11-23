@@ -11,6 +11,7 @@ dist/
 
 # Development & Test Scripts
 scripts/
+scratch/
 *.log
 
 # Raw Crawl Dumps & Archives

@@ -12,7 +12,7 @@ export function AboutDanielSection() {
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 -left-48 w-96 h-96 bg-[#ded8d2]/60 rounded-full blur-[140px]" />
-        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#c48b7e]/10 rounded-full blur-[140px]" />
+        <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#545358]/10 rounded-full blur-[140px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -45,19 +45,19 @@ export function AboutDanielSection() {
                 <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
                   <div>
                     <p className="font-serif italic text-xl leading-tight">Daniel Diez</p>
-                    <p className="text-[11px] uppercase tracking-wider text-[#c48b7e] font-space font-medium">
+                    <p className="text-[11px] uppercase tracking-wider text-[#545358] font-space font-medium">
                       Clinical Director &amp; Founder
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                    <CheckCircle2 className="w-4 h-4 text-[#c48b7e]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#545358]" />
                   </div>
                 </div>
               </div>
 
               {/* Floating luxury credential tag */}
               <div className="hidden sm:flex absolute -bottom-5 -right-4 items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white shadow-xl border border-black/[0.08] text-xs text-[#1c1917]">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#c48b7e] animate-pulse" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#545358] animate-pulse" />
                 <span className="font-space font-medium tracking-wide">Consultations Open</span>
                 <span className="text-[#747476] font-space text-[11px]">King&apos;s Cross</span>
               </div>
@@ -75,13 +75,13 @@ export function AboutDanielSection() {
             {/* Header / Eyebrow */}
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-[#ded8d2] text-[#545358] border border-black/[0.06]">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
                 <span>03 / CLINICAL LEADERSHIP</span>
               </div>
 
               <h2 className="font-sans text-3xl sm:text-5xl lg:text-6xl font-light text-[#1c1917] tracking-tight leading-[1.08]">
                 NATURAL. BALANCED. <br />
-                <span className="font-serif italic font-normal text-[#c48b7e]">
+                <span className="font-serif italic font-normal text-[#545358]">
                   BEAUTIFULLY YOU.
                 </span>
               </h2>
@@ -151,7 +151,7 @@ export function AboutDanielSection() {
                 href="https://facesconsent.com/bookings/daniel?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#c48b7e] hover:text-white transition-all shadow-md transform hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#3b3b3d] text-[#efebe8] text-xs font-space uppercase tracking-[0.2em] font-semibold hover:bg-[#545358] hover:text-white transition-all shadow-md transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Book Consultation with Daniel</span>
                 <ArrowRight className="w-4 h-4" />
