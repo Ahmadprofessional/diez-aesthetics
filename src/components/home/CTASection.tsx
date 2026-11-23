@@ -3,7 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Calendar, MessageCircle, Sparkles, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/ui/Icons';
 import { GlobalConfig } from '@/types/content';
 
 interface CTASectionProps {
@@ -12,16 +13,22 @@ interface CTASectionProps {
 
 export function CTASection({ config }: CTASectionProps) {
   return (
-    <section className="py-24 sm:py-32 bg-[#0c0b0e] text-white relative overflow-hidden border-t border-white/[0.08]">
+    <section className="py-24 sm:py-32 bg-[#f7f5f3] text-[#1c1917] relative overflow-hidden border-t border-[#e5dfd8] transition-colors duration-500">
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#c48b7e]/15 rounded-full blur-[170px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#ded9d5]/60 rounded-full blur-[170px]" />
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="rounded-[36px] sm:rounded-[44px] bg-[#161418] border border-white/10 p-8 sm:p-14 lg:p-16 text-center space-y-8 shadow-[0_30px_90px_rgba(0,0,0,0.85)] relative overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="rounded-[36px] sm:rounded-[44px] bg-[#2c2b2e] text-[#efebe8] border border-black/[0.1] p-8 sm:p-14 lg:p-16 text-center space-y-8 shadow-[0_25px_70px_rgba(0,0,0,0.25)] relative overflow-hidden"
+        >
           {/* Subtle inner spotlight */}
-          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-white/[0.04] rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-white/[0.05] rounded-full blur-[120px] pointer-events-none" />
 
           {/* Official Logo */}
           <div className="flex justify-center pb-2">
@@ -37,9 +44,9 @@ export function CTASection({ config }: CTASectionProps) {
           </div>
 
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-white/[0.06] text-[#c48b7e] border border-white/10">
-              <Sparkles className="w-3.5 h-3.5 text-[#c48b7e]" />
-              <span>PRIVATE CLINICAL SANCTUARY</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-white/[0.08] text-[#c48b7e] border border-white/15">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c48b7e]" />
+              <span>08 / PRIVATE CONSULTATION</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.08]">
@@ -48,39 +55,47 @@ export function CTASection({ config }: CTASectionProps) {
             </h2>
 
             <p className="text-zinc-300 text-sm sm:text-base font-light max-w-xl mx-auto leading-relaxed pt-1">
-              Book a private one-on-one consultation with Daniel Diez at our clinic near King&apos;s Cross St. Pancras. Personalized care with zero pressure.
+              Personalised one-to-one consultations with Clinical Director Daniel Diez. Advanced regenerative care, doctor-led precision, and subtle natural results.
             </p>
           </div>
 
-          {/* CTAs */}
+          {/* Dual Action CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
               href={config.booking_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#c48b7e] text-[#0f0e11] text-xs uppercase font-space tracking-[0.2em] font-semibold hover:bg-white shadow-[0_4px_25px_rgba(192,132,252,0.4)] transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#c48b7e] text-white font-space text-xs uppercase tracking-[0.2em] font-semibold hover:bg-white hover:text-[#1c1917] transition-all transform hover:-translate-y-0.5 shadow-lg"
             >
-              <Calendar className="w-4 h-4 text-[#0f0e11]" />
-              <span>Book Consultation</span>
+              <Calendar className="w-4 h-4" />
+              <span>Book Consultation Slot</span>
             </a>
 
             <a
               href={config.whatsapp_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full border border-white/20 bg-white/[0.04] text-white text-xs uppercase font-space tracking-[0.2em] font-medium hover:border-[#25D366] hover:bg-[#25D366]/10 hover:text-white transition-all shadow-sm transform hover:-translate-y-0.5"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full border border-white/20 bg-white/[0.05] text-[#efebe8] font-space text-xs uppercase tracking-[0.2em] font-medium hover:border-white hover:bg-white/10 hover:text-white transition-all"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366]" />
-              <span>WhatsApp Clinician</span>
+              <WhatsAppIcon className="w-4 h-4 text-[#efebe8]" />
+              <span>Message on WhatsApp</span>
             </a>
           </div>
 
-          {/* Location Badge */}
-          <div className="pt-4 flex items-center justify-center gap-2 text-xs text-zinc-400 font-space">
-            <MapPin className="w-3.5 h-3.5 text-[#c48b7e]" />
-            <span>260 Pentonville Road, King&apos;s Cross London N1 9JY</span>
+          {/* Location & Transit Footer */}
+          <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-300 font-space">
+            <div className="flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#c48b7e]" />
+              <span>260 Pentonville Road, King&apos;s Cross N1 9JY</span>
+            </div>
+            <div className="flex items-center gap-2 text-zinc-400">
+              <span>•</span>
+              <span>4 mins walk from St Pancras</span>
+              <span>•</span>
+              <span>By appointment only</span>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
