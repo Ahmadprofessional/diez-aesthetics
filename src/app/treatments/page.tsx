@@ -8,7 +8,7 @@ import { CTASection } from '@/components/home/CTASection';
 import { ShieldCheck, Star, MapPin, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Treatments & Clinical Protocols | Diez Aesthetics London',
+  title: 'Medical Aesthetic Treatments | Diez Aesthetics London',
   description:
     'Explore doctor-led aesthetic treatments at Diez Aesthetics in King’s Cross: Anti-Wrinkle Injections, Signature Lips, Polynucleotides, Profhilo, and Medical Microneedling.',
   alternates: {
@@ -22,7 +22,7 @@ export default function TreatmentsPage() {
 
   return (
     <div className="bg-[#efebe8] text-[#1c1a19] min-h-screen">
-      {/* Editorial Luxury Hero Banner (Dark Stone & Atelier Visual) */}
+      {/* Editorial Luxury Hero Banner (Dark Stone & Clinic Visual) */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 bg-[#18171a] text-white border-b border-white/10 overflow-hidden">
         {/* Ambient atmospheric stone lighting */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -37,7 +37,7 @@ export default function TreatmentsPage() {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-                <span>CLINICAL TREATMENT ATELIER • KING’S CROSS</span>
+                <span>AESTHETIC CLINIC • KING’S CROSS</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-6xl font-normal text-white tracking-tight leading-[1.08]">
@@ -46,7 +46,7 @@ export default function TreatmentsPage() {
               </h1>
 
               <p className="text-base sm:text-lg text-white/70 font-light max-w-2xl leading-relaxed">
-                Conservative medical techniques focused on facial balance, subtle refinement, and cellular tissue regeneration. Explore our clinical protocols below.
+                Conservative medical techniques focused on facial balance, subtle refinement, and cellular tissue regeneration. Explore our medical treatments below.
               </p>
 
               {/* Trust Pillars */}

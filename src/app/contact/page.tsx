@@ -34,7 +34,7 @@ export default function ContactPage() {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-                <span>CENTRAL LONDON ATELIER • KING’S CROSS N1</span>
+                <span>CENTRAL LONDON CLINIC • KING’S CROSS N1</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-6xl font-normal text-white tracking-tight leading-[1.08]">

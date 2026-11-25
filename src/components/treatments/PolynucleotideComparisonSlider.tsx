@@ -84,7 +84,7 @@ export function PolynucleotideComparisonSlider() {
         <div className="flex items-center gap-2 text-[#44403c]">
           <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           <span>
-            Case: <strong className="text-[#1c1917] font-medium">Under-Eye Hollows &amp; Tear Troughs</strong> (Unretouched Clinical Documentation)
+            Case: <strong className="text-[#1c1917] font-medium">Under-Eye Hollows &amp; Tear Troughs</strong> (Standardised Clinical Documentation)
           </span>
         </div>
         <div className="flex items-center gap-2 text-[#78716c]">

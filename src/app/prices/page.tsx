@@ -20,7 +20,7 @@ export default function PricesPage() {
 
   return (
     <div className="bg-[#efebe8] text-[#1c1a19] min-h-screen">
-      {/* Editorial Luxury Hero Banner (Dark Stone & Atelier Visual) */}
+      {/* Editorial Luxury Hero Banner (Dark Stone & Clinic Visual) */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 bg-[#18171a] text-white border-b border-white/10 overflow-hidden">
         {/* Ambient atmospheric stone lighting */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -35,7 +35,7 @@ export default function PricesPage() {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-                <span>CLINICAL PRICING ATELIER • KING’S CROSS</span>
+                <span>TREATMENT PRICING • KING’S CROSS</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-6xl font-normal text-white tracking-tight leading-[1.08]">
@@ -82,10 +82,10 @@ export default function PricesPage() {
                   
                   <div className="absolute bottom-5 left-5 right-5 text-white space-y-1">
                     <span className="text-[10px] font-space uppercase tracking-widest text-[#dcd8d4] block">
-                      Private Treatment Atelier
+                      Private Treatment Suite
                     </span>
                     <p className="font-serif text-lg leading-snug">
-                      King’s Cross Clinical Sanctuary
+                      King’s Cross Private Clinic
                     </p>
                     <p className="text-xs text-white/60 font-light">
                       Medical-grade sterile environment tailored strictly for subtle rejuvenation

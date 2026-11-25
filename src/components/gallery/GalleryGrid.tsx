@@ -119,7 +119,7 @@ export function GalleryGrid({ content }: GalleryGridProps) {
             </motion.div>
 
             <div className="w-full text-center text-xs text-[#a8a5a3] font-space tracking-wider pt-2">
-              Unretouched clinical case • Diez Aesthetics London
+              Standardised clinical case • Diez Aesthetics London
             </div>
           </motion.div>
         )}

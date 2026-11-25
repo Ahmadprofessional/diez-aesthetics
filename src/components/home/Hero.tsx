@@ -59,7 +59,7 @@ export function Hero({ content }: HeroProps) {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[9px] sm:text-[10px] font-space uppercase tracking-[0.25em] text-[#efebe8] w-fit shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-            <span>King&apos;s Cross Clinical Atelier</span>
+            <span>King&apos;s Cross Aesthetic Clinic</span>
           </div>
 
           <div className="space-y-0.5 sm:space-y-1">
