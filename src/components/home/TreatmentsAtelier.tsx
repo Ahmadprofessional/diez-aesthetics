@@ -258,7 +258,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                   href="/treatments/polynucleotides/"
                   className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-[#efebe8] text-[#1c1a19] border border-[#747476]/25 font-space text-xs uppercase tracking-[0.18em] font-semibold transition-all shadow-sm"
                 >
-                  <span>Dedicated Guide</span>
+                  <span>View Treatment Details</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#545358]" />
                 </Link>
               )}

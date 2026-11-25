@@ -35,7 +35,7 @@ export default function GalleryPage() {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-                <span>UNRETOUCHED CLINICAL PORTFOLIO • KING’S CROSS</span>
+                <span>PATIENT CASE STUDIES • KING’S CROSS</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-6xl font-normal text-white tracking-tight leading-[1.08]">
@@ -51,7 +51,7 @@ export default function GalleryPage() {
               <div className="flex flex-wrap items-center gap-3 pt-1 text-xs text-white/80">
                 <div className="flex items-center gap-1.5 bg-white/05 px-3.5 py-1.5 rounded-full border border-white/10 backdrop-blur-sm">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>100% Unretouched Documentation</span>
+                  <span>Authentic Patient Documentation</span>
                 </div>
 
                 <div className="flex items-center gap-1.5 bg-white/05 px-3.5 py-1.5 rounded-full border border-white/10 backdrop-blur-sm">
