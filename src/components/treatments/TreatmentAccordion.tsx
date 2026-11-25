@@ -100,6 +100,16 @@ export function TreatmentAccordion({ services }: TreatmentAccordionProps) {
                   </div>
 
                   <div className="pt-2 flex flex-wrap items-center gap-4">
+                    {service.slug === 'polynucleotides' && (
+                      <a
+                        href="/treatments/polynucleotides/"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1c1a19] hover:bg-black text-white text-xs font-space uppercase tracking-wider font-semibold transition-all shadow-md"
+                      >
+                        <span>Explore Polynucleotides Protocol</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-[#dcd8d4]" />
+                      </a>
+                    )}
+
                     <a
                       href={service.cta.href}
                       target="_blank"

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Clock, AlertCircle } from 'lucide-react';
 import { PricesContent } from '@/types/content';
@@ -64,6 +65,14 @@ export function PriceTabs({ content, bookingUrl }: PriceTabsProps) {
                   <Clock className="w-3.5 h-3.5 text-[#545358]" />
                   <span>{item.duration}</span>
                 </div>
+                {item.name.toLowerCase().includes('polynucleotides') && (
+                  <Link
+                    href="/treatments/polynucleotides/"
+                    className="inline-block pt-1 text-[11px] text-[#545358] font-space uppercase tracking-wider font-medium hover:underline hover:text-[#1c1a19]"
+                  >
+                    View Under-Eye Guide &amp; Results &rarr;
+                  </Link>
+                )}
               </div>
 
               <div className="flex items-center justify-between sm:justify-end gap-5 pt-2 sm:pt-0 border-t sm:border-t-0 border-[#747476]/10">

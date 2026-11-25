@@ -20,7 +20,13 @@ export function Header({ config }: HeaderProps) {
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
-  const isDarkHero = pathname === '/';
+  const isDarkHero =
+    pathname === '/' ||
+    pathname?.startsWith('/about') ||
+    pathname?.startsWith('/treatments') ||
+    pathname?.startsWith('/prices') ||
+    pathname?.startsWith('/gallery') ||
+    pathname?.startsWith('/contact');
 
   useEffect(() => {
     setMounted(true);

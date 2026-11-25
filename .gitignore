@@ -19,6 +19,9 @@ archive/
 *.zip
 *.md
 !README.md
+*.docx
+*.xlsx
+*.csv
 
 # Environment & Local Secrets
 .env
