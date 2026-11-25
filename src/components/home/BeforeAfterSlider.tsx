@@ -55,7 +55,7 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
             Before &amp; After <span className="font-serif italic font-normal text-[#3b3b3d]">Transformations</span>
           </h2>
           <p className="text-sm sm:text-base text-[#57534e] font-light max-w-xl mx-auto">
-            Subtle, balanced enhancements showcasing natural regenerative results. Unretouched clinical documentation.
+            Subtle, balanced enhancements showcasing natural regenerative results. Standardised clinical documentation.
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ export function BeforeAfterSlider({ content }: BeforeAfterSliderProps) {
               <div className="flex items-center gap-2 text-[#44403c]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>
-                  Case: <strong className="text-[#1c1917] font-medium">{activePair.treatment}</strong> (Unretouched clinical photograph)
+                  Case: <strong className="text-[#1c1917] font-medium">{activePair.treatment}</strong> (Standardised clinical photograph)
                 </span>
               </div>
               <div className="text-[#78716c] text-[11px] font-mono">

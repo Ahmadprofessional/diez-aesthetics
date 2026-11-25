@@ -102,7 +102,7 @@ const clinicalCases: ClinicalCase[] = [
     productUsed: 'ExoCoBio Medical Exosomes + Hyaluronic Acid Glide',
     technique: 'Fractional Medical Depth Needling (1.5mm–2.0mm)',
     clinicianNotes:
-      'Significant improvement in epidermal clarity, depth of atrophic acne scarring, and global pore contraction following a 4-session protocol.',
+      'Significant improvement in epidermal clarity, depth of atrophic acne scarring, and global pore contraction following a 4-session treatment course.',
     patientGoal:
       'Eliminate stubborn post-acne pitting and uneven texture to achieve glass-skin radiance without heavy foundations.',
   },
@@ -195,13 +195,13 @@ export function BeforeAfterCarousel() {
             </h2>
 
             <p className="text-sm sm:text-base text-[#545358] font-light leading-relaxed">
-              Real clinical results documented at post-treatment review. Side-by-side unretouched photographic records with standardized clinic lighting.
+              Real clinical results documented at post-treatment review. Side-by-side photographic records with standardized clinic lighting.
             </p>
           </div>
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-black/[0.08] shadow-sm text-xs text-[#545358] self-start lg:self-auto">
             <ShieldCheck className="w-4 h-4 text-[#3b3b3d]" />
-            <span className="font-space font-medium text-[11px] uppercase tracking-wider">100% Unretouched Cases</span>
+            <span className="font-space font-medium text-[11px] uppercase tracking-wider">Standardised Clinical Cases</span>
           </div>
         </motion.div>
 
@@ -359,7 +359,7 @@ export function BeforeAfterCarousel() {
                   <div className="grid grid-cols-2 gap-3 pt-2 text-xs">
                     <div className="p-3 rounded-xl bg-[#f7f5f3] border border-black/[0.04]">
                       <span className="text-[10px] font-space uppercase tracking-wider text-[#747476] block mb-0.5">
-                        Protocol &amp; Product
+                        Treatment &amp; Product
                       </span>
                       <span className="text-[11px] text-[#1c1917] font-medium leading-tight block">
                         {activeCase.productUsed}

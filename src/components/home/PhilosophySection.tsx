@@ -29,7 +29,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space tracking-[0.25em] uppercase bg-[#e8e4e0] text-[#545358] border border-black/[0.06]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
-            <span>02 / CLINICAL SANCTUARY</span>
+            <span>02 / PRIVATE CLINIC</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight">
@@ -56,7 +56,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-black/[0.08] group">
               <Image
                 src="/assets/images/clinic_treatment_suite.webp"
-                alt="Diez Aesthetics Private Clinical Sanctuary London"
+                alt="Diez Aesthetics Private Clinic London"
                 fill
                 sizes="(max-width: 768px) 100vw, 550px"
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -64,7 +64,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5 text-xs text-white">
-                <p className="font-serif italic text-lg text-white">Private Clinical Sanctuary</p>
+                <p className="font-serif italic text-lg text-white">Private Treatment Suite</p>
                 <p className="text-zinc-300 text-[11px] font-space tracking-wider">260 Pentonville Road, King&apos;s Cross</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
                 <span>100%</span>
               </div>
               <p className="text-[10px] sm:text-xs uppercase font-space tracking-wider text-[#3b3b3d] font-semibold leading-tight">
-                Unretouched
+                Standardised
               </p>
               <p className="hidden md:block text-[11px] text-[#747476] font-light">
                 Honest, unfiltered photographic evidence

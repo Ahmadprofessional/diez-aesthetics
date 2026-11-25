@@ -246,7 +246,7 @@ export function PolynucleotidesLandingClient() {
             >
               <div className="space-y-1.5 border-b border-[#747476]/15 pb-5">
                 <span className="text-[10px] font-space uppercase tracking-[0.25em] text-[#545358] font-semibold block">
-                  THE ADVANCED PROTOCOL
+                  THE CLINICAL METHOD
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#1c1a19]">
                   Periorbital Polynucleotides
@@ -367,7 +367,7 @@ export function PolynucleotidesLandingClient() {
       </section>
 
       {/* ─────────────────────────────────────────────────────────────
-          STAGE 4: PRICING ATELIER & AUTHENTIC CLINICAL SUITE
+          STAGE 4: TRANSPARENT PRICING & CLINICAL SUITE
           ───────────────────────────────────────────────────────────── */}
       <section className="py-24 sm:py-32 bg-[#FAF8F5] text-[#1c1917] border-b border-[#e5dfd8] relative overflow-hidden transition-colors duration-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -380,7 +380,7 @@ export function PolynucleotidesLandingClient() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-space tracking-[0.25em] uppercase bg-[#e8e4e0] text-[#545358] border border-black/[0.06]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
-              <span>04 / TRANSPARENT PRICING ATELIER</span>
+              <span>04 / TRANSPARENT CLINICAL PRICING</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight">
@@ -390,7 +390,7 @@ export function PolynucleotidesLandingClient() {
               Honest London Fees • Private Clinical Suite King’s Cross
             </p>
             <p className="text-sm sm:text-base text-[#57534e] font-light max-w-xl mx-auto pt-1 leading-relaxed">
-              Every procedure is administered personally by Clinical Director Daniel Diez in our sterile King’s Cross sanctuary. Consultations are complimentary when proceeding with treatment.
+              Every procedure is administered personally by Clinical Director Daniel Diez in our private King’s Cross clinic. Consultations are complimentary when proceeding with treatment.
             </p>
           </motion.div>
 
@@ -408,7 +408,7 @@ export function PolynucleotidesLandingClient() {
               <div className="relative rounded-[32px] overflow-hidden border border-black/[0.08] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] aspect-[3/4] group">
                 <Image
                   src="/assets/images/clinic_treatment_suite.webp"
-                  alt="Diez Aesthetics Private Clinical Sanctuary King's Cross London"
+                  alt="Diez Aesthetics Private Clinical Suite King's Cross London"
                   fill
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -416,7 +416,7 @@ export function PolynucleotidesLandingClient() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
                 
                 <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
-                  <p className="font-serif italic text-xl text-white">Private Treatment Sanctuary</p>
+                  <p className="font-serif italic text-xl text-white">Private Treatment Suite</p>
                   <p className="text-zinc-300 text-[11px] font-space tracking-wider">
                     260 Pentonville Road, King’s Cross N1 9JY
                   </p>
@@ -439,7 +439,7 @@ export function PolynucleotidesLandingClient() {
               <div className="p-7 rounded-[28px] bg-white border border-black/[0.08] shadow-sm hover:shadow-md transition-shadow space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="font-space text-[10px] uppercase tracking-widest text-[#545358] font-semibold">
-                    SINGLE PROTOCOL
+                    SINGLE SESSION
                   </span>
                   <span className="text-[11px] text-[#78716c] font-space">
                     London Avg: £350–£400
@@ -567,7 +567,7 @@ export function PolynucleotidesLandingClient() {
               </h2>
 
               <p className="text-sm sm:text-base text-[#545358] font-light leading-relaxed">
-                &ldquo;True aesthetic medicine is not about distorting the face with excess volume—it is about restoring cellular health, biological skin thickness, and authentic balance. Every polynucleotide protocol I administer is custom-tailored to the patient&apos;s unique facial anatomy.&rdquo;
+                &ldquo;True aesthetic medicine is not about distorting the face with excess volume—it is about restoring cellular health, biological skin thickness, and authentic balance. Every polynucleotide treatment I administer is custom-tailored to the patient&apos;s unique facial anatomy.&rdquo;
               </p>
 
               <div className="space-y-3 pt-2 text-xs sm:text-sm text-[#44403c]">
@@ -623,7 +623,7 @@ export function PolynucleotidesLandingClient() {
           </h2>
 
           <p className="text-sm sm:text-base text-white/70 font-light max-w-xl mx-auto leading-relaxed">
-            Begin with a thorough periorbital examination at our King’s Cross atelier. Transparent fees, genuine patient results, and complete clinical discretion.
+            Begin with a thorough periorbital examination at our King’s Cross clinic. Transparent fees, genuine patient results, and complete clinical discretion.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

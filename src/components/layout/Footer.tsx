@@ -57,7 +57,7 @@ export function Footer({ config }: FooterProps) {
             <ul className="space-y-2.5 text-xs sm:text-sm font-light text-white/80">
               <li>
                 <Link href="/" className="hover:text-white hover:translate-x-0.5 transition-all inline-block">
-                  Home Atelier
+                  Home Clinic
                 </Link>
               </li>
               <li>
@@ -199,7 +199,7 @@ export function Footer({ config }: FooterProps) {
         <div className="border-t border-white/15 pt-5 pb-3 flex flex-col sm:flex-row items-center justify-between text-xs text-white/70 gap-3">
           <div className="flex items-center gap-3">
             <span className="font-space text-[11px] uppercase tracking-wider text-white/80">
-              Doctor-Led Aesthetics Atelier London
+              Doctor-Led Aesthetics Clinic London
             </span>
           </div>
 

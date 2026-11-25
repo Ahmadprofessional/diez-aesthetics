@@ -17,7 +17,7 @@ interface TreatmentCategory {
   eyebrow: string;
   title: string;
   summary: string;
-  protocol: string;
+  sessions: string;
   areas: string;
   duration: string;
   downtime: string;
@@ -31,7 +31,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Anti-wrinkle Injections',
     summary:
       'Precision micro-dosing of botulinum toxin to relax dynamic expression lines, smooth crow’s feet, and soften forehead furrows while preserving 100% natural facial movement and emotion.',
-    protocol: 'Single 20-minute procedure. Full results settle at 10–14 days. Complimentary 2-week review.',
+    sessions: 'Single 20-minute procedure. Full results settle at 10–14 days. Complimentary 2-week review.',
     areas: 'Forehead lines, Frown lines (11s), Crow’s feet, Bunny lines, Lip flip, Masseters / Jaw slimming.',
     duration: '3–4 Months',
     downtime: 'Zero Downtime (Lunchtime Procedure)',
@@ -43,7 +43,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Signature Lip Enhancement',
     summary:
       'Conservative hyaluronic acid micro-droplet technique to define the vermilion border, restore natural hydration, and balance anatomical symmetry with zero migration or unnatural duck-lip projection.',
-    protocol: 'Single appointment with micro-cannula technique. Tailored volume (0.5ml to 1.0ml).',
+    sessions: 'Single appointment with micro-cannula technique. Tailored volume (0.5ml to 1.0ml).',
     areas: 'Vermilion border, Cupid’s bow, Philtral columns, Central tubercles, Oral commissures.',
     duration: '9–12 Months',
     downtime: 'Minimal (24–48h subtle swelling)',
@@ -55,7 +55,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Polynucleotides (Nucleofill & Ameela)',
     summary:
       'Regenerative biostimulators derived from purified salmon DNA fractions. Stimulates autologous fibroblast collagen synthesis, microcirculation, and cellular repair to treat dark under-eye circles and skin laxity naturally without dermal filler.',
-    protocol: 'Course of 2–3 sessions recommended, spaced 3–4 weeks apart for cumulative cellular regeneration.',
+    sessions: 'Course of 2–3 sessions recommended, spaced 3–4 weeks apart for cumulative cellular regeneration.',
     areas: 'Under-eye tear troughs, Periorbital hollows, Cheeks, Neck lines, Décolletage.',
     duration: 'Long-Term Cellular Regeneration',
     downtime: 'Minimal (Small papules subside within 24h)',
@@ -67,7 +67,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Profhilo Bio-Remodelling',
     summary:
       'Ultra-pure high and low molecular weight hyaluronic acid that flows beneath the dermis to bio-remodel collagen and elastin. Delivers deep cellular hydration, radiance, and elasticity rather than artificial volume.',
-    protocol: 'Initial course of 2 sessions, 4 weeks apart. Maintenance session every 6 months.',
+    sessions: 'Initial course of 2 sessions, 4 weeks apart. Maintenance session every 6 months.',
     areas: 'Full face (5 Bio-Aesthetic Points), Neck, Decolletage, Hands.',
     duration: '6–9 Months',
     downtime: 'Zero to minimal (Small bumps settle within 12–24h)',
@@ -79,7 +79,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Medical Microneedling & Exosomes',
     summary:
       'Medical-grade depth microneedling combined with topical regenerative exosome infusion to accelerate cellular turnover, refine pore size, smooth acne scars, and stimulate neo-collagenesis for glass skin luminosity.',
-    protocol: 'Course of 3–4 sessions spaced 4 weeks apart. Delivers cumulative skin texture refinement.',
+    sessions: 'Course of 3–4 sessions spaced 4 weeks apart. Delivers cumulative skin texture refinement.',
     areas: 'Full face, Neck, Texture irregularities, Sun damage, Enlarged pores.',
     duration: 'Cumulative Permanent Remodelling',
     downtime: '24–36h mild rosiness (sunburn sensation)',
@@ -91,7 +91,7 @@ const treatmentCategories: TreatmentCategory[] = [
     title: 'Fat Dissolving',
     summary:
       'Targeted deoxycholic acid compound that disrupts and permanently liquefies localized subcutaneous adipocyte cell membranes, flushed out naturally by the lymphatic system.',
-    protocol: 'Usually two sessions, 3–4 weeks apart. Permanent removal of targeted fat cells.',
+    sessions: 'Usually two sessions, 3–4 weeks apart. Permanent removal of targeted fat cells.',
     areas: 'Underarms, forearms, back, abdominal region, hips, thighs, submental (double chin).',
     duration: 'Permanent Fat Cell Destruction',
     downtime: '3–5 days mild swelling and tenderness',
@@ -118,7 +118,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-medium text-[#545358] bg-[#ded8d2] border border-black/[0.06]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
-            <span>01 / CURATED PROTOCOLS</span>
+            <span>01 / MEDICAL TREATMENTS</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1a19] tracking-tight leading-tight">
@@ -203,13 +203,13 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
               {selectedTreatment.summary}
             </p>
 
-            {/* Protocol & Areas Note */}
+            {/* Treatment Frequency & Areas Note */}
             <div className="p-4 rounded-2xl bg-[#f7f5f2] border border-[#ebe7e2] space-y-2 text-xs text-[#57534e]">
               <div>
                 <span className="font-space font-semibold uppercase tracking-wider text-[#75716b] text-[10px] block">
-                  Protocol &amp; Frequency
+                  Recommended Sessions
                 </span>
-                <p className="pt-0.5 leading-relaxed">{selectedTreatment.protocol}</p>
+                <p className="pt-0.5 leading-relaxed">{selectedTreatment.sessions}</p>
               </div>
 
               <div>

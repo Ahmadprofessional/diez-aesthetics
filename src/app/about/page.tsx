@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-              <span>KING&apos;S CROSS CLINICAL ATELIER</span>
+              <span>KING&apos;S CROSS CLINIC</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-tight leading-[1.05]">
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-white/75 font-light max-w-2xl mx-auto leading-relaxed">
-              A doctor-led clinical sanctuary in Central London dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
+              A doctor-led aesthetic clinic in Central London dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ const faqs = [
   {
     question: 'How many sessions will I need for noticeable results?',
     answer:
-      'Clinical studies and our in-clinic protocol recommend an initial course of 3 sessions spaced 3 to 4 weeks apart. Because polynucleotides trigger true cellular regeneration, initial hydration and radiance appear within 10 to 14 days, with full structural collagen remodeling peaking at 8 to 12 weeks. Results last 6 to 9 months, maintained with a single top-up.',
+      'Clinical studies and our in-clinic experience recommend an initial course of 3 sessions spaced 3 to 4 weeks apart. Because polynucleotides trigger true cellular regeneration, initial hydration and radiance appear within 10 to 14 days, with full structural collagen remodeling peaking at 8 to 12 weeks. Results last 6 to 9 months, maintained with a single top-up.',
   },
   {
     question: 'Does polynucleotide injection hurt?',
