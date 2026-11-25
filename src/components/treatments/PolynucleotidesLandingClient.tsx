@@ -185,7 +185,7 @@ export function PolynucleotidesLandingClient() {
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1917] tracking-tight">
-              Unretouched Periorbital <span className="italic text-[#545358] font-normal">Transformation</span>
+              Clinical Periorbital <span className="italic text-[#545358] font-normal">Transformation</span>
             </h2>
             <p className="font-space text-xs text-[#747476] uppercase tracking-[0.2em] pt-0.5">
               High-Resolution Clinical Macro Documentation • 3-Session Cycle
@@ -623,7 +623,7 @@ export function PolynucleotidesLandingClient() {
           </h2>
 
           <p className="text-sm sm:text-base text-white/70 font-light max-w-xl mx-auto leading-relaxed">
-            Begin with a thorough periorbital examination at our King’s Cross atelier. Transparent fees, unretouched results, and zero downtime anxiety.
+            Begin with a thorough periorbital examination at our King’s Cross atelier. Transparent fees, genuine patient results, and complete clinical discretion.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
