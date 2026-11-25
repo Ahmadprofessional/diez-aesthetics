@@ -64,7 +64,7 @@ const clinicalCases: ClinicalCase[] = [
     clinicianNotes:
       'Patient presented with hollow under-eye shadowing and thin crepey dermis. A 3-session course stimulated natural collagen synthesis, thickening periorbital skin naturally without hydrophilic filler swelling.',
     patientGoal:
-      'Eradicate tired under-eye appearance and dark circles without risking the puffiness associated with hyaluronic acid fillers.',
+      'Improve tired under-eye appearance and dark circles without risking the puffiness associated with hyaluronic acid fillers.',
   },
   {
     id: 3,

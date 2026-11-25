@@ -151,7 +151,7 @@ export function PolynucleotidesLandingClient() {
                           Periorbital Rejuvenation
                         </span>
                         <span className="text-[9px] font-space uppercase tracking-wider text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2 py-0.5 rounded-full">
-                          Zero Filler Puffiness
+                          Less Filler Puffiness
                         </span>
                       </div>
                       <p className="text-[10px] sm:text-[11px] text-zinc-300 font-light leading-relaxed">
@@ -191,7 +191,7 @@ export function PolynucleotidesLandingClient() {
               High-Resolution Clinical Macro Documentation • 3-Session Cycle
             </p>
             <p className="text-sm sm:text-base text-[#57534e] font-light max-w-xl mx-auto pt-1 leading-relaxed">
-              Drag the interactive divider to observe the clearance of vascular dark circles and natural thickening of the delicate under-eye dermis.
+              Drag the interactive divider to observe the improvement of vascular dark circles and natural thickening of the delicate under-eye dermis.
             </p>
           </motion.div>
 
