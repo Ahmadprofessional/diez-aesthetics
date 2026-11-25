@@ -19,22 +19,30 @@ export default function AboutPage() {
   const globalConfig = getGlobalConfig();
 
   return (
-    <div className="pt-28 pb-16 bg-[#efebe8] text-[#1c1a19] min-h-screen">
-      {/* Editorial Header Banner */}
-      <section className="py-20 text-center border-b border-[#747476]/15 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#747476]/20 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] font-semibold text-[#545358] shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
-            <span>King&apos;s Cross Clinical Atelier</span>
+    <div className="bg-[#efebe8] text-[#1c1a19] min-h-screen">
+      {/* Editorial Luxury Hero Banner (Dark Stone) */}
+      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 bg-[#18171a] text-white border-b border-white/10 overflow-hidden">
+        {/* Ambient atmospheric stone lighting */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[500px] bg-[#545358]/20 rounded-full blur-[180px]" />
+          <div className="absolute top-10 left-10 w-[450px] h-[350px] bg-[#747476]/15 rounded-full blur-[150px]" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] sm:text-[11px] font-space uppercase tracking-[0.25em] text-[#efebe8] shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
+              <span>KING&apos;S CROSS CLINICAL ATELIER</span>
+            </div>
+
+            <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-tight leading-[1.05]">
+              Welcoming <span className="italic text-[#dcd8d4]">Diez Aesthetics</span>
+            </h1>
+
+            <p className="text-base sm:text-lg text-white/75 font-light max-w-2xl mx-auto leading-relaxed">
+              A doctor-led clinical sanctuary in Central London dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
+            </p>
           </div>
-
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-[#1c1a19] tracking-tight leading-[1.08]">
-            Welcoming <span className="italic text-[#545358]">Diez Aesthetics</span>
-          </h1>
-
-          <p className="text-base sm:text-lg text-[#57534e] font-light max-w-2xl mx-auto leading-relaxed">
-            A doctor-led clinical sanctuary in Central London dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
-          </p>
         </div>
       </section>
 

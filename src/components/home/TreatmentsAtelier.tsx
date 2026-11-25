@@ -242,7 +242,7 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
             </div>
 
             {/* Direct Booking Button Matching Screenshot */}
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
               <a
                 href={bookingUrl}
                 target="_blank"
@@ -252,6 +252,16 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 <Calendar className="w-4 h-4 text-[#545358]" />
                 <span>Book your treatment</span>
               </a>
+
+              {selectedTreatment.id === 'polynucleotides' && (
+                <Link
+                  href="/treatments/polynucleotides/"
+                  className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-[#efebe8] text-[#1c1a19] border border-[#747476]/25 font-space text-xs uppercase tracking-[0.18em] font-semibold transition-all shadow-sm"
+                >
+                  <span>Dedicated Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#545358]" />
+                </Link>
+              )}
             </div>
           </motion.div>
         </AnimatePresence>
