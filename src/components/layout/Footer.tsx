@@ -172,7 +172,7 @@ export function Footer({ config }: FooterProps) {
                 <MapPin className="w-4 h-4 text-white/90 shrink-0 mt-0.5" />
                 <div>
                   <span className="text-white block font-medium">London, UK</span>
-                  <span className="text-white/70 text-xs">260 Pentonville Road, N1 9JY (King&apos;s Cross)</span>
+                  <span className="text-white/70 text-xs">260 Pentonville Road, London, United Kingdom N1 9JY</span>
                 </div>
               </li>
               <li className="flex items-center gap-2 text-white/70 text-xs pt-1">
@@ -206,7 +206,7 @@ export function Footer({ config }: FooterProps) {
           <div className="flex flex-wrap items-center gap-3 text-[11px] font-space text-white/70">
             <span>© 2026 Diez Aesthetics. All rights reserved.</span>
             <span className="text-white/30">•</span>
-            <span>260 Pentonville Road, King&apos;s Cross London</span>
+            <span>260 Pentonville Road, London, United Kingdom N1 9JY</span>
           </div>
         </div>
 

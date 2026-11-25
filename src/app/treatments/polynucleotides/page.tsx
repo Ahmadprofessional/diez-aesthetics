@@ -4,7 +4,7 @@ import { PolynucleotidesLandingClient } from '@/components/treatments/Polynucleo
 export const metadata: Metadata = {
   title: 'Polynucleotides London | Under-Eye & Tear Trough Treatment | Diez Aesthetics',
   description:
-    'Advanced polynucleotides treatment in King’s Cross, London. Naturally repair under-eye dark circles, tear troughs, and crepey skin with regenerative salmon DNA. Course of 3 £520.',
+    'Advanced polynucleotides treatment in King’s Cross, London. Naturally repair under-eye dark circles, tear troughs, and crepey skin with regenerative salmon DNA. Single session £90, Course of 3 £200.',
   alternates: {
     canonical: 'https://diezaesthetics.com/treatments/polynucleotides/',
   },
@@ -62,8 +62,8 @@ export default function PolynucleotidesPage() {
         offers: {
           '@type': 'AggregateOffer',
           priceCurrency: 'GBP',
-          lowPrice: '200',
-          highPrice: '520',
+          lowPrice: '90',
+          highPrice: '200',
           offerCount: '2',
         },
       },
