@@ -68,27 +68,27 @@ export default function GalleryPage() {
 
             {/* Right Column: Clinical Director Authority Card */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden border border-white/15 bg-white/05 backdrop-blur-md shadow-[0_25px_60px_rgba(0,0,0,0.5)]">
-                <div className="relative aspect-[4/3] w-full">
+              <div className="relative rounded-3xl overflow-hidden border border-white/15 bg-white/05 backdrop-blur-md shadow-[0_25px_60px_rgba(0,0,0,0.5)] max-w-sm lg:max-w-md mx-auto">
+                <div className="relative aspect-[4/4.6] w-full">
                   <Image
-                    src="/assets/images/danial-image.png"
+                    src="/assets/images/danial-centered.png"
                     alt="Daniel Diez, Clinical Director at Diez Aesthetics London"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 500px"
+                    sizes="(max-width: 1024px) 100vw, 460px"
                     className="object-cover object-top"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                   
-                  <div className="absolute bottom-5 left-5 right-5 text-white space-y-1">
+                  <div className="absolute bottom-4 left-4 right-4 text-white space-y-1">
                     <span className="text-[10px] font-space uppercase tracking-widest text-[#dcd8d4] block">
-                      Clinical Excellence
+                      Clinical Director
                     </span>
                     <p className="font-serif text-lg leading-snug">
                       Daniel Diez
                     </p>
-                    <p className="text-xs text-white/60 font-light">
-                      Medical aesthetic practitioner dedicated strictly to natural anatomy preservation
+                    <p className="text-xs text-white/70 font-light">
+                      Medical aesthetic practitioner dedicated to natural facial preservation
                     </p>
                   </div>
                 </div>
