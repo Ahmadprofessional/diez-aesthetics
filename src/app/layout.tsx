@@ -123,10 +123,31 @@ export default function RootLayout({
       className={`${cormorant.variable} ${inter.variable} ${anton.variable} ${kaushan.variable} ${spaceGrotesk.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-NMBJ8ZLP"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());`,
+          }}
+        />
+      </head>
       <body
         className="font-sans bg-[#efebe8] text-[#1c1917] antialiased selection:bg-[#545358] selection:text-white"
         suppressHydrationWarning
       >
+        {/* Google Tag Manager (noscript fallback) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NMBJ8ZLP"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
