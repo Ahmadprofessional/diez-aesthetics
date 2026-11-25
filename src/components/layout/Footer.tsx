@@ -127,7 +127,7 @@ export function Footer({ config }: FooterProps) {
                 </Link>
               </li>
               <li>
-                <Link href="/treatments/" className="hover:text-white transition-colors flex items-center justify-between group">
+                <Link href="/treatments/skin-boosters/" className="hover:text-white transition-colors flex items-center justify-between group">
                   <span>Skin Boosters (Profhilo)</span>
                   <ArrowUpRight className="w-3.5 h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" />
                 </Link>

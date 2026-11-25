@@ -253,9 +253,9 @@ export function TreatmentsAtelier({ bookingUrl }: TreatmentsAtelierProps) {
                 <span>Book your treatment</span>
               </a>
 
-              {selectedTreatment.id === 'polynucleotides' && (
+              {(selectedTreatment.id === 'polynucleotides' || selectedTreatment.id === 'profhilo') && (
                 <Link
-                  href="/treatments/polynucleotides/"
+                  href={selectedTreatment.id === 'polynucleotides' ? '/treatments/polynucleotides/' : '/treatments/skin-boosters/'}
                   className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-[#efebe8] text-[#1c1a19] border border-[#747476]/25 font-space text-xs uppercase tracking-[0.18em] font-semibold transition-all shadow-sm"
                 >
                   <span>View Treatment Details</span>
