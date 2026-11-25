@@ -54,7 +54,7 @@ const treatmentCategories: TreatmentCategory[] = [
     eyebrow: 'WHY HAVE POLYNUCLEOTIDES?',
     title: 'Polynucleotides (Nucleofill & Ameela)',
     summary:
-      'Regenerative biostimulators derived from purified salmon DNA fractions. Stimulates autologous fibroblast collagen synthesis, microcirculation, and cellular repair to treat dark under-eye circles and skin laxity naturally without dermal filler.',
+      'Regenerative biostimulators derived from purified salmon DNA fractions. Stimulates fibroblast collagen synthesis, microcirculation, and cellular repair to treat dark under-eye circles and skin laxity naturally without dermal filler.',
     sessions: 'Course of 2–3 sessions recommended, spaced 3–4 weeks apart for cumulative cellular regeneration.',
     areas: 'Under-eye tear troughs, Periorbital hollows, Cheeks, Neck lines, Décolletage.',
     duration: 'Long-Term Cellular Regeneration',

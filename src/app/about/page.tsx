@@ -40,7 +40,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-white/75 font-light max-w-2xl mx-auto leading-relaxed">
-              A doctor-led aesthetic clinic in Central London dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
+              A premier aesthetic clinic in Central London founded and led by Clinical Director Daniel Diez, dedicated to thoughtful, subtle facial harmonisation and advanced regenerative medicine.
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                         <div>
                           <p className="text-[#1c1a19] text-base font-serif italic">Daniel Diez</p>
                           <p className="text-[#545358] text-xs font-space uppercase tracking-wider font-semibold">
-                            Clinical Director &amp; Injector
+                            Clinical Director &amp; Aesthetic Practitioner
                           </p>
                         </div>
                         <CheckCircle2 className="w-5 h-5 text-[#545358]" />
@@ -127,7 +127,7 @@ export default function AboutPage() {
                     <ShieldCheck className="w-4 h-4 text-[#545358]" />
                   </div>
                   <h3 className="font-serif text-base font-normal text-[#1c1a19]">
-                    Doctor-Led Care
+                    Practitioner-Led Care
                   </h3>
                   <p className="text-xs text-[#75716b] font-light leading-relaxed">
                     Every procedure personally administered by Daniel Diez with medical safety.
@@ -142,7 +142,7 @@ export default function AboutPage() {
                     5.0 ★ Reputation
                   </h3>
                   <p className="text-xs text-[#75716b] font-light leading-relaxed">
-                    120+ unblemished five-star patient reviews in King&apos;s Cross &amp; Central London.
+                    191 verified five-star patient reviews in King&apos;s Cross &amp; Central London.
                   </p>
                 </div>
               </div>

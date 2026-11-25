@@ -36,7 +36,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
             Craft Over <span className="italic text-[#545358] font-normal">Volume</span>
           </h2>
           <p className="font-space text-xs text-[#747476] uppercase tracking-[0.2em] pt-1">
-            Bespoke Regenerative Aesthetics • Doctor-led Care
+            Regenerative Aesthetics • Practitioner-Led Care
           </p>
           <p className="text-sm sm:text-base text-[#545358] font-light max-w-xl mx-auto leading-relaxed pt-2">
             &ldquo;{bioQuote}&rdquo;
@@ -100,7 +100,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
                 Precision
               </p>
               <p className="hidden md:block text-[11px] text-[#747476] font-light">
-                Doctor-led medical experience
+                Clinical practitioner experience
               </p>
             </div>
 

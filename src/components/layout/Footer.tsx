@@ -42,7 +42,7 @@ export function Footer({ config }: FooterProps) {
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-white/70">
               <ShieldCheck className="w-4 h-4 text-white/90 shrink-0" />
-              <span>Doctor-Led &amp; Complications Trained</span>
+              <span>Practitioner-Led &amp; Complications Trained</span>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export function Footer({ config }: FooterProps) {
                   rel="noopener noreferrer"
                   className="hover:text-white hover:translate-x-0.5 transition-all inline-flex items-center gap-1.5"
                 >
-                  <span>Google 5.0 <span className="text-[#eab308]">★</span> Reviews (128)</span>
+                  <span>Google 5.0 <span className="text-[#eab308]">★</span> Reviews (191)</span>
                 </a>
               </li>
             </ul>
@@ -177,7 +177,7 @@ export function Footer({ config }: FooterProps) {
               </li>
               <li className="flex items-center gap-2 text-white/70 text-xs pt-1">
                 <Clock className="w-3.5 h-3.5 text-white/80 shrink-0" />
-                <span>Mon–Fri: 10:00–19:00, Sat: 10:00–18:00</span>
+                <span>Mon–Sat: 9:00–20:30, Sun: Closed</span>
               </li>
               <li className="pt-2">
                 <a
@@ -199,7 +199,7 @@ export function Footer({ config }: FooterProps) {
         <div className="border-t border-white/15 pt-5 pb-3 flex flex-col sm:flex-row items-center justify-between text-xs text-white/70 gap-3">
           <div className="flex items-center gap-3">
             <span className="font-space text-[11px] uppercase tracking-wider text-white/80">
-              Doctor-Led Aesthetics Clinic London
+              Practitioner-Led Aesthetics Clinic London
             </span>
           </div>
 

@@ -47,7 +47,7 @@ export function AboutDanielSection() {
                     Daniel Diez
                   </p>
                   <p className="text-[11px] uppercase tracking-wider text-white/90 font-space font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] pt-1">
-                    Clinical Director &amp; Founder
+                    Clinical Director &amp; Aesthetic Practitioner
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export function AboutDanielSection() {
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-[#1c1917] tracking-wide uppercase font-space">
-                    Doctor-Led
+                    Practitioner-Led
                   </p>
                   <p className="text-[11px] text-[#747476] font-light">
                     Safety &amp; complications trained

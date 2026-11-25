@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Skin Booster Treatment King's Cross London | Profhilo | Diez Aesthetics",
     description:
-      "Doctor-led Profhilo and skin booster bio-remodelling in King's Cross, London. Restore natural glow, firmness, and deep hydration. 5.0 on Google, 128 reviews.",
+      "Practitioner-led Profhilo and skin booster bio-remodelling in King's Cross, London. Restore natural glow, firmness, and deep hydration. 5.0 on Google, 191 verified reviews.",
     url: 'https://diezaesthetics.com/treatments/skin-boosters/',
     siteName: 'Diez Aesthetics London',
     locale: 'en_GB',
@@ -46,7 +46,7 @@ export default function SkinBoostersPage() {
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '128',
+          reviewCount: '191',
         },
         priceRange: '££',
       },

@@ -47,7 +47,7 @@ export default function PolynucleotidesPage() {
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '50',
+          reviewCount: '191',
         },
         priceRange: '££',
       },

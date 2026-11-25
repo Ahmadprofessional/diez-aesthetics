@@ -87,7 +87,7 @@ export function Hero({ content }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xs sm:text-sm text-[#a8a5a3] font-light leading-relaxed pt-0.5"
           >
-            Doctor-led facial harmonisation and regenerative skin longevity, designed to elevate your authentic features with subtle, undetectable precision.
+            Practitioner-led facial harmonisation and regenerative skin longevity, designed to enhance your natural features with subtle, undetectable precision.
           </motion.p>
 
           <motion.div
@@ -173,7 +173,7 @@ export function Hero({ content }: HeroProps) {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-md text-[10px] uppercase font-space tracking-widest text-[#efebe8] ml-auto">
             <ShieldCheck className="w-3.5 h-3.5 text-[#747476]" />
-            <span>Doctor-Led Excellence</span>
+            <span>Clinical Excellence</span>
           </div>
 
           <div className="space-y-1">
@@ -181,7 +181,7 @@ export function Hero({ content }: HeroProps) {
               5.0 <span className="text-[#eab308]">★</span>
             </div>
             <p className="text-[10px] font-space uppercase tracking-[0.2em] text-[#747476]">
-              128 Verified Patient Reviews
+              191 Verified Google Reviews
             </p>
             <p className="text-xs text-[#a8a5a3] font-light leading-relaxed pt-1">
               Flawless five-star clinical reputation in King&apos;s Cross &amp; Central London.
@@ -225,7 +225,7 @@ export function Hero({ content }: HeroProps) {
           </div>
 
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 text-xs text-[#a8a5a3] font-space">
-            <span className="text-[#efebe8] font-medium">Doctor-led Clinic</span>
+            <span className="text-[#efebe8] font-medium">Practitioner-Led Clinic</span>
             <span className="text-white/20">•</span>
             <span>260 Pentonville Road, London, United Kingdom N1 9JY</span>
           </div>

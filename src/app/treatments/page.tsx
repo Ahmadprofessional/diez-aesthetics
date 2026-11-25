@@ -10,7 +10,7 @@ import { ShieldCheck, Star, MapPin, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Medical Aesthetic Treatments | Diez Aesthetics London',
   description:
-    'Explore doctor-led aesthetic treatments at Diez Aesthetics in King’s Cross: Anti-Wrinkle Injections, Signature Lips, Polynucleotides, Profhilo, and Medical Microneedling.',
+    'Explore clinical aesthetic treatments at Diez Aesthetics in King’s Cross: Anti-Wrinkle Injections, Signature Lips, Polynucleotides, Profhilo, and Medical Microneedling.',
   alternates: {
     canonical: 'https://diezaesthetics.com/treatments/',
   },

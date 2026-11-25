@@ -39,7 +39,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
   > = {
     treatments: {
       reply:
-        'Diez Aesthetics specialises in doctor-led facial harmonisation and skin longevity:\n\n• Anti-Wrinkle Injections (Precision dynamic line relaxing)\n• Dermal & Lip Fillers (Conservative natural enhancement)\n• Polynucleotides (Nucleofill & Ameela for dark circles & crepey skin)\n• Profhilo Bio-Remodelling (Deep cellular hydration & elasticity)\n• Medical Microneedling with Exosomes (Glass skin rejuvenation)\n• Fat Dissolving (Targeted submental & body reduction)',
+        'Diez Aesthetics specialises in practitioner-led facial harmonisation and skin longevity:\n\n• Anti-Wrinkle Injections (Precision dynamic line relaxing)\n• Dermal & Lip Fillers (Conservative natural enhancement)\n• Polynucleotides (Nucleofill & Ameela for dark circles & crepey skin)\n• Profhilo Bio-Remodelling (Deep cellular hydration & elasticity)\n• Medical Microneedling with Exosomes (Glass skin rejuvenation)\n• Fat Dissolving (Targeted submental & body reduction)',
       actionLabel: 'View All Treatments',
       actionHref: '/treatments/',
     },
@@ -119,7 +119,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
       } else {
         match = {
           reply:
-            'Thank you for reaching out to Diez Aesthetics. Clinical Director Daniel Diez provides doctor-led aesthetic care and natural facial harmonisation. How can we best assist your aesthetic journey?',
+            'Thank you for reaching out to Diez Aesthetics. Clinical Director & Aesthetic Practitioner Daniel Diez provides dedicated clinical care and natural facial harmonisation. How can we best assist your aesthetic journey?',
           actionLabel: 'Book Consultation',
           actionHref: config.booking_url,
         };

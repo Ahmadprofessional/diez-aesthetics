@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     template: '%s | Diez Aesthetics',
   },
   description:
-    'Doctor-led aesthetic clinic in King’s Cross, London (260 Pentonville Road). Specialising in subtle anti-wrinkle injections, dermal fillers, polynucleotides, skin boosters, and medical microneedling.',
+    'Premier aesthetic clinic in King’s Cross, London (260 Pentonville Road). Specialising in subtle anti-wrinkle injections, dermal fillers, polynucleotides, skin boosters, and medical microneedling.',
   keywords: [
     'aesthetics clinic London',
     'King’s Cross aesthetics',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     siteName: 'Diez Aesthetics',
     title: 'Diez Aesthetics | King’s Cross London',
     description:
-      'Doctor-led aesthetic clinic in King’s Cross, London. Specialising in subtle anti-wrinkle treatments, dermal fillers, polynucleotides, and skin boosters.',
+      'Premier aesthetic clinic in King’s Cross, London. Specialising in subtle anti-wrinkle treatments, dermal fillers, polynucleotides, and skin boosters.',
     images: [
       {
         url: 'https://diezaesthetics.com/wp-content/uploads/2026/06/hero-clinic.jpg',
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Diez Aesthetics | King’s Cross London',
     description:
-      'Doctor-led aesthetic clinic in King’s Cross, London. Subtle, natural-looking results.',
+      'Premier aesthetic clinic in King’s Cross, London. Subtle, natural-looking results.',
   },
   robots: {
     index: true,

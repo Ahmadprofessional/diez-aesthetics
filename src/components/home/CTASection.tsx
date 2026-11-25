@@ -55,7 +55,7 @@ export function CTASection({ config }: CTASectionProps) {
             </h2>
 
             <p className="text-zinc-300 text-sm sm:text-base font-light max-w-xl mx-auto leading-relaxed pt-1">
-              Personalised one-to-one consultations with Clinical Director Daniel Diez. Advanced regenerative care, doctor-led precision, and subtle natural results.
+              Personalised one-to-one consultations with Clinical Director &amp; Aesthetic Practitioner Daniel Diez. Advanced regenerative care, practitioner precision, and subtle natural results.
             </p>
           </div>
 

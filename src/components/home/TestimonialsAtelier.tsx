@@ -75,7 +75,7 @@ const reviews: ReviewItem[] = [
     time: '2 months ago',
     rating: 5,
     quote:
-      'The clinic is stunning and Daniel really listens to your individual facial anatomy. Subtle, balanced artistry without ever looking overdone. By far the best aesthetic doctor in London.',
+      'The clinic is stunning and Daniel really listens to your individual facial anatomy. Subtle, balanced artistry without ever looking overdone. By far the best aesthetic practitioner in London.',
   },
 ];
 
@@ -177,7 +177,7 @@ export function TestimonialsAtelier() {
                   <Star key={i} className="w-3 h-3 fill-[#eab308] text-[#eab308]" />
                 ))}
               </div>
-              <span className="text-[#747476]">128 reviews on Google</span>
+              <span className="text-[#747476]">191 verified reviews on Google</span>
             </div>
           </div>
         </motion.div>

@@ -19,8 +19,8 @@
     "label": "ABOUT Daniel",
     "heading": "NATURAL. BALANCED. BEAUTIFULLY YOU.",
     "bio": [
-      "Danial is an aesthetic practitioner known for his precision, artistic eye, and gentle technique. Specialising in subtle, confidence-boosting enhancements, he prioritises patient safety, natural results, and bespoke care tailored to your unique facial anatomy.",
-      "With continuous training in the latest medical aesthetic procedures, Danial believes in enhancing your authentic beauty—never overpowering it."
+      "Daniel is an aesthetic practitioner known for his precision, artistic eye, and gentle technique. Specialising in subtle, confidence-boosting enhancements, he prioritises patient safety, natural results, and bespoke care tailored to your unique facial anatomy.",
+      "With continuous training in the latest medical aesthetic procedures, Daniel believes in enhancing your authentic beauty—never overpowering it."
     ],
     "qualifications": [
       "Fully Insured & Qualified Practitioner",
@@ -42,7 +42,7 @@
         "description": "Target fine lines and dynamic wrinkles for a smoother, rejuvenated complexion while preserving natural expression.",
         "image": "/assets/images/anti-wrinkle.png",
         "cta": {
-          "label": "Learn More",
+          "label": "View Anti-Wrinkle Details",
           "href": "/treatments/"
         }
       },
@@ -51,7 +51,7 @@
         "description": "Enhance facial contours, restore volume, and define lips with premium hyaluronic acid dermal fillers.",
         "image": "/assets/images/dermal-fillers.png",
         "cta": {
-          "label": "Learn More",
+          "label": "View Dermal Filler Details",
           "href": "/treatments/"
         }
       },
@@ -60,7 +60,7 @@
         "description": "Deeply hydrate, stimulate collagen and elastin, and repair cellular damage for radiant, youthful skin.",
         "image": "/assets/images/skin-booster.png",
         "cta": {
-          "label": "Learn More",
+          "label": "View Skin Booster Details",
           "href": "/treatments/"
         }
       },
@@ -69,7 +69,7 @@
         "description": "Boost collagen synthesis, refine skin texture, and diminish acne scarring and pigmentation.",
         "image": "/assets/images/why choose diez image.webp",
         "cta": {
-          "label": "Learn More",
+          "label": "View Microneedling Details",
           "href": "/treatments/"
         }
       }
@@ -123,7 +123,7 @@
     "label": "PATIENT REVIEWS",
     "heading": "Real Stories. Real Confidence",
     "rating": "5.0",
-    "total_reviews": "50+",
+    "total_reviews": "191",
     "source": "Google Reviews",
     "items": [
       {

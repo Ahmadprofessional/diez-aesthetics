@@ -45,7 +45,7 @@ export function OfficialPriceCards() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs text-white/80">
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-              <span>100% Fixed Fees</span>
+              <span>Transparent Fixed Fees</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />

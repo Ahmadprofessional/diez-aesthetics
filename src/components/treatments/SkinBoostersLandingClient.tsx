@@ -95,7 +95,7 @@ export function SkinBoostersLandingClient() {
 
               {/* First paragraph containing skin booster, Profhilo and King's Cross for Quality Score alignment */}
               <p className="text-xs sm:text-sm text-white/80 font-light max-w-xl leading-relaxed">
-                Experience doctor-led <strong>skin booster</strong> and <strong>Profhilo</strong> treatments at our private clinic in <strong>King&apos;s Cross</strong>. Ultra-pure hyaluronic acid bio-remodelling engineered to hydrate deep tissue layers, restore firmness, and produce a radiant glow without artificial volume.
+                Experience practitioner-led <strong>skin booster</strong> and <strong>Profhilo</strong> treatments at our private clinic in <strong>King&apos;s Cross</strong>. Ultra-pure hyaluronic acid bio-remodelling engineered to hydrate deep tissue layers, restore firmness, and produce a radiant glow without artificial volume.
               </p>
 
               {/* Prices visible at once before scrolling */}
@@ -136,7 +136,7 @@ export function SkinBoostersLandingClient() {
                   ))}
                 </div>
                 <span className="text-[11px] sm:text-xs">
-                  5.0 on Google, 128 reviews, doctor-led, 260 Pentonville Road, 4 mins from St Pancras
+                  5.0 on Google, 191 reviews, practitioner-led, 260 Pentonville Road, 4 mins from St Pancras
                 </span>
               </div>
 
@@ -192,7 +192,7 @@ export function SkinBoostersLandingClient() {
 
                 <div className="absolute bottom-5 left-5 right-5 text-white space-y-1">
                   <span className="text-[10px] font-space uppercase tracking-widest text-[#dcd8d4] block">
-                    Doctor-Led Clinical Suite
+                    Practitioner-Led Clinical Suite
                   </span>
                   <p className="font-serif text-lg leading-snug">
                     Private Treatment Room
@@ -416,7 +416,7 @@ export function SkinBoostersLandingClient() {
 
             <div className="p-6 rounded-2xl bg-white border border-black/[0.08] shadow-sm space-y-3">
               <ShieldCheck className="w-6 h-6 text-emerald-700" />
-              <h3 className="font-serif text-lg text-[#1c1917]">Doctor-Led &amp; Insured</h3>
+              <h3 className="font-serif text-lg text-[#1c1917]">Practitioner-Led &amp; Insured</h3>
               <p className="text-xs text-[#78716c] font-light leading-relaxed">
                 Fully insured, complications-trained, and operating under hospital-grade sterile clinical standards.
               </p>
@@ -460,11 +460,11 @@ export function SkinBoostersLandingClient() {
             </h2>
 
             <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-              Consistently rated 5.0 on Google across 128 verified patient reviews for medical safety, natural subtlety, and clinical care.
+              Consistently rated 5.0 on Google across 191 verified patient reviews for clinical safety, subtle enhancement, and genuine care.
             </p>
           </div>
 
-          {/* Review Showcase Cards */}
+          {/* Real Google Reviews (Verbatim authentic reviews from Google Business Profile) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <div className="p-6 rounded-2xl bg-white/[0.04] border border-white/15 space-y-3">
@@ -474,10 +474,10 @@ export function SkinBoostersLandingClient() {
                 ))}
               </div>
               <p className="text-xs sm:text-sm text-white/80 font-light italic leading-relaxed">
-                &ldquo;Daniel is an exceptional practitioner. He thoroughly evaluated my skin texture and recommended a course of Profhilo. My skin feels deeply plumped and radiant without any artificial look.&rdquo;
+                &ldquo;The service was great, done with utmost care and attention. The clinic is pristine and Daniel explains every step with patience and clear guidance. Outstanding experience from consultation to follow-up.&rdquo;
               </p>
-              <span className="text-[10px] font-space uppercase tracking-wider text-[#dcd8d4] block">
-                Verified Patient · King’s Cross Clinic
+              <span className="text-[10px] font-space uppercase tracking-wider text-emerald-400 block">
+                Jesmin Begum · Verified Google Review
               </span>
             </div>
 
@@ -488,10 +488,10 @@ export function SkinBoostersLandingClient() {
                 ))}
               </div>
               <p className="text-xs sm:text-sm text-white/80 font-light italic leading-relaxed">
-                &ldquo;The entire experience was seamless. Daniel explained the 5 injection points on each side and had a gentle hand. The slight bumps were completely gone the next morning.&rdquo;
+                &ldquo;Completed treatment at the clinic last week — my skin looks and feels amazing! Don’t worry about any pain either, he uses top quality numbing cream. A fantastic clinic 4 mins from King’s Cross.&rdquo;
               </p>
-              <span className="text-[10px] font-space uppercase tracking-wider text-[#dcd8d4] block">
-                Verified Patient · London
+              <span className="text-[10px] font-space uppercase tracking-wider text-emerald-400 block">
+                Samiyah N. · Verified Google Review
               </span>
             </div>
 
@@ -502,19 +502,32 @@ export function SkinBoostersLandingClient() {
                 ))}
               </div>
               <p className="text-xs sm:text-sm text-white/80 font-light italic leading-relaxed">
-                &ldquo;Truly professional and conservative in his approach. No hard upsells, clear pricing, and spotless clinical setting right near St Pancras. Highly recommend Daniel.&rdquo;
+                &ldquo;Numbing cream was applied as I was still in the waiting area and then treatment itself was really quick and efficient. Dani was super friendly and professional and I felt like I trusted his work and technique.&rdquo;
               </p>
-              <span className="text-[10px] font-space uppercase tracking-wider text-[#dcd8d4] block">
-                Verified Patient · Central London
+              <span className="text-[10px] font-space uppercase tracking-wider text-emerald-400 block">
+                Niki S. · Verified Google Review
               </span>
             </div>
 
           </div>
 
+          {/* Link to all 191 Google Reviews */}
+          <div className="text-center pt-2">
+            <a
+              href="https://maps.google.com/?q=Diez+Anti-Aging+Aesthetics+London"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs font-space uppercase tracking-wider text-white/80 hover:text-white transition-colors underline underline-offset-4"
+            >
+              <span>Read all 191 Google Reviews on Google Maps</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
           {/* Privacy & Clinical Case Studies Statement (No reuse of polynucleotide photos) */}
           <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 text-center space-y-2 max-w-2xl mx-auto">
             <p className="text-xs text-white/80 font-light leading-relaxed">
-              <strong>Patient Confidentiality Note:</strong> Authentic Profhilo and skin booster before-and-after photographic records with patient consent are reviewed in person during your private clinical consultation to protect patient privacy.
+              <strong>Patient Confidentiality &amp; UK Advertising Compliance:</strong> In accordance with UK CMA and CAP regulations, authentic Profhilo and skin booster before-and-after photographic records with signed written patient consent are reviewed in person during your private clinical consultation.
             </p>
           </div>
 

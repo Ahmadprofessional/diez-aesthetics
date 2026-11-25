@@ -78,7 +78,7 @@ export function PolynucleotidesLandingClient() {
 
               {/* Subtitle */}
               <p className="text-sm sm:text-base text-white/75 font-light max-w-xl leading-relaxed">
-                Doctor-led cellular salmon DNA biostimulation to soften hollows, brighten stubborn dark circles, and restore delicate periorbital skin without dermal filler puffiness.
+                Practitioner-led cellular salmon DNA biostimulation to soften hollows, brighten persistent dark circles, and restore delicate periorbital skin.
               </p>
 
               {/* Minimal Trust Indicator */}
@@ -222,21 +222,21 @@ export function PolynucleotidesLandingClient() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-space tracking-[0.25em] uppercase bg-white border border-[#747476]/20 text-[#545358] shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#545358]" />
-              <span>03 / THE BIOLOGICAL DIFFERENCE</span>
+              <span>03 / PERIORBITAL TREATMENT MODALITIES</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#1c1a19] tracking-tight">
-              Regeneration Over <span className="italic text-[#545358] font-normal">Artificial Volume</span>
+              Clinical Comparison: <span className="italic text-[#545358] font-normal">Polynucleotides &amp; Tear Trough Fillers</span>
             </h2>
-            <p className="text-sm sm:text-base text-[#57534e] font-light max-w-xl mx-auto">
-              Why London’s leading aesthetic clinicians are replacing traditional tear trough dermal fillers with bio-regenerative DNA fractions.
+            <p className="text-sm sm:text-base text-[#57534e] font-light max-w-2xl mx-auto leading-relaxed">
+              At Diez Aesthetics, we offer both dedicated under-eye treatments. During your clinical consultation, Daniel Diez evaluates your facial anatomy to recommend the most suitable clinical approach for your goals.
             </p>
           </motion.div>
 
           {/* Dual Haute-Couture Editorial Panels */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            {/* Panel A: Polynucleotides (The Modern Gold Standard) */}
+            {/* Panel A: Polynucleotides */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -246,13 +246,13 @@ export function PolynucleotidesLandingClient() {
             >
               <div className="space-y-1.5 border-b border-[#747476]/15 pb-5">
                 <span className="text-[10px] font-space uppercase tracking-[0.25em] text-[#545358] font-semibold block">
-                  THE CLINICAL METHOD
+                  CELLULAR REGENERATION · £90 / £200
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#1c1a19]">
                   Periorbital Polynucleotides
                 </h3>
                 <p className="text-xs text-[#747476] font-light">
-                  Autologous cellular signaling derived from medical-grade PDRN
+                  Biocompatible polynucleotide signaling derived from medical-grade PDRN
                 </p>
               </div>
 
@@ -262,8 +262,8 @@ export function PolynucleotidesLandingClient() {
                     ✓
                   </div>
                   <div>
-                    <strong className="text-[#1c1917] font-medium block">Zero Hydrophilic Puffiness:</strong>
-                    Does not bind excess water. Eliminates the risk of chronic morning fluid bags.
+                    <strong className="text-[#1c1917] font-medium block">Best For Skin Quality &amp; Dark Circles:</strong>
+                    Directly thickens thin, translucent under-eye dermis and stimulates microcirculation.
                   </div>
                 </div>
 
@@ -272,8 +272,8 @@ export function PolynucleotidesLandingClient() {
                     ✓
                   </div>
                   <div>
-                    <strong className="text-[#1c1917] font-medium block">No Tyndall Blue Discoloration:</strong>
-                    Transparent, natural bio-fractions absorb completely without bluish optical tinting.
+                    <strong className="text-[#1c1917] font-medium block">Non-Hydrophilic Formulation:</strong>
+                    Does not pull excess water into periorbital tissue, making it suitable for patients prone to morning fluid retention.
                   </div>
                 </div>
 
@@ -282,8 +282,8 @@ export function PolynucleotidesLandingClient() {
                     ✓
                   </div>
                   <div>
-                    <strong className="text-[#1c1917] font-medium block">Real Dermal Thickening:</strong>
-                    Directly stimulates fibroblasts to grow your own collagen, naturally concealing dark veins.
+                    <strong className="text-[#1c1917] font-medium block">Fibroblast Collagen Synthesis:</strong>
+                    Stimulates natural synthesis of type I collagen and elastin over a 2 to 3-session course.
                   </div>
                 </div>
 
@@ -292,71 +292,71 @@ export function PolynucleotidesLandingClient() {
                     ✓
                   </div>
                   <div>
-                    <strong className="text-[#1c1917] font-medium block">Full Emotional Mobility:</strong>
-                    Zero stiffness. Preserves 100% natural eyelid dynamics when you laugh or smile.
+                    <strong className="text-[#1c1917] font-medium block">Natural Mobility:</strong>
+                    Integrates smoothly into the extracellular matrix while preserving natural eyelid dynamics.
                   </div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Panel B: Traditional Tear Trough Fillers (The Pitfalls) */}
+            {/* Panel B: Tear Trough Dermal Fillers */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="p-8 sm:p-10 rounded-[32px] bg-white/70 border border-[#747476]/20 shadow-sm space-y-6 opacity-85"
+              className="p-8 sm:p-10 rounded-[32px] bg-white border border-[#747476]/30 shadow-sm space-y-6"
             >
               <div className="space-y-1.5 border-b border-[#747476]/15 pb-5">
-                <span className="text-[10px] font-space uppercase tracking-[0.25em] text-[#78716c] font-semibold block">
-                  CONVENTIONAL MODALITY
+                <span className="text-[10px] font-space uppercase tracking-[0.25em] text-[#545358] font-semibold block">
+                  STRUCTURAL VOLUME REPLACEMENT · £140
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#78716c]">
+                <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#1c1917]">
                   Tear Trough Dermal Fillers
                 </h3>
                 <p className="text-xs text-[#78716c] font-light">
-                  Synthetic cross-linked hyaluronic acid gel
+                  Targeted hyaluronic acid for deep anatomical hollows
                 </p>
               </div>
 
-              <div className="space-y-4 text-xs sm:text-sm text-[#78716c] font-light leading-relaxed">
+              <div className="space-y-4 text-xs sm:text-sm text-[#44403c] font-light leading-relaxed">
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-rose-200">
-                    ✕
+                  <div className="w-5 h-5 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-emerald-200">
+                    ✓
                   </div>
                   <div>
-                    <strong className="text-[#44403c] font-medium block">Chronic Fluid Retention:</strong>
-                    Hyaluronic acid absorbs up to 1,000x its weight in water, often causing persistent malar edema.
+                    <strong className="text-[#1c1917] font-medium block">Best For Deep Structural Hollows:</strong>
+                    Physically restores lost volume where significant orbital bone recession or fat loss creates severe shadows.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-rose-200">
-                    ✕
+                  <div className="w-5 h-5 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-emerald-200">
+                    ✓
                   </div>
                   <div>
-                    <strong className="text-[#44403c] font-medium block">Tyndall Effect Risks:</strong>
-                    Light scattering through superficial filler creates visible blue-tinted discoloration.
+                    <strong className="text-[#1c1917] font-medium block">Immediate Volume Lift:</strong>
+                    Delivers visible volumetric correction immediately in a single 30-minute appointment.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-rose-200">
-                    ✕
+                  <div className="w-5 h-5 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-emerald-200">
+                    ✓
                   </div>
                   <div>
-                    <strong className="text-[#44403c] font-medium block">No Cellular Improvement:</strong>
-                    Merely pushes the skin outward without repairing underlying thinning or crepey texture.
+                    <strong className="text-[#1c1917] font-medium block">Micro-Cannula Placement:</strong>
+                    Placed in the deep pre-periosteal plane with blunt micro-cannula technique to minimize bruising risk.
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-rose-200">
-                    ✕
+                  <div className="w-5 h-5 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 border border-emerald-200">
+                    ✓
                   </div>
                   <div>
-                    <strong className="text-[#44403c] font-medium block">Risk of Downward Migration:</strong>
-                    Facial movement can cause the gel to shift over time, requiring emergency dissolving.
+                    <strong className="text-[#1c1917] font-medium block">Anatomical Suitability:</strong>
+                    Recommended for patients with adequate skin thickness who require physical volume rather than surface dermal renewal.
                   </div>
                 </div>
               </div>
@@ -441,9 +441,6 @@ export function PolynucleotidesLandingClient() {
                   <span className="font-space text-[10px] uppercase tracking-widest text-[#545358] font-semibold">
                     SINGLE SESSION
                   </span>
-                  <span className="text-[11px] text-[#78716c] font-space">
-                    London Avg: £350–£400
-                  </span>
                 </div>
 
                 <div className="flex items-baseline justify-between">
@@ -476,9 +473,6 @@ export function PolynucleotidesLandingClient() {
                   <span className="font-space text-[10px] uppercase tracking-widest text-[#dcd8d4] font-semibold">
                     THE CLINICAL GOLD STANDARD
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-white/10 border border-white/15 text-white text-[9px] font-space uppercase tracking-wider">
-                    Save £500+ vs Harley St
-                  </span>
                 </div>
 
                 <div className="flex items-baseline justify-between border-b border-white/10 pb-4">
@@ -493,7 +487,7 @@ export function PolynucleotidesLandingClient() {
                 </div>
 
                 <p className="text-xs text-white/80 font-light leading-relaxed">
-                  The recommended full course required for cumulative cellular tissue remodeling, permanent darkness reduction, and maximum skin density lasting 6 to 9 months.
+                  The recommended full course required for cumulative cellular tissue remodeling, progressive darkness reduction, and maximum skin density lasting 6 to 9 months.
                 </p>
 
                 <div className="pt-2">
@@ -540,7 +534,7 @@ export function PolynucleotidesLandingClient() {
                 <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
                   <p className="font-serif italic text-2xl text-white">Daniel Diez</p>
                   <p className="text-[11px] font-space uppercase tracking-wider text-white/90">
-                    Clinical Director &amp; Practitioner
+                    Clinical Director &amp; Aesthetic Practitioner
                   </p>
                 </div>
               </div>
@@ -581,7 +575,7 @@ export function PolynucleotidesLandingClient() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-                  <span>50+ verified 5.0 Google Reviews in King’s Cross, London</span>
+                  <span>191 verified 5.0 Google Reviews in King’s Cross, London</span>
                 </div>
               </div>
 

@@ -62,7 +62,7 @@ const clinicalCases: ClinicalCase[] = [
     productUsed: 'Ameela / Nucleofill Eyes (Purified Polynucleotides)',
     technique: 'Intradermal Micro-papular Infusion',
     clinicianNotes:
-      'Patient presented with hollow under-eye shadowing and thin crepey dermis. A 3-session course stimulated autologous collagen, thickening periorbital skin naturally without hydrophilic filler swelling.',
+      'Patient presented with hollow under-eye shadowing and thin crepey dermis. A 3-session course stimulated natural collagen synthesis, thickening periorbital skin naturally without hydrophilic filler swelling.',
     patientGoal:
       'Eradicate tired under-eye appearance and dark circles without risking the puffiness associated with hyaluronic acid fillers.',
   },
@@ -291,7 +291,7 @@ export function BeforeAfterCarousel() {
             {/* Quick Caption Under Image */}
             <div className="flex items-center justify-between text-xs text-[#747476] font-space px-2">
               <span>Standardised clinic lighting &amp; patient positioning</span>
-              <span className="text-[#3b3b3d] font-semibold">Doctor-led Result</span>
+              <span className="text-[#3b3b3d] font-semibold">Practitioner-Led Result</span>
             </div>
           </motion.div>
 

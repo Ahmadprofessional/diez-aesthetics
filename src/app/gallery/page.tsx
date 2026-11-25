@@ -8,7 +8,7 @@ import { ShieldCheck, Camera, CheckCircle2, Award } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Clinical Results & Case Studies | Diez Aesthetics London',
   description:
-    'Clinical results and patient case studies from Diez Aesthetics in King’s Cross, London. Standardised before-and-after clinical photography of subtle, doctor-led transformations.',
+    'Clinical results and patient case studies from Diez Aesthetics in King’s Cross, London. Standardised before-and-after clinical photography of subtle transformations under Clinical Director Daniel Diez.',
   alternates: {
     canonical: 'https://diezaesthetics.com/gallery/',
   },
@@ -61,7 +61,7 @@ export default function GalleryPage() {
 
                 <div className="flex items-center gap-1.5 bg-white/05 px-3.5 py-1.5 rounded-full border border-white/10 backdrop-blur-sm">
                   <Award className="w-3.5 h-3.5 text-[#dcd8d4]" />
-                  <span>Doctor-Led Treatments</span>
+                  <span>Practitioner-Led Treatments</span>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function GalleryPage() {
                   
                   <div className="absolute bottom-4 left-4 right-4 text-white space-y-1">
                     <span className="text-[10px] font-space uppercase tracking-widest text-[#dcd8d4] block">
-                      Clinical Director
+                      Clinical Director &amp; Aesthetic Practitioner
                     </span>
                     <p className="font-serif text-lg leading-snug">
                       Daniel Diez

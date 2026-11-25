@@ -85,11 +85,14 @@ export function PolynucleotideComparisonSlider() {
           <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           <span>
             Case: <strong className="text-[#1c1917] font-medium">Under-Eye Hollows &amp; Tear Troughs</strong> (Standardised Clinical Documentation)
+            <span className="block text-[11px] text-[#78716c] font-normal pt-0.5">
+              Clinical case study record. Full patient portfolios and documentation with signed written consent are reviewed during private in-clinic consultation.
+            </span>
           </span>
         </div>
         <div className="flex items-center gap-2 text-[#78716c]">
           <ShieldCheck className="w-4 h-4 text-[#d4af37] shrink-0" />
-          <span>Director-Led Treatment</span>
+          <span>Practitioner-Led Treatment</span>
         </div>
       </div>
     </div>
