@@ -447,9 +447,9 @@ export function PolynucleotidesLandingClient() {
                 </div>
 
                 <div className="flex items-baseline justify-between">
-                  <h3 className="font-serif text-2xl text-[#1c1917]">Targeted Session</h3>
+                  <h3 className="font-serif text-2xl text-[#1c1917]">Single Session</h3>
                   <div className="flex items-baseline gap-1">
-                    <span className="font-serif text-4xl text-[#1c1917]">£200</span>
+                    <span className="font-serif text-4xl text-[#1c1917]">£90</span>
                     <span className="text-xs text-[#78716c]">/ treatment</span>
                   </div>
                 </div>
@@ -487,8 +487,8 @@ export function PolynucleotidesLandingClient() {
                     <span className="text-xs text-white/60 font-light">3 Spaced Sessions (3–4 Wks)</span>
                   </div>
                   <div className="flex items-baseline gap-1">
-                    <span className="font-serif text-5xl text-white">£520</span>
-                    <span className="text-xs text-white/60">/ complete course</span>
+                    <span className="font-serif text-5xl text-white">£200</span>
+                    <span className="text-xs text-white/60">/ complete course of 3</span>
                   </div>
                 </div>
 

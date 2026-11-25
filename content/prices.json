@@ -1,124 +1,241 @@
 {
   "header": {
-    "subtitle": "PRICING PACKAGES",
-    "title": "Simple & Transparent Pricing",
-    "description": "Honest, competitive pricing with no hidden costs. Consultations are complimentary when proceeding with treatment."
+    "subtitle": "OFFICIAL PRICING",
+    "title": "Transparent Treatment Pricing",
+    "description": "Official London treatment fees directly from Clinical Director Daniel Diez. Zero hidden clinic charges."
   },
   "categories": [
     {
       "category": "Anti-Wrinkle Injections",
-      "note": "Botulinum toxin treatment for fine lines and muscle relaxation.",
+      "note": "Prescription botulinum toxin to soften expression lines, slim jaw muscles, and smooth skin.",
       "items": [
         {
-          "name": "1 Area",
-          "price": "£150",
+          "name": "Anti-wrinkle injections - 3 areas (Frown, forehead & crow's feet)",
+          "price": "£180",
           "duration": "30 mins"
         },
         {
-          "name": "2 Areas",
-          "price": "£200",
-          "duration": "30 mins"
-        },
-        {
-          "name": "3 Areas",
-          "price": "£250",
-          "duration": "45 mins"
-        },
-        {
-          "name": "Masseter / Jaw Slimming",
-          "price": "£250",
-          "duration": "30 mins"
-        },
-        {
-          "name": "Gummy Smile / Bunny Lines",
-          "price": "£120",
+          "name": "Frown area with anti-wrinkle",
+          "price": "£100",
           "duration": "20 mins"
+        },
+        {
+          "name": "Lip flip with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Gummy smile with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Nose tip lift with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Cobblestone chin with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Bunny lines with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Downturned smile with anti-wrinkle",
+          "price": "£100",
+          "duration": "20 mins"
+        },
+        {
+          "name": "Masseter - face slimming / clenching with anti-wrinkle",
+          "price": "£190",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Nefertiti neck lift, platysma bands with anti-wrinkle",
+          "price": "£190",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Traptox - trapezius muscle, straighter & slimmer back",
+          "price": "£190",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Hyperhidrosis - underarm sweating with anti-wrinkle",
+          "price": "£190",
+          "duration": "30 mins"
         }
       ]
     },
     {
       "category": "Dermal Fillers",
-      "note": "Premium Hyaluronic Acid fillers.",
+      "note": "Premium hyaluronic acid contouring for natural structure, symmetry, and volume.",
       "items": [
         {
-          "name": "Lip Filler (0.5ml)",
-          "price": "£150",
+          "name": "Signature lip filler - 0.5ML",
+          "price": "£90",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Signature lip filler - 1ML",
+          "price": "£110",
           "duration": "45 mins"
         },
         {
-          "name": "Lip Filler (1.0ml)",
-          "price": "£220",
+          "name": "Chin filler - projection and shape",
+          "price": "£110",
           "duration": "45 mins"
         },
         {
-          "name": "Cheek Filler (1ml)",
-          "price": "£240",
+          "name": "Cheek filler - 1ML",
+          "price": "£110",
           "duration": "45 mins"
         },
         {
-          "name": "Jawline & Chin Contouring (2ml)",
-          "price": "£420",
+          "name": "Nose filler - bridge, hump and tip",
+          "price": "£110",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Smile lines filler - 1ML",
+          "price": "£110",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Tear trough filler",
+          "price": "£140",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Hands filler",
+          "price": "£140",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Jawline filler - 2ML",
+          "price": "£180",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Diez Contour Filler Package - 2ML",
+          "price": "£180",
           "duration": "60 mins"
         },
         {
-          "name": "Nasolabial / Marionette Folds",
-          "price": "£220",
-          "duration": "45 mins"
+          "name": "Diez Contour Filler Package - 3ML",
+          "price": "£245",
+          "duration": "60 mins"
+        },
+        {
+          "name": "Diez Contour Filler Package - 4ML",
+          "price": "£295",
+          "duration": "60 mins"
+        },
+        {
+          "name": "Diez Contour Filler Package - 5ML",
+          "price": "£345",
+          "duration": "60 mins"
+        },
+        {
+          "name": "Diez Contour Filler Package - 6ML",
+          "price": "£395",
+          "duration": "75 mins"
         }
       ]
     },
     {
-      "category": "Skin Boosters & Polynucleotides",
-      "note": "Regenerative deep hydration and cellular repair.",
+      "category": "Polynucleotides Treatment",
+      "note": "Regenerative salmon DNA (PDRN) biostimulation to treat under-eye dark circles, hollows, and laxity.",
       "items": [
         {
-          "name": "Profhilo (Face - 1 Session)",
-          "price": "£250",
-          "duration": "45 mins"
+          "name": "Polynucleotides injection (Single session)",
+          "price": "£90",
+          "duration": "30 mins"
         },
         {
-          "name": "Profhilo (Course of 2)",
-          "price": "£450",
-          "duration": "2 Sessions"
-        },
-        {
-          "name": "Polynucleotides Eyes (1 Session)",
+          "name": "Polynucleotides - 3 sessions (Full course)",
           "price": "£200",
-          "duration": "45 mins"
-        },
-        {
-          "name": "Polynucleotides Eyes (Course of 3)",
-          "price": "£520",
           "duration": "3 Sessions"
-        },
-        {
-          "name": "Seventy Hyal 2000 (1 Session)",
-          "price": "£150",
-          "duration": "45 mins"
         }
       ]
     },
     {
-      "category": "Skin Rejuvenation & Microneedling",
-      "note": "Collagen induction therapy.",
+      "category": "Skin Boosters",
+      "note": "Deep cellular hydration, bio-remodelling, and dermal radiance.",
       "items": [
         {
-          "name": "Medical Microneedling (Single)",
+          "name": "Glutathione glow up skin booster",
+          "price": "£90",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Profhilo - 1 session",
+          "price": "£140",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Profhilo - 2 sessions",
+          "price": "£250",
+          "duration": "2 Sessions"
+        }
+      ]
+    },
+    {
+      "category": "Fat Dissolving",
+      "note": "Targeted deoxycholic acid compound to permanently liquefy localized subcutaneous fat cells.",
+      "items": [
+        {
+          "name": "Fat dissolving - 1 small area",
+          "price": "£90",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Fat dissolving - 2 small areas",
+          "price": "£110",
+          "duration": "45 mins"
+        },
+        {
+          "name": "Fat dissolving - 1 large area",
           "price": "£130",
           "duration": "45 mins"
         },
         {
-          "name": "Medical Microneedling (Course of 3)",
-          "price": "£330",
-          "duration": "3 Sessions"
+          "name": "Fat dissolving - Upper and lower stomach (full)",
+          "price": "£150",
+          "duration": "60 mins"
+        }
+      ]
+    },
+    {
+      "category": "Microneedling",
+      "note": "Medical-grade collagen induction therapy for scar reduction, pore contraction, and skin tone.",
+      "items": [
+        {
+          "name": "Medical microneedling with vitamin C",
+          "price": "£90",
+          "duration": "45 mins"
         },
         {
-          "name": "Microneedling + Hyaluronic Cocktail",
-          "price": "£160",
+          "name": "Microneedling - 1 small area",
+          "price": "£90",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Body stretch marks removal medical microneedling",
+          "price": "£120",
+          "duration": "60 mins"
+        },
+        {
+          "name": "Medical microneedling with exosomes",
+          "price": "£120",
           "duration": "60 mins"
         }
       ]
     }
   ],
-  "booking_note": "A deposit is required to secure your appointment. 48-hour cancellation policy applies."
+  "booking_note": "A deposit is required to secure your appointment. Direct one-to-one care with Clinical Director Daniel Diez."
 }

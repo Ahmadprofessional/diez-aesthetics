@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useSpring, useMotionValue, useTransform } from 'framer-motion';
-import { Eye, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Eye, ShieldCheck, ArrowRight, MapPin } from 'lucide-react';
 import { HomeContent } from '@/types/content';
 
 interface HeroProps {
@@ -57,9 +57,9 @@ export function Hero({ content }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="lg:col-span-4 flex flex-col justify-center space-y-4 sm:space-y-5 text-left z-20 max-w-md mx-auto lg:mx-0"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[9px] sm:text-[10px] font-space uppercase tracking-[0.25em] text-[#efebe8] w-fit shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#dcd8d4]" />
-            <span>King&apos;s Cross Aesthetic Clinic</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[9px] sm:text-[10px] font-space uppercase tracking-[0.22em] text-[#efebe8] w-fit shadow-sm">
+            <MapPin className="w-3 h-3 text-[#dcd8d4] shrink-0" />
+            <span>260 Pentonville Road, London N1 9JY</span>
           </div>
 
           <div className="space-y-0.5 sm:space-y-1">
@@ -227,7 +227,7 @@ export function Hero({ content }: HeroProps) {
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 text-xs text-[#a8a5a3] font-space">
             <span className="text-[#efebe8] font-medium">Doctor-led Clinic</span>
             <span className="text-white/20">•</span>
-            <span>260 Pentonville Road, King&apos;s Cross N1 9JY</span>
+            <span>260 Pentonville Road, London, United Kingdom N1 9JY</span>
           </div>
         </div>
       </div>

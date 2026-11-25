@@ -65,7 +65,7 @@ export function PhilosophySection({ bioQuote }: PhilosophySectionProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
               <div className="absolute bottom-5 left-5 right-5 text-xs text-white">
                 <p className="font-serif italic text-lg text-white">Private Treatment Suite</p>
-                <p className="text-zinc-300 text-[11px] font-space tracking-wider">260 Pentonville Road, King&apos;s Cross</p>
+                <p className="text-zinc-300 text-[11px] font-space tracking-wider">260 Pentonville Road, London, United Kingdom N1 9JY</p>
               </div>
             </div>
           </motion.div>

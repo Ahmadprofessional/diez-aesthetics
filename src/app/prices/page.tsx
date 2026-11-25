@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getPricesContent, getGlobalConfig } from '@/lib/content';
 import { PriceTabs } from '@/components/prices/PriceTabs';
+import { OfficialPriceCards } from '@/components/prices/OfficialPriceCards';
 import { CTASection } from '@/components/home/CTASection';
 import { ShieldCheck, Star, MapPin, CheckCircle2 } from 'lucide-react';
 
@@ -98,6 +99,9 @@ export default function PricesPage() {
           </div>
         </div>
       </section>
+
+      {/* Official Instagram Price Cards */}
+      <OfficialPriceCards />
 
       {/* Main Pricing Tabs Stage */}
       <section className="py-20 bg-[#efebe8] border-b border-[#747476]/15">

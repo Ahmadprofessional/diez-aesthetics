@@ -45,7 +45,7 @@ export function ConciergeChatWidget({ config }: ConciergeChatWidgetProps) {
     },
     pricing: {
       reply:
-        'All-inclusive clinical pricing with doctor consultation included:\n\n• Anti-Wrinkle Injections: from £150 (1 area) to £240 (3 areas)\n• Dermal & Lip Fillers: £200 (0.5ml) / £260 (1.0ml)\n• Polynucleotides (Eye / Face): £280 / session (£750 for 3)\n• Profhilo Bio-Remodelling: £280 / session (£520 for 2)\n• Medical Microneedling: £160 / session\n• Fat Dissolving: from £180 / session\n\nTransparent pricing with zero hidden clinical fees.',
+        'Official transparent clinic fees with Clinical Director Daniel Diez:\n\n• Polynucleotides: £90 (1 session) / £200 (course of 3)\n• Anti-Wrinkle Injections: from £100 (1 area) to £180 (3 areas)\n• Dermal & Lip Fillers: £90 (0.5ml) / £110 (1.0ml)\n• Profhilo Bio-Remodelling: £140 (1 session) / £250 (2 sessions)\n• Medical Microneedling: from £90 / session\n• Fat Dissolving: from £90 / session\n\nTransparent pricing with zero hidden clinical fees.',
       actionLabel: 'View Full Treatment Menu',
       actionHref: '/prices/',
     },
