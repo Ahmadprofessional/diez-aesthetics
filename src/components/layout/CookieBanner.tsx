@@ -18,6 +18,17 @@ export function CookieBanner() {
       if (!saved) {
         const timer = setTimeout(() => setIsOpen(true), 1200);
         return () => clearTimeout(timer);
+      } else {
+        // Restore previously saved consent on every page load
+        const parsed: { analytics?: boolean; marketing?: boolean } = JSON.parse(saved);
+        if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
+          (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('consent', 'update', {
+            analytics_storage: parsed.analytics ? 'granted' : 'denied',
+            ad_storage: parsed.marketing ? 'granted' : 'denied',
+            ad_user_data: parsed.marketing ? 'granted' : 'denied',
+            ad_personalization: parsed.marketing ? 'granted' : 'denied',
+          });
+        }
       }
     } catch (e) {}
   }, []);

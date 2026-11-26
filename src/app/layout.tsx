@@ -124,15 +124,26 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        {/* Google Consent Mode v2 — MUST run before GTM to block _gcl_au until consent granted */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           async
           src="https://www.googletagmanager.com/gtm.js?id=GTM-NMBJ8ZLP"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());`,
-          }}
         />
       </head>
       <body
