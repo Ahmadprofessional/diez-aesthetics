@@ -106,6 +106,11 @@ export function ContactForm() {
       }
 
       setIsSubmitted(true);
+      // Fire GTM dataLayer event for Google Ads conversion tracking
+      if (typeof window !== 'undefined') {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ((window as any).dataLayer = (window as any).dataLayer || []).push({ event: 'booking_form_submitted' });
+      }
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : 'An unexpected error occurred. Please try again.';
       setServerError(message);
